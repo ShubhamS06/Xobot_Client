@@ -17,12 +17,7 @@
   position: absolute;
   top: 9640px;
   left: calc(50% - 1029px);
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    transparent 21.67%,
-    #18d777 69.34%,
-    #fff
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   width: 2060px;
   height: 1080px;
 }
@@ -40,12 +35,7 @@
   top: 110px;
   left: calc(50% - 860px);
   border-radius: var(--br-31xl);
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    transparent 21.67%,
-    #18d777 77.71%,
-    #fff
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   width: 1720px;
   height: 1080px;
 }
@@ -78,11 +68,7 @@
   font-size: 76px;
   line-height: 120%;
   display: inline-block;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5) 84.77%
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1167,11 +1153,7 @@
   position: relative;
   line-height: 140%;
   font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5)
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -1305,12 +1287,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-31xl);
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    transparent 50.98%,
-    #18d777 90.96%,
-    #fff 95.65%
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   border-top: 2px solid var(--primary-color);
   box-sizing: border-box;
 }
@@ -1573,12 +1550,7 @@
   top: 71.67%;
   right: 0;
   left: 0.07%;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    transparent 21.67%,
-    rgba(24, 215, 119, 0.8) 69.34%,
-    rgba(255, 255, 255, 0.8)
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
 }
 .background {
   width: 100.07%;
@@ -1793,12 +1765,7 @@
 .groupChild52 {
   left: calc(50% - 860px);
   border-radius: var(--br-31xl);
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    transparent 33%,
-    #18d777 79.5%,
-    #fff
-  );
+  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
   width: 1720px;
   height: 1161px;
 }
