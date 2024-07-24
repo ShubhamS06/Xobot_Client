@@ -15,7 +15,6 @@ function ConnectToolsSection({ styles }) {
                 </div>
                 <div className={styles.unionParent9}>
                     <div className={styles.union6}>
-                        <div className={styles.unionChild9} />
                         <img className={styles.unionChild10} src='/connect-tools.svg' alt="" />
                         <img className={styles.unionIcon20} alt="" src="/union7.svg" />
                     </div>
