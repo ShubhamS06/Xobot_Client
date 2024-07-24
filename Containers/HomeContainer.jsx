@@ -18,8 +18,8 @@ function HomeContainer({ styles }) {
             <div className={styles.landingPageInner} />
             <div className={styles.rectangleDiv} />
             <div className={styles.landingPageChild1} />
-            <img className={styles.unionIcon} alt="" src="/union.svg" />
-            <img className={styles.unionIcon} alt="" src="/union.svg" />
+            {/* <img className={styles.unionIcon} alt="" src="/union.svg" />
+            <img className={styles.unionIcon} alt="" src="/union.svg" /> */}
             <Header styles={styles} />
             <HeroSection styles={styles} />
             <MaximizeSection styles={styles} />

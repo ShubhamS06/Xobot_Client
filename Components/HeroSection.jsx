@@ -4,6 +4,7 @@ export default function HeroSection({ styles }) {
     return (
         <div className={styles.heroSectionParent}>
             <img className={styles.heroStars} src="/hero-stars.svg" alt="" />
+            <img className={styles.heroStars2} src="/hero-stars.svg" alt="" />
 
             <div className={styles.heroSection}>
                 <div className={styles.captionParent}>

@@ -1277,6 +1277,13 @@
   right: -6%;
 }
 
+.heroStars2 {
+  position: absolute;
+  bottom: 6%;
+  left: -1%;
+  transform: translate(-6%, 1%);
+}
+
 .heroWaveLines {
   position: absolute;
   bottom: 5%;
@@ -1860,9 +1867,9 @@
 .frameParent10 {
   width: 1520px;
   flex-wrap: wrap;
-  justify-content: space-between;
   font-size: var(--font-size-base);
   color: var(--primary-color);
+  gap: var(--gap-40xl);
 }
 
 .button,
@@ -1937,6 +1944,21 @@
   justify-content: flex-start;
 }
 
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 15px 30px !important;
+  }
+
+  .headerInner {
+    width: 7rem;
+  }
+
+  .frameChild12 {
+    width: 7rem;
+    height: auto;
+  }
+}
+
 .menu,
 .signInWrapper {
   border-radius: var(--br-21xl);
@@ -1981,16 +2003,14 @@
   color: var(--white-theme);
 }
 
-.groupChild52,
-.header {
+.groupChild52 {
   position: absolute;
   top: 0;
 }
 
 .header {
-  left: calc(50% - 960px);
   background-color: var(--black);
-  width: 1920px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
