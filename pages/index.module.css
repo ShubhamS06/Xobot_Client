@@ -2050,22 +2050,19 @@
 
 .unionChild10 {
   position: absolute;
-  top: 308.9px;
-  left: -40.9px;
-  width: 187.9px;
-  height: 187.9px;
-  object-fit: contain;
 }
 
 .union6 {
   position: relative;
-  background-color: var(--color-slategray-200);
   width: 450px;
   height: 450.8px;
 }
 
 .unionIcon20 {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 336.1px;
   height: 336.1px;
 }
