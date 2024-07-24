@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
 body {
   margin: 0;
   line-height: normal;
 }
+
 :root {
   /* fonts */
   --font-poppins: Poppins;
@@ -117,4 +119,28 @@ body {
   --br-6xl-5: 25.5px;
   --br-12xl-8: 31.8px;
   --br-23xl: 42px;
+
+
+  --blur-amount: 264px;
+  --background-color-primary: #18d777;
+  --background-color-secondary: rgba(111, 60, 247, 0);
+  --background-color-black: #000;
+  --box-shadow: 0 0 10px rgba(119, 68, 255, 0.7);
+  --border-radius-1: var(--br-31xl);
+  --border-radius-2: var(--br-21xl);
+  --border-radius-3: 25.46px;
+  --border-radius-4: 31.83px;
+  --border-radius-5: 50%;
+  --border-radius-6: var(--br-23xl);
+  --border-radius-7: var(--br-11xs);
+  --primary-color: #18d777;
+  --primary-gradient: linear-gradient(180deg, var(--background-color-secondary) 82.44%, var(--background-color-primary));
+  --transparent-gradient: linear-gradient(transparent 50%, var(--background-color-primary) 100%);
+  --text-gradient: linear-gradient(94.85deg, #18d777 6.96%, #67eeaa 95.58%);
+  --gray-color: var(--color-gray-400);
+  --white-color: var(--white-theme);
+  --font-weight-bold: 500;
+  --letter-spacing: 0.4em;
+  --line-height-160: 160%;
+  --line-height-120: 120%;
 }
