@@ -1037,9 +1037,6 @@ export default function HeroSection({ styles }) {
                     </div>
                 </div>
             </div>
-
-            <img className={styles.heroWaveLines} src="/hero-wave-lines.svg" alt="" />
-
             
         </div>
     )
