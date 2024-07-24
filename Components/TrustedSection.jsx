@@ -8,7 +8,11 @@ function TrustedSection({ styles }) {
                     <b className={styles.minuteSetUpProcess}>
                         Trusted by 100+ businesses
                     </b>
-                    <img className={styles.logosIcon} alt="" src="/logos.svg" />
+                    <div className={styles.logoAndBgParent}>
+                        <img className={styles.logosIcon} alt="" src="/logos.svg" />
+                        <img className={styles.groupIcon} alt="" src="/group-202@2x.png" />
+                    </div>
+
                 </div>
                 <div className={styles.frameParent9}>
                     <div className={styles.minuteSetUpProcessParent}>
@@ -142,6 +146,7 @@ function TrustedSection({ styles }) {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

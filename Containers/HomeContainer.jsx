@@ -17,15 +17,14 @@ function HomeContainer({ styles }) {
             <div className={styles.landingPageItem} />
             <div className={styles.landingPageInner} />
             <div className={styles.rectangleDiv} />
-            <div className={styles.landingPageChild1} />
-            <img className={styles.unionIcon} alt="" src="/union.svg" />
-            <img className={styles.unionIcon} alt="" src="/union.svg" />
+            {/* <div className={styles.landingPageChild1} /> */}
+            {/* <img className={styles.unionIcon} alt="" src="/union.svg" />
+            <img className={styles.unionIcon} alt="" src="/union.svg" /> */}
             <Header styles={styles} />
             <HeroSection styles={styles} />
+            <TrustedSection styles={styles} />
             <MaximizeSection styles={styles} />
             <FaqSection styles={styles} />
-            <img className={styles.groupIcon} alt="" src="/group-202@2x.png" />
-            <TrustedSection styles={styles} />
             <img className={styles.landingPageChild2} alt="" src="/group-220.svg" />
             <ConnectToolsSection styles={styles} />
             <WhatDoWeOfferSection styles={styles} />
