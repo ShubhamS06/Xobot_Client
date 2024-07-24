@@ -4,7 +4,7 @@
   top: 4715px;
   left: calc(50% + 507px);
   filter: blur(264px);
-  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, #18d777);
+  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, var(--background-color-primary));
   width: 685px;
   height: 492px;
 }
@@ -19,7 +19,7 @@
   position: absolute;
   top: 9640px;
   left: calc(50% - 1029px);
-  background: linear-gradient(transparent 50%, #18d777 100%);
+  background: linear-gradient(transparent 50%, var(--background-color-primary) 100%);
   width: 2060px;
   height: 1080px;
 }
@@ -29,7 +29,7 @@
   top: 9917px;
   left: calc(50% - 759px);
   filter: blur(264px);
-  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, #18d777);
+  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, var(--background-color-primary));
   width: 1520px;
   height: 615px;
 }
@@ -39,7 +39,7 @@
   top: 110px;
   left: calc(50% - 860px);
   border-radius: var(--br-31xl);
-  background: linear-gradient(transparent 41.67%, #18d77750, #18d777 77.71%);
+  background: linear-gradient(transparent 41.67%, #18d77750, var(--background-color-primary) 77.71%);
   width: 1720px;
   height: 1040px;
 }
@@ -57,7 +57,7 @@
   line-height: 160%;
   text-transform: uppercase;
   font-weight: 500;
-  background: linear-gradient(94.85deg, #18d777 6.96%, #67eeaa 95.58%);
+  background: linear-gradient(94.85deg, var(--background-color-primary) 6.96%, #67eeaa 95.58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -170,6 +170,7 @@
 }
 
 .heroSection {
+  margin: 5rem;
   align-items: flex-start;
   gap: var(--gap-3xl);
 }
@@ -200,7 +201,7 @@
 }
 
 .captionInner {
-  width: 119px;
+  width: 5rem;
   justify-content: center;
 }
 
@@ -223,7 +224,7 @@
   top: 22.78%;
   bottom: 0.36%;
   filter: blur(264px);
-  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, #18d777);
+  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, var(--background-color-primary));
 }
 
 .dashboardItem {
@@ -1170,7 +1171,7 @@
   top: 22.79%;
   bottom: 0.37%;
   filter: blur(264px);
-  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, #18d777);
+  background: linear-gradient(180deg, rgba(111, 60, 247, 0) 82.44%, var(--background-color-primary));
 }
 
 .dashboardChild3 {
@@ -1271,20 +1272,6 @@
   font-size: var(--font-size-10xl-7);
 }
 
-.heroStars {
-  position: absolute;
-  top: -6%;
-  right: -2%;
-  width: 18rem;
-  height: 16rem;
-}
-
-.heroStars2 {
-  position: absolute;
-  bottom: 6%;
-  left: -1%;
-  transform: translate(-6%, 1%);
-}
 
 .maximizeHeroStars {
   position: absolute;
@@ -1315,7 +1302,8 @@
 }
 
 .captionGroup {
-  width: 760px;
+  width: 60%;
+  margin-top: 50px;
   flex-direction: column;
   gap: var(--gap-21xl);
   font-size: var(--font-size-5xl);
@@ -1323,11 +1311,69 @@
 }
 
 .heroSectionParent {
-  position: absolute;
-  top: 177px;
-  left: 200px;
+  position: relative;
+  /* top: 177px; */
+  /* left: 200px; */
   flex-direction: row;
   font-size: var(--font-size-13xl);
+  border-radius: var(--br-31xl);
+  background: linear-gradient(transparent 41.67%, #18d77750, var(--background-color-primary) 77.71%);
+  width: 90vw;
+  padding: 25px;
+  /* height: 1040px; */
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroSectionParent {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .heroSectionParent {
+    flex-direction: column;
+  }
+
+
+  .heroSection {
+    /* width: calc(50% - 2.5rem); */
+    width: 90%;
+  }
+
+  .captionGroup {
+    /* width: calc(50% - 2.5rem); */
+    width: 90%;
+  }
+
+  .letUsDo {
+    width: 100%;
+    /* font-size: 3rem; */
+  }
+
+  .captionParent {
+    width: 100%;
+  }
+
+  .groupParent {
+    /* width: 100%; */
+    margin-inline: auto;
+  }
+}
+
+.heroStars {
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  width: 18rem;
+  height: 16rem;
+}
+
+.heroStars2 {
+  position: absolute;
+  bottom: 6%;
+  left: -1%;
+  transform: translate(-6%, 1%);
 }
 
 .icon {
@@ -1497,7 +1543,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-31xl);
-  background: linear-gradient(#9cffce10 5%, transparent 70%, #18d777 100%);
+  background: linear-gradient(#9cffce10 5%, transparent 70%, var(--background-color-primary) 100%);
   border-top: 2px solid var(--primary-color);
   box-sizing: border-box;
 }
@@ -1752,12 +1798,7 @@
 }
 
 .groupIcon {
-  position: absolute;
-  top: 1699px;
-  left: 201px;
-  width: 1520px;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
 }
 
 .logosIcon {
@@ -1766,11 +1807,32 @@
   height: 281px;
 }
 
+.logoAndBgParent img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.logoAndBgParent {
+  align-items: center;
+  width: min(80vw, 1600px);
+}
+
+.logoAndBgParent,
+.stack {
+  display: grid;
+  place-content: center;
+}
+
+.logoAndBgParent>*,
+.stack>* {
+  grid-area: 1 / 1;
+}
+
 .trustedBy100BusinessesParent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--gap-61xl);
 }
 
@@ -1807,7 +1869,7 @@
   right: 0.07%;
   left: 0;
   filter: blur(264px);
-  background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, #18d777);
+  background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, var(--background-color-primary));
 }
 
 .backgroundChild,
@@ -1835,7 +1897,7 @@
   height: 20%;
   right: 0;
   left: 0.07%;
-  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
+  background: linear-gradient(transparent 21.67%, var(--background-color-primary) 77.71%);
 }
 
 .background {
@@ -1966,6 +2028,7 @@
   align-items: center;
   gap: 44px;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .frameParent8,
@@ -1978,14 +2041,12 @@
 
 .frameParent8 {
   align-items: center;
+  margin-top: 180px;
   gap: 180px;
 }
 
 .trustedSection {
-  position: absolute;
-  top: 1538px;
-  left: 200px;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
 }
 
@@ -2092,7 +2153,7 @@
 .groupChild52 {
   left: calc(50% - 860px);
   border-radius: var(--br-31xl);
-  background: linear-gradient(transparent 50%, #18d777);
+  background: linear-gradient(transparent 50%, var(--background-color-primary));
   width: 1720px;
   height: 1161px;
 }
