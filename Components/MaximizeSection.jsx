@@ -3,6 +3,9 @@ import React from 'react'
 function MaximizeSection({styles}) {
     return (
         <div className={styles.maximizeSection}>
+            <img className={styles.maximizeHeroStars} src="/hero-stars.svg" alt="" />
+            <img className={styles.maximizeHeroStars2} src="/hero-stars.svg" alt="" />
+
             <div className={styles.maximizeSectionChild} />
             <div className={styles.frameParent5}>
                 <div className={styles.maximizeYourSupportCapacityParent}>

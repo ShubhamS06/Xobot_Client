@@ -19,7 +19,7 @@
   position: absolute;
   top: 9640px;
   left: calc(50% - 1029px);
-  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
+  background: linear-gradient(transparent 50%, #18d777 100%);
   width: 2060px;
   height: 1080px;
 }
@@ -1284,6 +1284,33 @@
   transform: translate(-6%, 1%);
 }
 
+.heroStars {
+  position: absolute;
+  top: -6%;
+  right: -6%;
+}
+
+.heroStars2 {
+  position: absolute;
+  bottom: 6%;
+  left: -1%;
+  transform: translate(-6%, 1%);
+}
+
+.maximizeHeroStars {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-0%, -50%);
+}
+
+.maximizeHeroStars2 {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translate(-1%, -50%);
+}
+
 .heroWaveLines {
   position: absolute;
   bottom: 5%;
@@ -1326,7 +1353,8 @@
   position: relative;
   line-height: 140%;
   font-weight: 500;
-  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
+  /* color: #ecececcc; */
+  background: linear-gradient(#ecececcc, #ececec, #ecececcc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -1480,7 +1508,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-31xl);
-  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
+  background: linear-gradient(#9cffce10 5%, transparent 70%, #18d777 100%);
   border-top: 2px solid var(--primary-color);
   box-sizing: border-box;
 }
@@ -1545,6 +1573,9 @@
   width: 1520px;
   height: 614px;
   text-align: center;
+  /* background: radial-gradient(50% 50%at 50% 50%,
+          #fff 30%,
+          rgba(255, 255, 255, 0.5)); */
 }
 
 .unionIcon10 {
