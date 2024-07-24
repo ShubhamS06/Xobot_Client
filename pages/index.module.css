@@ -2386,17 +2386,17 @@
 
 .frameParent15 {
   position: absolute;
-  top: 202px;
-  left: 60px;
-  width: 1600px;
-  height: 819px;
+  top: calc(50% + 2rem);
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 2rem));
+  width: min(100%, 1600px);
 }
 
 .groupParent17 {
   position: absolute;
   top: 3024px;
   left: calc(50% - 860px);
-  width: 1720px;
+  width: min(100vw, 1720px);
   height: 1161px;
 }
 

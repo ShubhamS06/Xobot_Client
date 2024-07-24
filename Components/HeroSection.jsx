@@ -346,7 +346,6 @@ export default function HeroSection({ styles }) {
                                 <div className={styles.groupParent4}>
                                     <div className={styles.unionGroup}>
                                         <img
-                                            data-className={styles.unionIcon2}
                                             alt=""
                                             src="/talk-on-web-icon.svg"
                                         />
