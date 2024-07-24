@@ -2022,7 +2022,7 @@
 .groupChild52 {
   left: calc(50% - 860px);
   border-radius: var(--br-31xl);
-  background: linear-gradient(transparent 21.67%, #18d777 77.71%);
+  background: linear-gradient(transparent 50%, #18d777);
   width: 1720px;
   height: 1161px;
 }
