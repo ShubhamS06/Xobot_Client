@@ -12,31 +12,33 @@ import WhatOurClientsAreSayingSection from "../Components/WhatOurClientsAreSayin
 
 function HomeContainer({ styles }) {
     return (
-        <div className={styles.landingPage}>
-            <div className={styles.landingPageChild} />
-            <div className={styles.landingPageItem} />
-            <div className={styles.landingPageInner} />
-            <div className={styles.rectangleDiv} />
-            {/* <div className={styles.landingPageChild1} /> */}
-            {/* <img className={styles.unionIcon} alt="" src="/union.svg" />
-            <img className={styles.unionIcon} alt="" src="/union.svg" /> */}
-            <Header styles={styles} />
-            <HeroSection styles={styles} />
-            <TrustedSection styles={styles} />
-            <MaximizeSection styles={styles} />
-            <FaqSection styles={styles} />
-            <img className={styles.landingPageChild2} alt="" src="/group-220.svg" />
-            <ConnectToolsSection styles={styles} />
-            <WhatDoWeOfferSection styles={styles} />
-            <BusinessesWeServerSection styles={styles} />
-            <WhatOurClientsAreSayingSection styles={styles} />
-            <img
-                className={styles.landingPageChild3}
-                alt=""
-                src="/group-151@2x.png"
-            />
-            <Footer styles={styles} />
-        </div>
+        <>
+            <div className={styles.landingPage}>
+                <Header styles={styles} />
+                <div className={styles.landingPageChild} />
+                <div className={styles.landingPageItem} />
+                <div className={styles.landingPageInner} />
+                <div className={styles.rectangleDiv} />
+                {/* <div className={styles.landingPageChild1} /> */}
+                {/* <img className={styles.unionIcon} alt="" src="/union.svg" />
+                <img className={styles.unionIcon} alt="" src="/union.svg" /> */}
+                <HeroSection styles={styles} />
+                <TrustedSection styles={styles} />
+                <MaximizeSection styles={styles} />
+                <FaqSection styles={styles} />
+                <img className={styles.landingPageChild2} alt="" src="/group-220.svg" />
+                <ConnectToolsSection styles={styles} />
+                <WhatDoWeOfferSection styles={styles} />
+                <BusinessesWeServerSection styles={styles} />
+                <WhatOurClientsAreSayingSection styles={styles} />
+                {/* <img
+                    className={styles.landingPageChild3}
+                    alt=""
+                    src="/group-151@2x.png"
+                /> */}
+                <Footer styles={styles} />
+            </div>
+        </>
     )
 }
 

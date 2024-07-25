@@ -7,18 +7,18 @@ function Header({styles}) {
                 <img className={styles.frameChild12} alt="" src="/group-15@2x.png" />
             </div>
             <div className={styles.menu}>
-                <div className={styles.discord}>For Business</div>
-                <div className={styles.discord}>Pricing</div>
-                <div className={styles.discord}>Contact</div>
-                <div className={styles.discord}>Blogs</div>
+                <li className={styles.discord}>For Business</li>
+                <li className={styles.discord}>Pricing</li>
+                <li className={styles.discord}>Contact</li>
+                <li className={styles.discord}>Blogs</li>
             </div>
             <div className={styles.cta}>
-                <div className={styles.signInWrapper}>
-                    <div className={styles.platform}>Sign In</div>
-                </div>
-                <div className={styles.signUpWrapper}>
-                    <div className={styles.platform}>Sign Up</div>
-                </div>
+                {/* <div className={styles.signInWrapper}> */}
+                    <button className={`${styles.signUpWrapper} ${styles.platform}`}>Sign In</button>
+                {/* </div> */}
+                {/* <div className={styles.signUpWrapper}> */}
+                    <button className={`${styles.signUpWrapper} ${styles.platform}`}>Sign Up</button>
+                {/* </div> */}
             </div>
         </div>
     )

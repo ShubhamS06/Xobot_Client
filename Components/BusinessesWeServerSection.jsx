@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function BusinessesWeServerSection({ styles }) {
+    const [selectedItem, setSelectedItem] = useState('Saas');
+
+    const items = ['Small Business', 'Professional service', 'Saas', 'Enterprise'];
+
+    const getTopPosition = (index) => {
+        const baseTopPosition = 100;
+        const itemHeight = 100;
+        return `${baseTopPosition + index * itemHeight}px`;
+    };
     return (
         <>
             <div className={styles.businessesWeServerParent}>
@@ -40,13 +49,23 @@ function BusinessesWeServerSection({ styles }) {
             <div className={styles.groupParent20}>
                 <div className={styles.vectorParent13}>
                     <img className={styles.groupChild68} alt="" src="/line-82.svg" />
-                    <img className={styles.groupChild69} alt="" src="/polygon-4.svg" />
+                    <img
+                        className={styles.groupChild69}
+                        alt=""
+                        src="/polygon-4.svg"
+                        style={{ top: getTopPosition(items.indexOf(selectedItem)) }}
+                    />
                 </div>
                 <div className={styles.smallBusinessParent}>
-                    <div className={styles.smallBusiness}>Small Business</div>
-                    <div className={styles.smallBusiness}>Professional service</div>
-                    <div className={styles.saas}>Saas</div>
-                    <div className={styles.smallBusiness}>Enterprise</div>
+                    {items.map((item, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.item} ${item === selectedItem ? styles.selectedItem : ''}`}
+                            onClick={() => setSelectedItem(item)}
+                        >
+                            {item}
+                        </div>
+                    ))}
                 </div>
             </div>
         </>

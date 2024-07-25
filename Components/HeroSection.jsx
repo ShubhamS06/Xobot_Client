@@ -21,10 +21,17 @@ export default function HeroSection({ styles }) {
                         powered custom chatbot in 5 minutes
                     </div>
                     <div className={styles.frameParent}>
-                        <div className={styles.getStartedForFreeWrapper}>
-                            <div className={styles.getStartedFor}>Get started for free</div>
-                        </div>
-                        <div className={styles.frameWrapper}>
+                        <button className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}>
+                            Get started for free
+                        </button>
+                        <button className={`${styles.getStartedForFreeWrapper} ${styles.vectorParent}`}>
+                            <img
+                                className={styles.frameChild}
+                                alt=""
+                                src="/polygon-2.svg"
+                            /> Watch Video
+                        </button>
+                        {/* <div className={styles.frameWrapper}>
                             <div className={styles.vectorParent}>
                                 <img
                                     className={styles.frameChild}
@@ -33,7 +40,7 @@ export default function HeroSection({ styles }) {
                                 />
                                 <div className={styles.getStartedFor}>Watch Video</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -41,14 +48,13 @@ export default function HeroSection({ styles }) {
                 <div className={styles.caption1}>
                     <div className={styles.welcomeToXobot}>talk to xobot</div>
                     <div className={styles.captionInner}>
-                        <div className={styles.englishParent}>
-                            <div className={styles.getStartedFor}>English</div>
-                            <img
-                                className={styles.vuesaxtwotonearrowRightIcon}
-                                alt=""
-                                src="/vuesaxtwotonearrowright@2x.png"
-                            />
-                        </div>
+                        {/* <div className={styles.englishParent}> */}
+                            <select className={`${styles.englishParent} ${styles.getStartedFor}`}>
+                                <option value="English">English</option>
+                                <option value="English">Hindi</option>
+                                <option value="English">Chinies</option>
+                            </select>
+                        {/* </div> */}
                     </div>
                 </div>
                 <div className={styles.groupParent}>
@@ -674,7 +680,6 @@ export default function HeroSection({ styles }) {
                                 <div className={styles.groupParent4}>
                                     <div className={styles.unionGroup}>
                                         <img
-                                            data-className={styles.unionIcon2}
                                             alt=""
                                             src="/talk-on-web-icon.svg"
                                         />
@@ -1003,7 +1008,6 @@ export default function HeroSection({ styles }) {
                                 <div className={styles.groupParent4}>
                                     <div className={styles.unionGroup}>
                                         <img
-                                            data-className={styles.unionIcon2}
                                             alt=""
                                             src="/talk-on-web-icon.svg"
                                         />
@@ -1037,7 +1041,7 @@ export default function HeroSection({ styles }) {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

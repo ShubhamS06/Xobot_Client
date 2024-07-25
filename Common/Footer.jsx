@@ -39,22 +39,22 @@ function Footer({styles}) {
                     <div className={styles.linksColumn}>
                         <div className={styles.platform}>Get the app</div>
                         <div className={styles.links3}>
-                            <div className={styles.platform1}>
+                            <button className={`${styles.platform1} ${styles.plansPricing}`}>
                                 <img
                                     className={styles.riwindowsFillIcon}
                                     alt=""
                                     src="/riwindowsfill.svg"
                                 />
-                                <div className={styles.plansPricing}>Windows</div>
-                            </div>
-                            <div className={styles.platform2}>
+                                    Windows
+                            </button>
+                            <button className={`${styles.platform1} ${styles.plansPricing}`}>
                                 <img
                                     className={styles.riwindowsFillIcon}
                                     alt=""
                                     src="/icroundapple.svg"
                                 />
-                                <div className={styles.plansPricing}>macOS</div>
-                            </div>
+                                    macOS
+                            </button>
                         </div>
                     </div>
                 </div>

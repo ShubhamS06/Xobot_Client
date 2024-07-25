@@ -113,6 +113,8 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-3xl) var(--padding-21xl);
+  color: var(--white-theme);
+  font-size: var(--font-size-lg);
 }
 
 .frameChild {
@@ -189,7 +191,9 @@
   border: 1.5px solid var(--primary-color);
   justify-content: center;
   padding: 15px 25px;
+  font-size: var(--font-size-5xl);
   gap: var(--gap-3xs);
+  color: var(--white-theme);
 }
 
 .caption1,
@@ -1321,16 +1325,105 @@
   width: 90vw;
   padding: 25px;
   /* height: 1040px; */
+  height: 45rem;
   margin-inline: auto;
+}
+
+@media screen and (max-width: 1900px) {
+
+  .header>* {
+    transform: scale(.8) translate(-20%, 10%);
+  }
+
+  .heroSection {
+    transform: scale(.8) translate(-20%, 10%);
+  }
+
+  .captionGroup {
+    transform: scale(.7) translate(-40%, 0%);
+  }
+
+  .groupParent17 {
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .unionParent9 {
+    transform: translate(-13%, -2%);
+  }
+
+  .frameParent10 {
+    width: 1550px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .frameParent16 {
+    top: 3400px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .businessesWeServerParent {
+    top: 5400px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .groupParent20 {
+    top: 5600px !important;
+    transform: scale(.8) translate(-17%, -2%);
+  }
+
+  .selfServeSection {
+    top: 5550px !important;
+    transform: scale(.8) translate(-23%, 0%);
+  }
+
+  .whatOurClientsAreSayingParent {
+    top: 6200px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .frameParent23 {
+    top: 6350px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .faqSection {
+    top: 6800px !important;
+    transform: scale(.8) translate(-16%, 0%);
+  }
+
+  .maximizeSection {
+    top: 7600px !important;
+    transform: scale(.8) translate(-16%, 0%);
+  }
+
+  .footer {
+    position: absolute !important;
+    top: 8300px !important;
+    bottom: unset;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .rectangleDiv,
+  .landingPageInner {
+    position: absolute !important;
+    top: 7800px !important;
+    bottom: unset;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .landingPage {
+    max-height: 8610px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .heroSectionParent {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 1900px) {
+
+  /* }
+@media screen and (max-width: 1900px) { */
   .heroSectionParent {
     flex-direction: column;
   }
@@ -1338,12 +1431,12 @@
 
   .heroSection {
     /* width: calc(50% - 2.5rem); */
-    width: 90%;
+    /* width: 90%; */
   }
 
   .captionGroup {
     /* width: calc(50% - 2.5rem); */
-    width: 90%;
+    /* width: 90%; */
   }
 
   .letUsDo {
@@ -1458,13 +1551,16 @@
   justify-content: flex-start;
   padding: var(--padding-5xs) var(--padding-sm);
   gap: var(--gap-7xs);
+  font-size: var(--font-size-mid);
+  background: transparent;
+  color: var(--white-theme);
 }
 
-.platform2 {
+/* .platform2 {
   width: 128px;
   box-sizing: border-box;
   justify-content: center;
-}
+} */
 
 .footerLinks,
 .links3 {
@@ -1525,8 +1621,10 @@
 
 .footer {
   position: absolute;
-  top: 10176px;
-  left: 1px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-58xl);
@@ -1961,6 +2059,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline: auto;
 }
 
 .targetParent {
@@ -1996,7 +2095,7 @@
 }
 
 .frameParent10 {
-  width: 1520px;
+  width: 80%;
   flex-wrap: wrap;
   font-size: var(--font-size-base);
   color: var(--primary-color);
@@ -2101,6 +2200,8 @@
   flex-direction: row;
   padding: var(--padding-base) var(--padding-13xl);
   gap: var(--gap-21xl);
+  font-size: var(--font-size-xl);
+  list-style: none;
 }
 
 .signInWrapper {
@@ -2124,6 +2225,8 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-base) var(--padding-21xl);
+  background: transparent;
+  color: var(--white-theme);
 }
 
 .cta {
@@ -2265,10 +2368,10 @@
 }
 
 .rectangleParent21 {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: calc(50% - 860px);
-  box-shadow: 0-2px 4px rgba(110, 105, 105, 0.25);
+  left: calc(50% - 860px); */
+  /* box-shadow: 0-2px 4px rgba(110, 105, 105, 0.25); */
   width: 1720px;
   height: 1161px;
 }
@@ -2524,11 +2627,13 @@
 }
 
 .groupParent17 {
-  position: absolute;
+  position: relative;
+  /* position: absolute;
   top: 3024px;
-  left: calc(50% - 860px);
+  left: calc(50% - 860px); */
   width: min(100vw, 1720px);
-  height: 1161px;
+  /* height: 1161px; */
+  height: auto;
 }
 
 .whatDoWeOfferParent {
@@ -2744,9 +2849,32 @@
 .vectorParent13 {
   width: 40px;
   position: relative;
-  height: 480px;
+  height: 530px;
+  /* height: 480px; */
+}
+.groupParent20 {
+  position: relative;
 }
 
+/* .vectorParent13 {
+  position: absolute;
+} */
+
+.groupChild68 {
+  position: absolute;
+  /* add your existing styles */
+}
+
+.groupChild69 {
+  position: absolute;
+  transition: top 0.3s ease;
+}
+
+.smallBusinessParent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* adjust based on your design */
+}
 .saas,
 .smallBusiness {
   align-self: stretch;
@@ -2754,12 +2882,6 @@
   line-height: 120%;
   font-weight: 500;
 }
-
-.saas {
-  font-size: 28px;
-  color: var(--white-theme);
-}
-
 .groupParent20,
 .smallBusinessParent {
   display: flex;
@@ -2783,7 +2905,15 @@
   font-size: var(--font-size-5xl);
   color: var(--color-slategray-100);
 }
-
+.item {
+  cursor: pointer;
+  color: #b0b0b0;
+}
+.selectedItem {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px; 
+}
 .backgroundIcon {
   width: 100%;
   position: absolute;
@@ -3004,8 +3134,8 @@
 
 .landingPageChild3 {
   position: absolute;
-  top: 10186px;
-  left: 201px;
+  /* top: 10186px; */
+  /* left: 201px; */
   width: 140.9px;
   height: 40px;
   object-fit: cover;
@@ -3013,10 +3143,9 @@
 
 .landingPage {
   width: 100%;
-  position: relative;
-  background-color: #0a0b0d;
-  height: 10523px;
-  overflow: hidden;
+  position: relative; 
+  height: auto;
+  /* overflow: auto; */
   text-align: left;
   font-size: var(--font-size-35xl);
   color: var(--paragraph);

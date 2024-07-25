@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MaximizeSection({styles}) {
+function MaximizeSection({ styles }) {
     return (
         <div className={styles.maximizeSection}>
             <img className={styles.maximizeHeroStars} src="/hero-stars.svg" alt="" />
@@ -18,10 +18,17 @@ function MaximizeSection({styles}) {
                     </div>
                 </div>
                 <div className={styles.frameParent}>
-                    <div className={styles.getStartedForFreeWrapper}>
-                        <div className={styles.getStartedFor}>Get started for free</div>
-                    </div>
-                    <div className={styles.buttonInner}>
+                    <button className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}>
+                        Get started for free
+                    </button>
+                    <button className={`${styles.getStartedForFreeWrapper} ${styles.vectorParent}`}>
+                        <img
+                            className={styles.frameChild}
+                            alt=""
+                            src="/polygon-2.svg"
+                        /> Watch Video
+                    </button>
+                    {/* <div className={styles.buttonInner}>
                         <div className={styles.vectorParent}>
                             <img
                                 className={styles.frameChild}
@@ -30,7 +37,7 @@ function MaximizeSection({styles}) {
                             />
                             <div className={styles.getStartedFor}>Watch Video</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <img className={styles.unionIcon8} alt="" src="/union3.svg" />
                 <img className={styles.unionIcon8} alt="" src="/union3.svg" />
