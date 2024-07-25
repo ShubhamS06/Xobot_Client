@@ -113,6 +113,8 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-3xl) var(--padding-21xl);
+  color: var(--white-theme);
+  font-size: var(--font-size-lg);
 }
 
 .frameChild {
@@ -189,7 +191,9 @@
   border: 1.5px solid var(--primary-color);
   justify-content: center;
   padding: 15px 25px;
+  font-size: var(--font-size-5xl);
   gap: var(--gap-3xs);
+  color: var(--white-theme);
 }
 
 .caption1,
@@ -1547,13 +1551,16 @@
   justify-content: flex-start;
   padding: var(--padding-5xs) var(--padding-sm);
   gap: var(--gap-7xs);
+  font-size: var(--font-size-mid);
+  background: transparent;
+  color: var(--white-theme);
 }
 
-.platform2 {
+/* .platform2 {
   width: 128px;
   box-sizing: border-box;
   justify-content: center;
-}
+} */
 
 .footerLinks,
 .links3 {
@@ -1617,6 +1624,7 @@
   bottom: 0px;
   right: 0px;
   left: 0px;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-58xl);
@@ -2192,6 +2200,8 @@
   flex-direction: row;
   padding: var(--padding-base) var(--padding-13xl);
   gap: var(--gap-21xl);
+  font-size: var(--font-size-xl);
+  list-style: none;
 }
 
 .signInWrapper {
@@ -2215,6 +2225,8 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-base) var(--padding-21xl);
+  background: transparent;
+  color: var(--white-theme);
 }
 
 .cta {
@@ -2837,9 +2849,32 @@
 .vectorParent13 {
   width: 40px;
   position: relative;
-  height: 480px;
+  height: 530px;
+  /* height: 480px; */
+}
+.groupParent20 {
+  position: relative;
 }
 
+/* .vectorParent13 {
+  position: absolute;
+} */
+
+.groupChild68 {
+  position: absolute;
+  /* add your existing styles */
+}
+
+.groupChild69 {
+  position: absolute;
+  transition: top 0.3s ease;
+}
+
+.smallBusinessParent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* adjust based on your design */
+}
 .saas,
 .smallBusiness {
   align-self: stretch;
@@ -2847,12 +2882,6 @@
   line-height: 120%;
   font-weight: 500;
 }
-
-.saas {
-  font-size: 28px;
-  color: var(--white-theme);
-}
-
 .groupParent20,
 .smallBusinessParent {
   display: flex;
@@ -2876,7 +2905,15 @@
   font-size: var(--font-size-5xl);
   color: var(--color-slategray-100);
 }
-
+.item {
+  cursor: pointer;
+  color: #b0b0b0;
+}
+.selectedItem {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px; 
+}
 .backgroundIcon {
   width: 100%;
   position: absolute;
@@ -3097,8 +3134,8 @@
 
 .landingPageChild3 {
   position: absolute;
-  top: 10186px;
-  left: 201px;
+  /* top: 10186px; */
+  /* left: 201px; */
   width: 140.9px;
   height: 40px;
   object-fit: cover;
@@ -3106,10 +3143,9 @@
 
 .landingPage {
   width: 100%;
-  position: relative;
-  background-color: #0a0b0d;
-  height: 10523px;
-  overflow: hidden;
+  position: relative; 
+  height: auto;
+  /* overflow: auto; */
   text-align: left;
   font-size: var(--font-size-35xl);
   color: var(--paragraph);

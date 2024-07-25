@@ -130,10 +130,17 @@ function TrustedSection({ styles }) {
                         </div>
                     </div>
                     <div className={styles.button}>
-                        <div className={styles.getStartedForFreeWrapper}>
-                            <div className={styles.getStartedFor}>Get started for free</div>
-                        </div>
-                        <div className={styles.buttonInner}>
+                        <button className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}>
+                            Get started for free
+                        </button>
+                        <button className={`${styles.getStartedForFreeWrapper} ${styles.vectorParent}`}>
+                            <img
+                                className={styles.frameChild}
+                                alt=""
+                                src="/polygon-2.svg"
+                            /> Watch Video
+                        </button>
+                        {/* <div className={styles.buttonInner}>
                             <div className={styles.vectorParent}>
                                 <img
                                     className={styles.frameChild}
@@ -142,7 +149,7 @@ function TrustedSection({ styles }) {
                                 />
                                 <div className={styles.getStartedFor}>Watch Video</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
