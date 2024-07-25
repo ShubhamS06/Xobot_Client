@@ -1321,16 +1321,105 @@
   width: 90vw;
   padding: 25px;
   /* height: 1040px; */
+  height: 45rem;
   margin-inline: auto;
+}
+
+@media screen and (max-width: 1900px) {
+
+  .header>* {
+    transform: scale(.8) translate(-20%, 10%);
+  }
+
+  .heroSection {
+    transform: scale(.8) translate(-20%, 10%);
+  }
+
+  .captionGroup {
+    transform: scale(.7) translate(-40%, 0%);
+  }
+
+  .groupParent17 {
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .unionParent9 {
+    transform: translate(-13%, -2%);
+  }
+
+  .frameParent10 {
+    width: 1550px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .frameParent16 {
+    top: 3400px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .businessesWeServerParent {
+    top: 5400px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .groupParent20 {
+    top: 5600px !important;
+    transform: scale(.8) translate(-17%, -2%);
+  }
+
+  .selfServeSection {
+    top: 5550px !important;
+    transform: scale(.8) translate(-23%, 0%);
+  }
+
+  .whatOurClientsAreSayingParent {
+    top: 6200px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .frameParent23 {
+    top: 6350px !important;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .faqSection {
+    top: 6800px !important;
+    transform: scale(.8) translate(-16%, 0%);
+  }
+
+  .maximizeSection {
+    top: 7600px !important;
+    transform: scale(.8) translate(-16%, 0%);
+  }
+
+  .footer {
+    position: absolute !important;
+    top: 8300px !important;
+    bottom: unset;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .rectangleDiv,
+  .landingPageInner {
+    position: absolute !important;
+    top: 7800px !important;
+    bottom: unset;
+    transform: scale(.8) translate(0%, 0%);
+  }
+
+  .landingPage {
+    max-height: 8610px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .heroSectionParent {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 1900px) {
+
+  /* }
+@media screen and (max-width: 1900px) { */
   .heroSectionParent {
     flex-direction: column;
   }
@@ -1338,12 +1427,12 @@
 
   .heroSection {
     /* width: calc(50% - 2.5rem); */
-    width: 90%;
+    /* width: 90%; */
   }
 
   .captionGroup {
     /* width: calc(50% - 2.5rem); */
-    width: 90%;
+    /* width: 90%; */
   }
 
   .letUsDo {
@@ -1525,8 +1614,9 @@
 
 .footer {
   position: absolute;
-  top: 10176px;
-  left: 1px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-58xl);
@@ -1961,6 +2051,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline: auto;
 }
 
 .targetParent {
@@ -1996,7 +2087,7 @@
 }
 
 .frameParent10 {
-  width: 1520px;
+  width: 80%;
   flex-wrap: wrap;
   font-size: var(--font-size-base);
   color: var(--primary-color);
@@ -2265,10 +2356,10 @@
 }
 
 .rectangleParent21 {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: calc(50% - 860px);
-  box-shadow: 0-2px 4px rgba(110, 105, 105, 0.25);
+  left: calc(50% - 860px); */
+  /* box-shadow: 0-2px 4px rgba(110, 105, 105, 0.25); */
   width: 1720px;
   height: 1161px;
 }
@@ -2524,11 +2615,13 @@
 }
 
 .groupParent17 {
-  position: absolute;
+  position: relative;
+  /* position: absolute;
   top: 3024px;
-  left: calc(50% - 860px);
+  left: calc(50% - 860px); */
   width: min(100vw, 1720px);
-  height: 1161px;
+  /* height: 1161px; */
+  height: auto;
 }
 
 .whatDoWeOfferParent {
