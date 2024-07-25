@@ -1,0 +1,12 @@
+.faqSection{
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 80%;
+margin: auto;
+gap: 20px;
+font-size: var(--font-size-base);
+}
+.minuteSetUpProcess{
+    font-size: var(--font-size-xl);
+}

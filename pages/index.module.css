@@ -1862,11 +1862,6 @@
   gap: var(--gap-61xl);
 }
 
-.faqContainer {
-  /* display: flex; */
-  /* width: 80%; */
-  /* max-width: 600px; */
-}
 
 .faqItem {
   border-bottom: 1px solid #555;

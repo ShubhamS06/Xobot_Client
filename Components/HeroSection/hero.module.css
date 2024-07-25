@@ -1,0 +1,9 @@
+.heroSectionParent {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-13xl);
+    border-radius: var(--br-31xl);
+    background: linear-gradient(transparent 41.67%, #18d77750, var(--background-color-primary) 77.71%);
+    min-height: 90vh;
+    margin-inline: auto;
+  }
