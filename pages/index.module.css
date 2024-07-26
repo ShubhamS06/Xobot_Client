@@ -1329,7 +1329,7 @@
   margin-inline: auto;
 }
 
-@media screen and (max-width: 1900px) {
+/* @media screen and (max-width: 1900px) {
 
   .header>* {
     transform: scale(.8) translate(-20%, 10%);
@@ -1386,11 +1386,6 @@
     transform: scale(.8) translate(0%, 0%);
   }
 
-  /* .faqSection {
-    top: 6800px !important;
-    transform: scale(.8) translate(-16%, 0%);
-  } */
-
   .maximizeSection {
     top: 7600px !important;
     transform: scale(.8) translate(-16%, 0%);
@@ -1414,13 +1409,12 @@
   .landingPage {
     max-height: 8610px;
   }
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .heroSectionParent {
     flex-direction: column;
   }
-
 
   /* }
 @media screen and (max-width: 1900px) { */
@@ -2182,10 +2176,6 @@
   color: var(--white-theme);
 }
 
-.groupChild52 {
-  position: absolute;
-  top: 0;
-}
 
 .header {
   background-color: var(--black);
@@ -2199,128 +2189,9 @@
   font-size: var(--font-size-base);
 }
 
-.groupChild52 {
-  left: calc(50% - 860px);
-  border-radius: var(--br-31xl);
-  background: linear-gradient(transparent 50%, var(--background-color-primary));
-  width: 1720px;
-  height: 1161px;
-}
 
-.connectToToolsYouUseParent {
-  position: absolute;
-  top: 40px;
-  left: calc(50% - 373px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xl);
-}
 
-.unionChild9 {
-  position: absolute;
-  top: 3428px;
-  left: 735px;
-  border-radius: 50%;
-  background-color: var(--color-dimgray);
-  width: 450px;
-  height: 450px;
-}
 
-.unionChild10 {
-  position: absolute;
-}
-
-.union6 {
-  position: relative;
-  width: 450px;
-  height: 450.8px;
-}
-
-.unionIcon20 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 336.1px;
-  height: 336.1px;
-}
-
-.groupChild53 {
-  position: absolute;
-  top: 63.8px;
-  left: 0;
-  border-radius: 448.25px;
-  background-color: var(--white-theme);
-  width: 24.4px;
-  height: 24.4px;
-}
-
-.groupChild54,
-.groupChild55 {
-  top: 31.9px;
-  border-radius: 509.37px;
-  height: 92.2px;
-}
-
-.groupChild54 {
-  position: absolute;
-  left: 51.5px;
-  background-color: var(--white-theme);
-  width: 24.4px;
-}
-
-.groupChild55 {
-  left: 154.5px;
-}
-
-.groupChild55,
-.groupChild56,
-.groupChild57 {
-  position: absolute;
-  background-color: var(--white-theme);
-  width: 24.4px;
-}
-
-.groupChild56 {
-  top: calc(50% - 81.35px);
-  left: calc(50% - 12.2px);
-  border-radius: 509.37px;
-  height: 162.7px;
-}
-
-.groupChild57 {
-  top: 63.8px;
-  left: 206px;
-  border-radius: 448.25px;
-  height: 24.4px;
-}
-
-.rectangleParent22,
-.unionParent9 {
-  position: absolute;
-  top: 147.8px;
-  left: 110px;
-  width: 230.4px;
-  height: 162.7px;
-}
-
-.unionParent9 {
-  top: 404px;
-  left: 635px;
-  width: 450px;
-  height: 450.8px;
-}
-
-.rectangleParent21 {
-  /* position: absolute;
-  top: 0;
-  left: calc(50% - 860px); */
-  /* box-shadow: 0-2px 4px rgba(110, 105, 105, 0.25); */
-  width: 1720px;
-  height: 1161px;
-}
 
 .image4Icon {
   width: 120px;
@@ -2564,23 +2435,6 @@
   height: 37px;
 }
 
-.frameParent15 {
-  position: absolute;
-  top: calc(50% + 2rem);
-  left: 50%;
-  transform: translate(-50%, calc(-50% + 2rem));
-  width: min(100%, 1600px);
-}
-
-.groupParent17 {
-  position: relative;
-  /* position: absolute;
-  top: 3024px;
-  left: calc(50% - 860px); */
-  width: min(100vw, 1720px);
-  /* height: 1161px; */
-  height: auto;
-}
 
 .whatDoWeOfferParent {
   align-self: stretch;
@@ -2798,6 +2652,7 @@
   height: 530px;
   /* height: 480px; */
 }
+
 .groupParent20 {
   position: relative;
 }
@@ -2819,8 +2674,10 @@
 .smallBusinessParent {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* adjust based on your design */
+  gap: 20px;
+  /* adjust based on your design */
 }
+
 .saas,
 .smallBusiness {
   align-self: stretch;
@@ -2828,6 +2685,7 @@
   line-height: 120%;
   font-weight: 500;
 }
+
 .groupParent20,
 .smallBusinessParent {
   display: flex;
@@ -2851,15 +2709,18 @@
   font-size: var(--font-size-5xl);
   color: var(--color-slategray-100);
 }
+
 .item {
   cursor: pointer;
   color: #b0b0b0;
 }
+
 .selectedItem {
   color: #fff;
   font-weight: bold;
-  padding: 5px; 
+  padding: 5px;
 }
+
 .backgroundIcon {
   width: 100%;
   position: absolute;
@@ -3089,7 +2950,7 @@
 
 .landingPage {
   width: 100%;
-  position: relative; 
+  position: relative;
   height: auto;
   /* overflow: auto; */
   text-align: left;

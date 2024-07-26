@@ -1,11 +1,12 @@
 import React from 'react'
+import compStyles from "./connect.module.css";
 
 function ConnectToolsSection({ styles }) {
     return (
-        <div className={styles.groupParent17}>
-            <div className={styles.rectangleParent21}>
-                <div className={styles.groupChild52} />
-                <div className={styles.connectToToolsYouUseParent}>
+        <div className={compStyles.connectParent}>
+            <div className={compStyles.rectangleParent21}>
+                {/* <div className={compStyles.groupChild52} /> */}
+                <div className={compStyles.connectToToolsYouUseParent}>
                     <b className={styles.minuteSetUpProcess}>
                         Connect to tools you use
                     </b>
@@ -13,22 +14,27 @@ function ConnectToolsSection({ styles }) {
                         Within a Couple of Steps your AI Voice Bot is ready to be used.
                     </div>
                 </div>
-                <div className={styles.unionParent9}>
-                    <div className={styles.union6}>
-                        <img className={styles.unionChild10} src='/connect-tools.svg' alt="" />
-                        <img className={styles.unionIcon20} alt="" src="/union7.svg" />
+
+                <img className={compStyles.toolImage} src='/connect-tools.svg' alt="" />
+
+                {/* <div className={compStyles.stack}>
+                    <div className={compStyles.frameParent15}>
+                        <img src="/connect-tools-images.svg" alt="" />
                     </div>
-                    <div className={styles.rectangleParent22}>
-                        <div className={styles.groupChild53} />
-                        <div className={styles.groupChild54} />
-                        <div className={styles.groupChild55} />
-                        <div className={styles.groupChild56} />
-                        <div className={styles.groupChild57} />
+                    <div className={compStyles.unionParent9}>
+                        <div className={compStyles.union6}>
+                            <img className={compStyles.unionChild10} src='/connect-tools.svg' alt="" />
+                            <img className={compStyles.unionIcon20} alt="" src="/union7.svg" />
+                        </div>
+                        <div className={compStyles.rectangleParent22}>
+                            <div className={compStyles.groupChild53} />
+                            <div className={compStyles.groupChild54} />
+                            <div className={compStyles.groupChild55} />
+                            <div className={compStyles.groupChild56} />
+                            <div className={compStyles.groupChild57} />
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className={styles.frameParent15}>
-                <img src="/connect-tools-images.svg" alt="" />
+                </div> */}
             </div>
         </div>
     )
