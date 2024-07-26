@@ -131,7 +131,6 @@
   gap: var(--gap-xs);
 }
 
-.frameParent,
 .frameWrapper,
 .vectorParent {
   flex-direction: row;
@@ -148,14 +147,6 @@
   height: 68px;
   display: none;
   padding: var(--padding-3xl) var(--padding-21xl);
-}
-
-.frameParent {
-  display: flex;
-  gap: var(--gap-5xl);
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--white-theme);
 }
 
 .heroSection,
@@ -1278,19 +1269,6 @@
 }
 
 
-.maximizeHeroStars {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(-0%, -50%);
-}
-
-.maximizeHeroStars2 {
-  position: absolute;
-  top: 50%;
-  left: 1%;
-  transform: translate(-1%, -50%);
-}
 
 .heroWaveLines {
   position: absolute;
@@ -1627,84 +1605,7 @@
   color: var(--white-theme);
 }
 
-.maximizeSectionChild {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-31xl);
-  background: linear-gradient(#9cffce10 5%, transparent 70%, var(--background-color-primary) 100%);
-  border-top: 2px solid var(--primary-color);
-  box-sizing: border-box;
-}
 
-.maximizeYourSupport,
-.spend5Minutes {
-  position: relative;
-  display: inline-block;
-}
-
-.maximizeYourSupport {
-  width: 805px;
-  line-height: 120%;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5) 84.77%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.spend5Minutes {
-  width: 656px;
-  font-size: var(--font-size-lg);
-  line-height: 160%;
-}
-
-.maximizeYourSupportCapacityParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-xl);
-}
-
-.unionIcon8 {
-  width: 358.9px;
-  position: relative;
-  margin: 0 !important;
-  height: 341px;
-  opacity: 0.1;
-}
-
-.frameParent5 {
-  position: absolute;
-  height: 61.24%;
-  width: 52.96%;
-  top: 19.38%;
-  right: 23.49%;
-  bottom: 19.38%;
-  left: 23.55%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-}
-
-.maximizeSection {
-  position: absolute;
-  top: 9303px;
-  left: 201px;
-  width: 1520px;
-  height: 614px;
-  text-align: center;
-  /* background: radial-gradient(50% 50%at 50% 50%,
-          #fff 30%,
-          rgba(255, 255, 255, 0.5)); */
-}
 
 .unionIcon10 {
   position: relative;
@@ -2126,6 +2027,12 @@
   .frameChild12 {
     width: 7rem;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .getStartedForFreeWrapper {
+    padding: var(--padding-sm);
   }
 }
 

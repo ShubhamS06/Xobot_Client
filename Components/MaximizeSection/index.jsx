@@ -1,23 +1,24 @@
 import React from 'react'
+import compStyles from "./maximize.module.css";
 
 function MaximizeSection({ styles }) {
     return (
-        <div className={styles.maximizeSection}>
-            <img className={styles.maximizeHeroStars} src="/hero-stars.svg" alt="" />
-            <img className={styles.maximizeHeroStars2} src="/hero-stars.svg" alt="" />
+        <div className={compStyles.maximizeSection}>
+            <img className={compStyles.maximizeHeroStars} src="/hero-stars.svg" alt="" />
+            <img className={compStyles.maximizeHeroStars2} src="/hero-stars.svg" alt="" />
 
-            <div className={styles.maximizeSectionChild} />
-            <div className={styles.frameParent5}>
-                <div className={styles.maximizeYourSupportCapacityParent}>
-                    <b className={styles.maximizeYourSupport}>
+            <div className={compStyles.maximizeSectionChild} />
+            <div className={compStyles.frameParent5}>
+                <div className={compStyles.maximizeYourSupportCapacityParent}>
+                    <b className={compStyles.maximizeYourSupport}>
                         Maximize your support capacity without extra hiring
                     </b>
-                    <div className={styles.spend5Minutes}>
+                    <div className={compStyles.spend5Minutes}>
                         Spend 5 minutes to get a ChatGPT powered chatbot that works 24/7
                         to help you engage and retain more users and boost conversions.
                     </div>
                 </div>
-                <div className={styles.frameParent}>
+                <div className={compStyles.frameParent}>
                     <button className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}>
                         Get started for free
                     </button>
@@ -39,8 +40,8 @@ function MaximizeSection({ styles }) {
                         </div>
                     </div> */}
                 </div>
-                <img className={styles.unionIcon8} alt="" src="/union3.svg" />
-                <img className={styles.unionIcon8} alt="" src="/union3.svg" />
+                {/* <img className={compStyles.unionIcon8} alt="" src="/union3.svg" />
+                <img className={compStyles.unionIcon8} alt="" src="/union3.svg" /> */}
             </div>
         </div>
     )
