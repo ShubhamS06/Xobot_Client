@@ -1,0 +1,34 @@
+.companyLogoGroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    width: 90%;
+}
+
+.companyLogo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 7px;
+    background-color: green;
+}
+
+.companyLogo[data-row='2']::after {
+    /* display: none; */
+    top: 0;
+    bottom: unset;
+}
+
+.companyLogo[data-first=true]:after,
+.companyLogo:first-child::after {
+    display: none;
+}
+
+.companyLogo {
+    position: relative;
+    border: 1px solid var(--stock);
+    display: flex;
+    align-items: center;
+}
