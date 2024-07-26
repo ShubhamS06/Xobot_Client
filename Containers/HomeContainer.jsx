@@ -14,7 +14,7 @@ function HomeContainer({ styles }) {
     return (
         <>
             <div className={styles.landingPage}>
-                <Header styles={styles} />
+                {/* <Header styles={styles} /> */}
                 {/* <div className={styles.landingPageChild} /> */}
                 {/* <div className={styles.landingPageItem} /> */}
                 {/* <div className={styles.landingPageInner} /> */}
@@ -28,7 +28,7 @@ function HomeContainer({ styles }) {
                 {/* <WhatOurClientsAreSayingSection styles={styles} /> */}
                 {/* <FaqSection styles={styles} /> */}
                 <MaximizeSection styles={styles} />
-                {/* <Footer styles={styles} /> */}
+                <Footer styles={styles} />
             </div>
         </>
     )
