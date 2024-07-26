@@ -18,6 +18,13 @@ function TrustedSection({ styles }) {
         { logo: "/Group 40.svg" },
     ]
 
+    const setupCardData = [
+        { icon: '/target.svg', step: 1, text: 'Choose goal for your agent' },
+        { icon: '/plugsconnected.svg', step: 2, text: 'Connect to your CRM' },
+        { icon: '/usercircleplus.svg', step: 3, text: 'Add phone numbers' },
+        { icon: '/rocketlaunch.svg', step: 4, text: 'Test & deploy' },
+    ];
+
     return (
         <div className={styles.trustedSection}>
             <div className={styles.frameParent8}>
@@ -36,17 +43,30 @@ function TrustedSection({ styles }) {
                     </div> */}
 
                 </div>
+
                 <div className={styles.frameParent9}>
                     <div className={styles.minuteSetUpProcessParent}>
-                        <b className={styles.minuteSetUpProcess}>
+                        <b className={compStyles.minuteSetUpProcess}>
                             5 minute set-up process
                         </b>
-                        <div className={styles.withinACouple}>
+                        <div className={compStyles.withinACouple}>
                             Within a Couple of Steps your AI Voice Bot is ready to be used.
                         </div>
                     </div>
-                    <div className={styles.frameParent10}>
-                        <div className={styles.backgroundParent}>
+                    <div className={compStyles.stepCardGroup}>
+                        {setupCardData.map((card, index) => (<div className={compStyles.setupCard}>
+                            <div className={compStyles.background}>
+                                <div className={compStyles.backgroundChild} />
+                                <div className={compStyles.backgroundItem} />
+                                <div className={compStyles.backgroundInner} />
+                            </div>
+                            <div className={compStyles.setupCardIcon}><img src={card.icon} alt="" /></div>
+                            <div className={compStyles.setupCardContent}>
+                                <div className={compStyles.setupCardStep}>STEP {index + 1}</div>
+                                <div className={compStyles.setupCardText}>{card.text}</div>
+                            </div>
+                        </div>))}
+                        {/* <div className={styles.backgroundParent}>
                             <div className={styles.background}>
                                 <div className={styles.backgroundChild} />
                                 <div className={styles.backgroundItem} />
@@ -149,7 +169,7 @@ function TrustedSection({ styles }) {
                                     >{`Test & deploy`}</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.button}>
                         <button className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}>

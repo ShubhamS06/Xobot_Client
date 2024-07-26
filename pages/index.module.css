@@ -1940,7 +1940,7 @@
 }
 
 .withinACouple {
-  width: 746px;
+  /* width: 746px; */
   position: relative;
   font-size: var(--font-size-xl);
   line-height: 160%;
@@ -1954,55 +1954,6 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-5xl);
-}
-
-.backgroundChild {
-  height: 100%;
-  top: 0;
-  right: 0.07%;
-  left: 0;
-  filter: blur(264px);
-  background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, var(--background-color-primary));
-}
-
-.backgroundChild,
-.backgroundInner,
-.backgroundItem {
-  position: absolute;
-  width: 99.93%;
-  bottom: 0;
-  border-radius: var(--br-xl);
-}
-
-.backgroundItem {
-  height: 100%;
-  top: 0;
-  right: 0.07%;
-  left: 0;
-  box-shadow: 0 4px 100px rgba(102, 77, 255, 0.2);
-  background-color: var(--color-gray-300);
-  border-top: 1px solid var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
-  box-sizing: border-box;
-}
-
-.backgroundInner {
-  height: 20%;
-  right: 0;
-  left: 0.07%;
-  background: linear-gradient(transparent 21.67%, var(--background-color-primary) 77.71%);
-}
-
-.background {
-  width: 100.07%;
-  position: absolute;
-  margin: 0 !important;
-  height: 100%;
-  top: 0;
-  right: -0.07%;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
 }
 
 .targetIcon {
