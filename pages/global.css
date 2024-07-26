@@ -12,22 +12,22 @@ body {
 
   /* font sizes */
   --font-size-base: 16px;
-  --font-size-5xl: 24px;
-  --font-size-13xl: 32px;
-  --font-size-7xl: 26px;
-  --font-size-35xl: 54px;
-  --font-size-xl: 20px;
-  --font-size-25xl: 44px;
-  --font-size-lg: 18px;
-  --font-size-17xl: 36px;
-  --font-size-sm: 14px;
-  --font-size-11xl: 30px;
-  --font-size-15xl: 34px;
-  --font-size-4xs-5: 8.5px;
-  --font-size-10xl-7: 29.7px;
-  --font-size-mid: 17px;
-  --font-size-lgi-1: 19.1px;
-  --font-size-6xl-5: 25.5px;
+  --font-size-5xl: calc(var(--font-size-base) * 1.5);
+  --font-size-13xl: calc(var(--font-size-base) * 2);
+  --font-size-7xl: calc(var(--font-size-base) * 1.625);
+  --font-size-35xl: calc(var(--font-size-base) * 3.375);
+  --font-size-xl: calc(var(--font-size-base) * 1.25);
+  --font-size-25xl: calc(var(--font-size-base) * 2.75);
+  --font-size-lg: calc(var(--font-size-base) * 1.125);
+  --font-size-17xl: calc(var(--font-size-base) * 2.25);
+  --font-size-sm: calc(var(--font-size-base) * 0.875);
+  --font-size-11xl: calc(var(--font-size-base) * 1.875);
+  --font-size-15xl: calc(var(--font-size-base) * 2.125);
+  --font-size-4xs-5: calc(var(--font-size-base) * 0.53125);
+  --font-size-10xl-7: calc(var(--font-size-base) * 1.85625);
+  --font-size-mid: calc(var(--font-size-base) * 1.0625);
+  --font-size-lgi-1: calc(var(--font-size-base) * 1.19375);
+  --font-size-6xl-5: calc(var(--font-size-base) * 1.59375);
 
   /* Colors */
   --stock: #2a2b3a;
@@ -144,4 +144,17 @@ body {
   --letter-spacing: 0.4em;
   --line-height-160: 160%;
   --line-height-120: 120%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-base: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --font-size-base: 10px;
+  }
 }
