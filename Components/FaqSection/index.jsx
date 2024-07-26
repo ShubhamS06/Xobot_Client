@@ -1,7 +1,8 @@
-import React from 'react';
-// import styles from './faq.module.css'
+import React, { useState } from 'react';
+import styleModule from './faq.module.css'
 import CommonAccordion from './Accordian.jsx'
-function FaqSection({styles}) {
+
+function FaqSection({ styles }) {
     const faqItems = [
         { id: '01', question: 'What is Xobot?' },
         { id: '02', question: 'Does it support all languages?' },
@@ -9,13 +10,19 @@ function FaqSection({styles}) {
         { id: '04', question: 'Will I be able to embed the chatbot into my website?' },
         { id: '05', question: 'Can multiple team members in my organization manage my chatbots?' },
     ];
+    const [expandedIndex, setExpandedIndex] = useState(-1)
+
+    const onExpand = (index) => {
+        setExpandedIndex(index === expandedIndex ? -1 : index)
+    }
 
     return (
-        <div className={styles.faqSection}>
-            <b className={styles.minuteSetUpProcess}>FAQ’s</b>
-            <div className={styles.unionParent4}>
+        <div className={styleModule.faqSection}>
+            <b className={styleModule.minuteSetUpProcess}>FAQ’s</b>
+            {/* <div className={styles.unionParent4}> */}
+            <div className={styleModule.faqQuestionGroup}>
                 {faqItems.map((faq, index) => (
-                    <CommonAccordion question={faq.question} answar={"test accordian ans"}/>
+                    <CommonAccordion key={index} index={index} question={faq.question} answar={"test accordian ans"} onExpand={onExpand} isExpanded={expandedIndex === index} />
                 ))}
             </div>
         </div>
