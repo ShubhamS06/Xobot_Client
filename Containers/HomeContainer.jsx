@@ -15,20 +15,20 @@ function HomeContainer({ styles }) {
         <>
             <div className={styles.landingPage}>
                 <Header styles={styles} />
-                <div className={styles.landingPageChild} />
-                <div className={styles.landingPageItem} />
-                <div className={styles.landingPageInner} />
-                <div className={styles.rectangleDiv} />
+                {/* <div className={styles.landingPageChild} /> */}
+                {/* <div className={styles.landingPageItem} /> */}
+                {/* <div className={styles.landingPageInner} /> */}
+                {/* <div className={styles.rectangleDiv} /> */}
                 {/* <HeroSection styles={styles} /> */}
                 <TrustedSection styles={styles} />
                 <img className={styles.landingPageChild2} alt="" src="/group-220.svg" />
                 <ConnectToolsSection styles={styles} />
-                <WhatDoWeOfferSection styles={styles} />
+                {/* <WhatDoWeOfferSection styles={styles} /> */}
                 <BusinessesWeServerSection styles={styles} />
-                <WhatOurClientsAreSayingSection styles={styles} />
+                {/* <WhatOurClientsAreSayingSection styles={styles} /> */}
                 <FaqSection styles={styles} />
-                <MaximizeSection styles={styles} />
-                <Footer styles={styles} />
+                {/* <MaximizeSection styles={styles} /> */}
+                {/* <Footer styles={styles} /> */}
             </div>
         </>
     )
