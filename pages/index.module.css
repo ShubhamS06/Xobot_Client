@@ -1386,10 +1386,10 @@
     transform: scale(.8) translate(0%, 0%);
   }
 
-  .faqSection {
+  /* .faqSection {
     top: 6800px !important;
     transform: scale(.8) translate(-16%, 0%);
-  }
+  } */
 
   .maximizeSection {
     top: 7600px !important;
@@ -1852,9 +1852,9 @@
 }
 
 .faqSection {
-  position: absolute;
+  /* position: absolute;
   top: 8387px;
-  left: 200px;
+  left: 200px; */
   display: flex;
   flex-direction: column;
   align-items: center;
