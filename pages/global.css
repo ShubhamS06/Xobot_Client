@@ -10,26 +10,42 @@ body {
   /* fonts */
   --font-poppins: Poppins;
 
-  /* font sizes */
+  /** font sizes */
   --font-size-base: 16px;
+  /** 24px */
   --font-size-5xl: calc(var(--font-size-base) * 1.5);
+  /** 32px */
   --font-size-13xl: calc(var(--font-size-base) * 2);
+  /** 26px */
   --font-size-7xl: calc(var(--font-size-base) * 1.625);
+  /** 54px */
   --font-size-35xl: calc(var(--font-size-base) * 3.375);
+  /** 20px */
   --font-size-xl: calc(var(--font-size-base) * 1.25);
+  /** 44px */
   --font-size-25xl: calc(var(--font-size-base) * 2.75);
+  /** 18px */
   --font-size-lg: calc(var(--font-size-base) * 1.125);
+  /** 36px */
   --font-size-17xl: calc(var(--font-size-base) * 2.25);
+  /** 14px */
   --font-size-sm: calc(var(--font-size-base) * 0.875);
+  /** 30px */
   --font-size-11xl: calc(var(--font-size-base) * 1.875);
+  /** 34px */
   --font-size-15xl: calc(var(--font-size-base) * 2.125);
+  /** 8.5px */
   --font-size-4xs-5: calc(var(--font-size-base) * 0.53125);
+  /** 29.7px */
   --font-size-10xl-7: calc(var(--font-size-base) * 1.85625);
+  /** 17px */
   --font-size-mid: calc(var(--font-size-base) * 1.0625);
+  /** 19.1px */
   --font-size-lgi-1: calc(var(--font-size-base) * 1.19375);
+  /** 25.5px */
   --font-size-6xl-5: calc(var(--font-size-base) * 1.59375);
 
-  /* Colors */
+  /** Colors */
   --stock: #2a2b3a;
   --color-gray-100: #262833;
   --color-gray-200: #182542;
@@ -53,7 +69,7 @@ body {
   --color-black: #000;
   --color-aquamarine: rgba(103, 238, 170, 0.08);
 
-  /* Gaps */
+  /** Gaps */
   --gap-3xs: 10px;
   --gap-xl: 20px;
   --gap-9xl: 28px;
@@ -85,7 +101,7 @@ body {
   --gap-smi-7: 12.7px;
   --gap-3xl: 22px;
 
-  /* Paddings */
+  /** Paddings */
   --padding-21xl: 40px;
   --padding-41xl: 60px;
   --padding-81xl: 100px;
@@ -103,7 +119,7 @@ body {
   --padding-mini-9: 14.9px;
   --padding-6xl-5: 25.5px;
 
-  /* Border radiuses */
+  /** Border radiuses */
   --br-21xl: 40px;
   --br-429xl-3: 448.3px;
   --br-490xl-4: 509.4px;
