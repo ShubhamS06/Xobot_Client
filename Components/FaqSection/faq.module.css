@@ -9,17 +9,19 @@
     font-size: var(--font-size-base);
 }
 
-.minuteSetUpProcess {
+.sectionMainHeading {
     line-height: 120%;
-    background: radial-gradient(50% 50%at 50% 50%,
+    font-family: var(--font-poppins);
+    background: radial-gradient(50% 50% at 50% 50%,
             #fff 30%,
             rgba(255, 255, 255, 0.5) 84.77%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
     text-fill-color: transparent;
     text-align: center;
-    font-size: var(--font-size-15xl);
+    font-size: var(--font-size-35xl);
 }
 
 .faqQuestionGroup {}
@@ -54,15 +56,15 @@
 .faqAccordionExpandIcon {
     width: 5rem;
     height: 6rem;
-    color: white;
+    color: var(--paragraph);
     margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-left: 1px solid var(--stock);
-    font-size: var(--font-size-15xl);
+    font-size: var(--font-size-17xl);
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .faqAccordionSummary>* {

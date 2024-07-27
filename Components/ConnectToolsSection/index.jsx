@@ -7,7 +7,7 @@ function ConnectToolsSection({ styles }) {
             <div className={compStyles.rectangleParent21}>
                 {/* <div className={compStyles.groupChild52} /> */}
                 <div className={compStyles.connectToToolsYouUseParent}>
-                    <b className={styles.minuteSetUpProcess}>
+                    <b className={styles.sectionMainHeading}>
                         Connect to tools you use
                     </b>
                     <div className={styles.withinACouple}>

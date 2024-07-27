@@ -29,7 +29,7 @@ function TrustedSection({ styles }) {
         <div className={styles.trustedSection}>
             <div className={styles.frameParent8}>
                 <div className={styles.trustedBy100BusinessesParent}>
-                    <b className={styles.minuteSetUpProcess}>
+                    <b className={styles.sectionMainHeading}>
                         Trusted by 100+ businesses
                     </b>
                     <div className={compStyles.companyLogoGroup}>
@@ -46,7 +46,7 @@ function TrustedSection({ styles }) {
 
                 <div className={styles.frameParent9}>
                     <div className={styles.minuteSetUpProcessParent}>
-                        <b className={compStyles.minuteSetUpProcess}>
+                        <b className={styles.sectionMainHeading}>
                             5 minute set-up process
                         </b>
                         <div className={compStyles.withinACouple}>
