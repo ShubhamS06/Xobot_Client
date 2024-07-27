@@ -15,9 +15,9 @@ export default function Card({ styles, title }) {
                             <div className={styles.playIconGroup}>
                                 <img className={styles.playIconBg}
                                     alt=""
-                                    src="/talk-on-web-icon.svg"
+                                    src="/playBg_green.svg"
                                 />
-                                <img className={styles.playIcon} alt="" src="/play.svg" />
+                                <img className={styles.playIconImg} alt="" src="/play.svg" />
                             </div>
                         </div>
 

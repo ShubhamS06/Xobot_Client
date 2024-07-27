@@ -1,6 +1,7 @@
 import React from 'react'
 import heroStyles from "./hero.module.css";
 import Card from "./card";
+import TypingAnnimatText from "../../Common/TypingAnnimatText";
 
 export default function HeroSection({ styles }) {
 
@@ -24,10 +25,9 @@ export default function HeroSection({ styles }) {
             <div className={heroStyles.heroSection}>
 
                 <div className={heroStyles.flipTextRoot}>
-                    You can talk with
-                    <div className={heroStyles.flipTextGroup}>
-                        {heroTitles.map((text, index) => <div key={index} className={heroStyles.flipText}>{text}</div>)}
-                    </div>
+                   <span> You can talk with </span>
+                    <span className={heroStyles.flipTextGroup}> <TypingAnnimatText textArray={heroTitles} period={2000} />
+                    </span>
                 </div>
 
                 <img className={styles.heroStars} src="/hero-stars.svg" alt="" />
