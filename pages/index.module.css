@@ -1356,7 +1356,7 @@
     transform: scale(.8) translate(0%, 0%);
   }
 
-  .frameParent23 {
+  .whatOurCardGroup {
     top: 6350px !important;
     transform: scale(.8) translate(0%, 0%);
   }
@@ -2028,6 +2028,18 @@
 
 @media screen and (max-width: 1000px) {
 
+  .whatOurCardGroup {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .whatOurCard[data-dir=left],
+  .whatOurCard[data-dir=right],
+  .whatOurCard[data-active=true] {
+    position: relative !important;
+    transform: none;
+  }
+
   .header .cta,
   .header .menu {
     display: none;
@@ -2065,6 +2077,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .groupParent18 {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
   .getStartedForFreeWrapper {
     padding: var(--padding-sm);
   }
@@ -2403,6 +2420,8 @@
 
 
 .whatDoWeOfferParent {
+  width: 100%;
+  margin-inline: auto;
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -2414,9 +2433,9 @@
 }
 
 .frameChild13 {
-  width: 658px;
+  width: 40%;
   position: relative;
-  height: 545px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -2440,8 +2459,8 @@
 }
 
 .ourSoftwareWith {
-  width: 615px;
-  font-size: var(--font-size-7xl);
+  width: 100%;
+  font-size: var(--font-size-xl);
   text-align: left;
   display: inline-block;
 }
@@ -2455,13 +2474,14 @@
 }
 
 .callAnalyticsDataParent {
+  width: 100%;
   gap: var(--gap-5xl);
-  text-align: center;
-  font-size: var(--font-size-25xl);
+  font-size: var(--font-size-13xl);
   color: var(--paragraph);
 }
 
 .frameParent17 {
+  width: clamp(300px, 40%, 600px);
   gap: var(--gap-xl);
 }
 
@@ -2471,6 +2491,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: var(--gap-xl);
 }
 
 .whatOurClientsAreSayingRoot {
@@ -2481,7 +2502,8 @@
 .whatOurClientsAreSayingParent {
   /* position: absolute;
   left: calc(50% - 760px); */
-  width: 1520px;
+  width: 80%;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2496,13 +2518,8 @@
 }
 
 .whatOurClientsAreSayingParent {
-  /* top: 6593px; */
   align-items: center;
   gap: var(--gap-5xl);
-}
-
-.whatOurClientsAreSayingParent {
-  top: 7606px;
 }
 
 
@@ -2588,16 +2605,16 @@
 }
 
 .everSinceImplementing {
-  width: 666px;
+  width: 80%;
   position: relative;
-  font-size: var(--font-size-7xl);
+  font-size: var(--font-size-xl);
   line-height: 160%;
   text-align: left;
   display: inline-block;
 }
 
 .selfServeCustomerSupportParent {
-  width: 693px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2621,29 +2638,30 @@
   object-fit: cover;
 }
 
-.bryceConway {
+.cardAuthorname {
   position: relative;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: var(--font-size-base);
 }
 
-.founderAndCeo {
+.cardAuthorAbout {
   position: relative;
-  font-size: var(--font-size-base);
+  font-size: calc(var(--font-size-base) * .8);
   line-height: 160%;
   color: var(--paragraph);
 }
 
-.bryceConwayParent {
+.cardAuthornameParent {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-5xs);
 }
 
-.bryceConwayParent,
+.cardAuthornameParent,
 .ellipseParent4,
-.frameParent24 {
+.whatOurClientCardBody {
   display: flex;
   justify-content: flex-start;
 }
@@ -2657,8 +2675,8 @@
   color: var(--white-theme);
 }
 
-.frameParent24 {
-  width: 693px;
+.whatOurClientCardBody {
+  width: 80%;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-xl);
@@ -2702,22 +2720,50 @@
   font-size: var(--font-size-5xl);
 }
 
-.backgroundParent4,
-.backgroundParent3,
-.backgroundParent2 {
-  /* position: absolute;
-  top: 200px;
-  left: calc(50% - 540.5px); */
-  width: 906px;
-  height: 400px;
+.whatOurCard {
+  position: relative;
+  width: min(70%, 50rem);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 0 var(--padding-41xl);
+  border-radius: var(--br-15xl-3);
+  padding: 2rem var(--padding-41xl);
+  background-color: #0b0b0d;
+  border-top: 3px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   box-sizing: border-box;
   gap: var(--gap-3xs);
   color: var(--paragraph);
+  transform: scale(.8) translate(0%, 0%);
+  transition: 1s transform;
+}
+
+
+@media screen and (min-width: 1000px) {
+  
+  .whatOurCard[data-dir=-2],
+  .whatOurCard[data-dir=-1] {
+    transform: scale(.8) translate(-60%, 0);
+  }
+  
+  .whatOurCard[data-dir=1],
+  .whatOurCard[data-dir=2] {
+    transform: scale(.8) translate(60%, 0);
+  }
+
+  .whatOurCard[data-active=true] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+
+.whatOurCardTitle {
+  font-size: var(--font-size-5xl);
 }
 
 /* .backgroundParent3 {
@@ -2782,21 +2828,31 @@
 }
 
 
-.frameParent23 {
-  /* position: absolute;
-  top: 7807px;
-  left: calc(50% - 1244px); */
+.whatOurCardGroup {
+  position: relative;
   width: 100%;
-  height: 16rem;
+  min-height: 25rem;
   text-align: center;
   display: flex;
+  justify-content: space-between;
   font-size: var(--font-size-13xl);
   color: var(--white-theme);
 }
 
-.frameParent23>*[data-active=true] {
-  scale: 1.1;
-}
+/* .whatOurCard::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  box-shadow:
+    20px 20px 50px #44ffec55,
+    -20px -20px 50px #44ffec55;
+    z-index: -1;
+} */
 
 .landingPageChild3 {
   position: absolute;
