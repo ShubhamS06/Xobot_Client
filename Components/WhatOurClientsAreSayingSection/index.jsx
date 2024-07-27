@@ -2,7 +2,7 @@ import React from 'react'
 
 function WhatOurClientsAreSayingSection({ styles }) {
     return (
-        <>
+        <div className={styles.whatOurClientsAreSayingRoot}>
             <div className={styles.whatOurClientsAreSayingParent}>
                 <b className={styles.minuteSetUpProcess}>What our clients are saying</b>
                 <div className={styles.withinACouple}>
@@ -125,7 +125,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                     src="/group-26@2x.png"
                 />
             </div> */}
-        </>
+        </div>
     )
 }
 
