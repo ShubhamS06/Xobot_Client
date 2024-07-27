@@ -18,7 +18,7 @@ function FaqSection({ styles }) {
 
     return (
         <div className={styleModule.faqSection}>
-            <b className={styleModule.sectionMainHeading}>FAQ’s</b>
+            <b className={styleModule.sectionMainHeading}>FAQ's</b>
             {/* <div className={styles.unionParent4}> */}
             <div className={styleModule.faqQuestionGroup}>
                 {faqItems.map((faq, index) => (

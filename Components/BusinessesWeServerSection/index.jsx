@@ -20,9 +20,9 @@ function BusinessesWeServerSection({ styles }) {
             </div>
 
             <div className={compStyles.businessContainer}>
-                <div className={compStyles.groupParent20}>
-                    <div className={compStyles.vectorParent13}>
-                        <img className={compStyles.groupChild68} alt="" src="/line-82.svg" />
+                <div className={compStyles.indicatorRoot}>
+                    <div className={compStyles.indicatorLineParent}>
+                        <img className={compStyles.indicatorLine} alt="" src="/line-82.svg" />
                         {/* <img
                             className={compStyles.groupChild69}
                             alt=""
@@ -30,7 +30,7 @@ function BusinessesWeServerSection({ styles }) {
                             style={{ top: getTopPosition(items.indexOf(selectedItem)) }}
                         /> */}
                     </div>
-                    <div className={compStyles.smallBusinessParent}>
+                    <div className={compStyles.indicatorTextParent}>
                         {items.map((item, index) => (
                             <div
                                 key={index}
