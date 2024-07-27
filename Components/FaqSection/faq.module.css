@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     width: 80vw !important;
-    margin: auto;
+    margin-inline: auto;
     gap: 20px;
     gap: var(--gap-61xl);
     font-size: var(--font-size-base);

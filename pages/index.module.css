@@ -1986,7 +1986,6 @@
 
 .frameParent8 {
   align-items: center;
-  margin-top: 180px;
   gap: 180px;
 }
 
@@ -2005,7 +2004,7 @@
 }
 
 .frameChild12 {
-  width: 140.9px;
+  width: 50%;
   position: relative;
   height: 40px;
   object-fit: cover;
@@ -2772,4 +2771,13 @@
   font-size: var(--font-size-35xl);
   color: var(--paragraph);
   font-family: var(--font-poppins);
+}
+.landingPage>* {
+  margin-top: 180px;
+}
+
+.landingPage>.header,
+.landingPage>*:nth-child(2),
+.landingPage>.footer {
+  margin-top: unset;
 }
