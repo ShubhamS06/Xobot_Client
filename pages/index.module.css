@@ -1428,7 +1428,7 @@
 .heroStars2 {
   position: absolute;
   bottom: 6%;
-  left: -1%;
+  /* left: -1%; */
   transform: translate(-6%, 1%);
 }
 

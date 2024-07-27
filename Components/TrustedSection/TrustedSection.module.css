@@ -229,6 +229,10 @@
         font-size: var(--font-size-xl);
     }
 
+    .companyLogo img {
+        width: 29vw;
+    }
+    
     .backgroundChild,
     .backgroundInner,
     .backgroundItem {
