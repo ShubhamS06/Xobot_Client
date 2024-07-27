@@ -49,7 +49,7 @@ function BusinessesWeServerSection({ styles }) {
                 </div>
                 <div className={compStyles.selfServeSection}>
                     {/* <div className={compStyles.frameParent21}> */}
-                    <div className={styles.frameParent22}>
+                    <div className={compStyles.headingImageGroup}>
                         <div className={compStyles.streamlineYourSalesProcessParent}>
                             <b className={compStyles.streamlineYourSales}>
                                 Streamline your sales process
