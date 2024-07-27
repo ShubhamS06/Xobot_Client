@@ -1438,6 +1438,7 @@
   height: 40.6px;
   opacity: 0;
 }
+
 .footerIcon {
   width: 30%;
 }
@@ -2004,7 +2005,7 @@
 }
 
 .frameChild12 {
-  width: 50%;
+  width: 140px;
   position: relative;
   height: 40px;
   object-fit: cover;
@@ -2019,6 +2020,16 @@
 }
 
 @media screen and (max-width: 1000px) {
+
+  .header .cta,
+  .header .menu {
+    display: none;
+  }
+
+  .header .togglerRoot {
+    display: inline-block;
+  }
+
   .header {
     padding: 15px 30px !important;
   }
@@ -2076,6 +2087,20 @@
   gap: var(--gap-21xl);
   font-size: var(--font-size-xl);
   list-style: none;
+}
+
+.header .menuToggler {
+  background: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/menu.svg');
+}
+
+.togglerRoot {
+  display: none;
 }
 
 .signInWrapper {
@@ -2441,10 +2466,14 @@
   justify-content: space-between;
 }
 
+.whatOurClientsAreSayingRoot {
+  position: relative;
+}
+
 .frameParent16,
 .whatOurClientsAreSayingParent {
-  position: absolute;
-  left: calc(50% - 760px);
+  /* position: absolute;
+  left: calc(50% - 760px); */
   width: 1520px;
   display: flex;
   flex-direction: column;
@@ -2452,7 +2481,7 @@
 }
 
 .frameParent16 {
-  top: 4385px;
+  /* top: 4385px; */
   align-items: flex-start;
   gap: var(--gap-61xl);
   font-size: var(--font-size-base);
@@ -2460,7 +2489,7 @@
 }
 
 .whatOurClientsAreSayingParent {
-  top: 6593px;
+  /* top: 6593px; */
   align-items: center;
   gap: var(--gap-5xl);
 }
@@ -2631,7 +2660,7 @@
 
 .backgroundParent2 {
   position: absolute;
-  top: 0;
+  top: 200px;
   left: calc(50% - 540.5px);
   width: 906px;
   height: 400px;
@@ -2683,7 +2712,7 @@
 
 .backgroundParent3 {
   position: absolute;
-  top: 47px;
+  top: 247px;
   left: calc(50% + 425.5px);
   width: 906px;
   height: 300px;
@@ -2729,7 +2758,7 @@
 
 .backgroundParent4 {
   position: absolute;
-  top: 47px;
+  top: 247px;
   left: calc(50% - 1331.5px);
   width: 731px;
   height: 300px;
@@ -2743,9 +2772,9 @@
 }
 
 .frameParent23 {
-  position: absolute;
+  /* position: absolute;
   top: 7807px;
-  left: calc(50% - 1244px);
+  left: calc(50% - 1244px); */
   width: 2663px;
   height: 400px;
   text-align: center;
@@ -2772,6 +2801,7 @@
   color: var(--paragraph);
   font-family: var(--font-poppins);
 }
+
 .landingPage>* {
   margin-top: 180px;
 }
