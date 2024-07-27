@@ -52,16 +52,6 @@
   opacity: 0.1;
 }
 
-.welcomeToXobot {
-  position: relative;
-  letter-spacing: 0.4em;
-  line-height: 160%;
-  text-transform: uppercase;
-  font-weight: 500;
-  background: linear-gradient(94.85deg, var(--background-color-primary) 6.96%, #67eeaa 95.58%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .caption {
   align-self: stretch;
@@ -72,7 +62,7 @@
 }
 
 .letUsDo {
-  width: 678px;
+  /* width: 678px; */
   position: relative;
   font-size: 76px;
   line-height: 120%;
