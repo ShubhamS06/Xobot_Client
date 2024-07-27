@@ -1,0 +1,241 @@
+.companyLogoGroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    width: 90%;
+}
+
+.companyLogo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 7px;
+    background-color: green;
+}
+
+.companyLogo[data-row='2']::after {
+    /* display: none; */
+    top: 0;
+    bottom: unset;
+}
+
+.companyLogo[data-first=true]:after,
+.companyLogo:first-child::after {
+    display: none;
+}
+
+.companyLogo img {
+    width: 14vw;
+}
+
+.companyLogo {
+    position: relative;
+    border: 1px solid var(--stock);
+    display: flex;
+    align-items: center;
+}
+
+.minuteSetUpProcess {
+    /* position: relative; */
+    line-height: 120%;
+    text-align: center;
+    background: radial-gradient(50% 50%at 50% 50%,
+            #fff 30%,
+            rgba(255, 255, 255, 0.5) 84.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.withinACouple {
+    /* width: 746px; */
+    position: relative;
+    font-size: var(--font-size-xl);
+    line-height: 160%;
+    text-align: center;
+    display: inline-block;
+}
+
+.stepCardGroup {
+    width: 90%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.setupCard {
+    /* margin-inline: auto; */
+    display: flex;
+    width: 35rem;
+    align-items: center;
+    /* background-color: #1a1a2e; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    /* box-shadow: 0 4px 6px rgba(0, 255, 170, 0.1); */
+    position: relative;
+    /* overflow: hidden; */
+    /* filter: blur(264px); */
+    /* background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, var(--background-color-primary)); */
+    /* box-shadow: 0 4px 100px rgba(102, 77, 255, 0.2); */
+    /* background-color: var(--color-gray-300); */
+}
+
+.setupCard::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    /* background-color: #00ffa9;
+    box-shadow: 0 0 10px #00ffa9; */
+}
+
+.setupCardIcon {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.setupCardIcon>img {
+    width: 5rem;
+}
+
+.setupCardContent {
+    flex-grow: 1;
+}
+
+.setupCardStep {
+    font-size: 12px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+    position: relative;
+    line-height: 160%;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.setupCardStep::before {
+    content: '';
+    padding-right: 10px;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("/union6.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.setupCardText {
+    align-self: stretch;
+    margin-right: 20px;
+    position: relative;
+    font-size: var(--font-size-17xl);
+    line-height: 120%;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-11xl);
+    background: radial-gradient(50% 50%at 50% 50%,
+            #fff 30%,
+            rgba(255, 255, 255, 0.5) 84.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.backgroundChild {
+    height: 100%;
+    top: 0;
+    right: 0.07%;
+    left: 0;
+    filter: blur(264px);
+    background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, var(--background-color-primary));
+}
+
+.backgroundChild,
+.backgroundInner,
+.backgroundItem {
+    position: absolute;
+    width: 99.93%;
+    bottom: 0;
+    border-radius: var(--br-xl);
+}
+
+.backgroundItem {
+    height: 100%;
+    top: 0;
+    right: 0.07%;
+    left: 0;
+    box-shadow: 0 4px 100px rgba(102, 77, 255, 0.2);
+    /* background-color: var(--color-gray-300); */
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    box-sizing: border-box;
+}
+
+.backgroundInner {
+    height: 20%;
+    right: 0;
+    left: 0.07%;
+    background: linear-gradient(transparent 21.67%, var(--background-color-primary) 77.71%);
+}
+
+.background {
+    width: 100.07%;
+    position: absolute;
+    margin: 0 !important;
+    height: 100%;
+    top: 0;
+    right: -0.07%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .setupCard {
+        /* margin-inline: auto; */
+        display: flex;
+        width: min(25rem, 80vw);
+        padding: 5px 10px;
+    }
+
+    .setupCardIcon {
+        margin: 12px;
+    }
+
+    .setupCardIcon>img {
+        width: 3rem;
+    }
+
+    .setupCardStep {
+        font-size: 10px;
+    }
+
+    .setupCardStep::before {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .setupCardText {
+        font-size: var(--font-size-xl);
+    }
+
+    .companyLogo img {
+        width: 29vw;
+    }
+    
+    .backgroundChild,
+    .backgroundInner,
+    .backgroundItem {
+        border-radius: calc(var(--br-xl) / 2);
+    }
+}

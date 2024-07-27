@@ -5,11 +5,11 @@ function Footer({styles}) {
         <div className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.logoAndText}>
-                    <img className={styles.icon} alt="" />
+                    <img className={styles.footerIcon} src="/group-15@2x.png" alt="" />
                     <div className={styles.weGrowingUp}>
                         Let us do the TALKING! While you focus on the Business.
                     </div>
-                    <div className={styles.xobot}>Xoot</div>
+                    <div className={styles.xobot}>Xobot</div>
                 </div>
                 <div className={styles.footerLinks}>
                     <div className={styles.linksColumn}>

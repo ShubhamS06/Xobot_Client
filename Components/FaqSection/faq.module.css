@@ -1,0 +1,87 @@
+.faqSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw !important;
+    margin-inline: auto;
+    gap: 20px;
+    gap: var(--gap-61xl);
+    font-size: var(--font-size-base);
+}
+
+.minuteSetUpProcess {
+    line-height: 120%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            #fff 30%,
+            rgba(255, 255, 255, 0.5) 84.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+    font-size: var(--font-size-15xl);
+}
+
+.faqQuestionGroup {}
+
+.faqAccordion {
+    background: transparent;
+    border: 1px solid var(--stock);
+    border-bottom: none;
+    border-radius: 0;
+    color: #ececec;
+    padding: 0;
+}
+
+.faqAccordion:last-child {
+    border-bottom: 1px solid var(--stock);
+}
+
+.faqAccordionIndex {
+    width: 5rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--stock);
+}
+
+.faqAccordionQuestion {
+    padding-inline: 2rem;
+    width: calc(100% - 10rem);
+}
+
+.faqAccordionExpandIcon {
+    width: 5rem;
+    height: 6rem;
+    color: white;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--stock);
+    font-size: var(--font-size-15xl);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.faqAccordionSummary>* {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.faqAccordionSummary {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 30%, rgba(255, 255, 255, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-5xl);
+    line-height: 160%;
+}

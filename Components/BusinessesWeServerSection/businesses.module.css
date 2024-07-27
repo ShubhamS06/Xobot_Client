@@ -1,0 +1,248 @@
+.businessesWeServerParent {
+    /* position: absolute;
+    left: calc(50% - 760px); */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-inline: auto;
+}
+
+.businessesWeServerParent {
+    align-items: center;
+    gap: var(--gap-5xl);
+}
+
+.streamlineYourSalesProcessParent {
+    width: 60%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-13xl);
+}
+
+.conversionRateOptimizationA {
+    width: 30%;
+    position: relative;
+    /* height: 400px; */
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.transformYourLead {
+    /* width: 60%; */
+    position: relative;
+    font-size: min(3vw, var(--font-size-7xl));
+    line-height: 160%;
+    display: inline-block;
+}
+
+.streamlineYourSales {
+    align-self: stretch;
+    position: relative;
+    line-height: 120%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            #fff 30%,
+            rgba(255, 255, 255, 0.5) 84.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4vw;
+}
+
+
+/* .frameChild16 {
+    width: 744px;
+    position: relative;
+    border-top: 1px solid var(--color-gray-200);
+    box-sizing: border-box;
+    height: 1px;
+} */
+
+.businessContainer {
+    display: flex;
+    width: 100%;
+}
+
+.selfServeSection {
+    box-shadow: 0 16px 80px rgba(24, 215, 119, 0.1);
+    border-radius: 30px;
+    background-color: var(--color-gray-300);
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    box-sizing: border-box;
+    /* width: 1166px; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-81xl) var(--padding-41xl);
+}
+
+.frameParent21 {
+    /* width: 1046px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.selfServeSectionChild {
+    width: 60%;
+    position: relative;
+    /* height: 62%; */
+    object-fit: cover;
+    display: none;
+}
+
+.groupParent20 {
+    position: relative;
+}
+
+.groupParent20 {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    flex-direction: row;
+    align-items: center;
+    font-size: var(--font-size-base);
+    color: var(--color-slategray-100);
+}
+
+.vectorParent13 {
+    /* width: 20%; */
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* height: 530px; */
+    /* height: 480px; */
+}
+
+/* .groupChild68, */
+.groupChild69 {
+    position: absolute;
+    object-fit: contain;
+}
+
+.groupChild68 {
+    /* top: 0;
+    left: 20px; */
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.groupChild69 {
+    top: 269px;
+    left: 10px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* .vectorParent13 {
+  position: absolute;
+} */
+
+.groupChild68 {
+    /* position: absolute; */
+    /* add your existing styles */
+}
+
+.groupChild69 {
+    position: absolute;
+    transition: top 0.3s ease;
+}
+
+.smallBusinessParent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: var(--padding-13xl);
+    /* adjust based on your design */
+}
+
+.selectedItemIcon {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 0;
+    transform: translate(calc((50% + var(--padding-13xl)) * -1), -50%);
+}
+
+.selectedItem .selectedItemIcon {
+    display: inline-block;
+}
+
+.saas,
+.smallBusiness {
+    align-self: stretch;
+    position: relative;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.saas {
+    align-self: stretch;
+    position: relative;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.item {
+    position: relative;
+    cursor: pointer;
+    color: #b0b0b0;
+}
+
+.selectedItem {
+    color: #fff;
+    font-weight: var(--font-weight-bold);
+}
+
+.smallBusinessParent {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.smallBusinessParent {
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.headingImageGroup {
+    /* width: 1046px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .transformYourLead {
+        font-size: var(--font-size-xl);
+    }
+
+    .selfServeSection {
+        padding: var(--padding-41xl) var(--padding-21xl);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .transformYourLead {
+        font-size: var(--font-size-base);
+    }
+
+    .selfServeSection {
+        padding: var(--padding-5xl) var(--padding-3xl);
+    }
+}

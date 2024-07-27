@@ -1,0 +1,109 @@
+.maximizeSection {
+    position: relative;
+    /* position: absolute;
+    top: 9303px;
+    left: 201px; */
+    width: 80%;
+    /* aspect-ratio: 16 / 7; */
+    padding: 10vw 0;
+    text-align: center;
+    margin-inline: auto;
+    /* background: radial-gradient(50% 50%at 50% 50%,
+          #fff 30%,
+          rgba(255, 255, 255, 0.5)); */
+}
+
+.maximizeHeroStars {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-0%, -50%);
+}
+
+.maximizeHeroStars2 {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(-1%, -50%);
+}
+
+.maximizeSectionChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-31xl);
+    background: linear-gradient(#9cffce10 5%, transparent 70%, var(--background-color-primary) 100%);
+    border-top: 2px solid var(--primary-color);
+    box-sizing: border-box;
+}
+
+.frameParent5 {
+    width: 70%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-13xl);
+}
+
+.maximizeYourSupportCapacityParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-xl);
+}
+
+.maximizeYourSupport,
+.spend5Minutes {
+    position: relative;
+    display: inline-block;
+}
+
+.maximizeYourSupport {
+    width: 100%;
+    line-height: 120%;
+    background: radial-gradient(50% 50%at 50% 50%,
+            #fff 30%,
+            rgba(255, 255, 255, 0.5) 84.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.spend5Minutes {
+    position: relative;
+    display: inline-block;
+}
+
+.spend5Minutes {
+    width: 100%;
+    font-size: var(--font-size-lg);
+    line-height: 160%;
+}
+
+.frameParent {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.frameParent {
+    display: flex;
+    gap: var(--gap-5xl);
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--white-theme);
+}
+
+.unionIcon8 {
+    width: 358.9px;
+    position: relative;
+    margin: 0 !important;
+    height: 341px;
+    opacity: 0.1;
+}
