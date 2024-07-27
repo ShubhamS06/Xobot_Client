@@ -2661,7 +2661,7 @@
 
 .cardAuthornameParent,
 .ellipseParent4,
-.frameParent24 {
+.whatOurClientCardBody {
   display: flex;
   justify-content: flex-start;
 }
@@ -2675,7 +2675,7 @@
   color: var(--white-theme);
 }
 
-.frameParent24 {
+.whatOurClientCardBody {
   width: 80%;
   flex-direction: column;
   align-items: flex-start;
