@@ -1977,7 +1977,7 @@
 
 .frameParent9 {
   align-items: center;
-  gap: 44px;
+  gap: var(--gap-xl);
   text-align: left;
   flex-wrap: wrap;
 }
