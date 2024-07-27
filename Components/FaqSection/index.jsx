@@ -18,7 +18,7 @@ function FaqSection({ styles }) {
 
     return (
         <div className={styleModule.faqSection}>
-            <b className={styleModule.minuteSetUpProcess}>FAQ’s</b>
+            <b className={styleModule.sectionMainHeading}>FAQ’s</b>
             {/* <div className={styles.unionParent4}> */}
             <div className={styleModule.faqQuestionGroup}>
                 {faqItems.map((faq, index) => (
@@ -39,7 +39,7 @@ export default FaqSection;
 // function FaqSection({ styles }) {
 //     return (
 //         <div className={styles.faqSection}>
-//             <b className={styles.minuteSetUpProcess}>FAQ’s</b>
+//             <b className={styles.sectionMainHeading}>FAQ’s</b>
 //             {<div className={styles.unionParent4}>
 //                 <img className={styles.unionIcon10} alt="" src="/union4.svg" />
 //                 <div className={styles.frameParent7}>

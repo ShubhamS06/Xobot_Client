@@ -9,7 +9,7 @@
     font-size: var(--font-size-base);
 }
 
-.minuteSetUpProcess {
+.sectionMainHeading {
     line-height: 120%;
     background: radial-gradient(50% 50%at 50% 50%,
             #fff 30%,

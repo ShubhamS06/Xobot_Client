@@ -13,7 +13,7 @@ function BusinessesWeServerSection({ styles }) {
     };
     return (
         <div className={compStyles.businessesWeServerParent}>
-            <b className={styles.minuteSetUpProcess}>Businesses we serve</b>
+            <b className={styles.sectionMainHeading}>Businesses we serve</b>
             <div className={styles.withinACouple}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua

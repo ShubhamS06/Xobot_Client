@@ -4,7 +4,7 @@ function WhatDoWeOfferSection({styles}) {
     return (
         <div className={styles.frameParent16}>
             <div className={styles.whatDoWeOfferParent}>
-                <b className={styles.minuteSetUpProcess}>What do we offer?</b>
+                <b className={styles.sectionMainHeading}>What do we offer?</b>
                 <div className={styles.withinACouple}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -18,7 +18,7 @@ function WhatDoWeOfferSection({styles}) {
                         <div className={styles.analytics}>Analytics</div>
                     </div>
                     <div className={styles.callAnalyticsDataParent}>
-                        <b className={styles.minuteSetUpProcess}>Call  Analytics data</b>
+                        <b className={styles.sectionMainHeading}>Call  Analytics data</b>
                         <div className={styles.ourSoftwareWith}>
                             Our software, with its intuitive dashboard, allows users to gain
                             a comprehensive overview of their calls, from average duration
@@ -36,7 +36,7 @@ function WhatDoWeOfferSection({styles}) {
                         <div className={styles.analytics}>AGENTS</div>
                     </div>
                     <div className={styles.callAnalyticsDataParent}>
-                        <b className={styles.minuteSetUpProcess}>Range of agents</b>
+                        <b className={styles.sectionMainHeading}>Range of agents</b>
                         <div className={styles.ourSoftwareWith}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -55,7 +55,7 @@ function WhatDoWeOfferSection({styles}) {
                         <div className={styles.analytics}>Testing</div>
                     </div>
                     <div className={styles.callAnalyticsDataParent}>
-                        <b className={styles.minuteSetUpProcess}>Test on the go!</b>
+                        <b className={styles.sectionMainHeading}>Test on the go!</b>
                         <div className={styles.ourSoftwareWith}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

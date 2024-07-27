@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function WhatOurClientsAreSayingSection({ styles }) {
+
+    const [activeCard, setActiveCard] = useState(0)
+
     return (
         <div className={styles.whatOurClientsAreSayingRoot}>
             <div className={styles.whatOurClientsAreSayingParent}>
-                <b className={styles.minuteSetUpProcess}>What our clients are saying</b>
+                <b className={styles.sectionMainHeading}>What our clients are saying</b>
                 <div className={styles.withinACouple}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod
                 </div>
             </div>
             <div className={styles.frameParent23}>
-                <div className={styles.backgroundParent2}>
+                <div data-active={activeCard == 0} className={styles.backgroundParent2}>
                     <img
                         className={styles.backgroundIcon}
                         alt=""
@@ -19,7 +22,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                     />
                     <div className={styles.frameParent24}>
                         <div className={styles.selfServeCustomerSupportParent}>
-                            <b className={styles.minuteSetUpProcess}>
+                            <b className={styles.sectionMainHeading}>
                                 Self-Serve Customer Support
                             </b>
                             <div className={styles.everSinceImplementing}>
@@ -43,7 +46,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                         </div>
                     </div>
                 </div>
-                <div className={styles.backgroundParent3}>
+                <div data-active={activeCard == 1} className={styles.backgroundParent3}>
                     <img
                         className={styles.backgroundIcon1}
                         alt=""
@@ -51,7 +54,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                     />
                     <div className={styles.frameParent24}>
                         <div className={styles.amazingToolWrapper}>
-                            <b className={styles.minuteSetUpProcess}>Amazing tool!</b>
+                            <b className={styles.sectionMainHeading}>Amazing tool!</b>
                         </div>
                         <div className={styles.frameChild17} />
                         <div className={styles.ellipseParent5}>
@@ -69,7 +72,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                         </div>
                     </div>
                 </div>
-                <div className={styles.backgroundParent4}>
+                <div data-active={activeCard == 2} className={styles.backgroundParent4}>
                     <img
                         className={styles.backgroundIcon2}
                         alt=""
@@ -77,7 +80,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                     />
                     <div className={styles.frameParent26}>
                         <div className={styles.greatToGenerateLeadsWrapper}>
-                            <b className={styles.minuteSetUpProcess}>
+                            <b className={styles.sectionMainHeading}>
                                 Great to generate leads
                             </b>
                         </div>
