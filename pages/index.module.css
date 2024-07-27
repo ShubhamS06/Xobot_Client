@@ -1448,9 +1448,12 @@
   height: 40.6px;
   opacity: 0;
 }
+.footerIcon {
+  width: 30%;
+}
 
 .weGrowingUp {
-  width: 413px;
+  width: min(90vw, 413px);
   position: relative;
   line-height: 140%;
   font-weight: 500;
@@ -1569,7 +1572,9 @@
   justify-content: space-between;
   margin-inline: auto;
   flex-wrap: wrap;
+  row-gap: var(--gap-xl);
 }
+
 .container>* {
   margin-inline: auto;
 }
@@ -1609,6 +1614,9 @@
   gap: var(--gap-58xl);
   font-size: var(--font-size-11xl);
   color: var(--white-theme);
+  padding-top: 12rem;
+  background: linear-gradient(transparent 30%, var(--background-color-primary) 100%);
+  padding-bottom: 1rem;
 }
 
 
@@ -2034,20 +2042,34 @@
     width: 7rem;
     height: auto;
   }
+
   .container1 {
     padding: var(--padding-sm) var(--padding-5xl);
   }
+
+  .footerLinks {
+    gap: var(--gap-5xl);
+  }
+
+  .footer .links {
+    text-align: left;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
   .getStartedForFreeWrapper {
     padding: var(--padding-sm);
   }
-  
+
   .container1 {
     /* padding: var(--padding-sm) var(--padding-5xl); */
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .footerLinks {
+    gap: var(--gap-xl);
   }
 }
 
