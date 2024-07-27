@@ -31,18 +31,24 @@ function BusinessesWeServerSection({ styles }) {
 
     return (
         <div className={compStyles.businessesWeServerParent}>
-            <b className={styles.minuteSetUpProcess}>Businesses we serve</b>
+            <b className={styles.sectionMainHeading}>Businesses we serve</b>
             <div className={styles.withinACouple}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua
             </div>
 
             <div className={compStyles.businessContainer}>
-                <div className={compStyles.groupParent20}>
-                    <div className={compStyles.vectorParent13}>
-                        <img className={compStyles.groupChild68} alt="" src="/line-82.svg" />
+                <div className={compStyles.indicatorRoot}>
+                    <div className={compStyles.indicatorLineParent}>
+                        <img className={compStyles.indicatorLine} alt="" src="/line-82.svg" />
+                        {/* <img
+                            className={compStyles.groupChild69}
+                            alt=""
+                            src="/polygon-4.svg"
+                            style={{ top: getTopPosition(items.indexOf(selectedItem)) }}
+                        /> */}
                     </div>
-                    <div className={compStyles.smallBusinessParent}>
+                    <div className={compStyles.indicatorTextParent}>
                         {items.map((item, index) => (
                             <div
                                 key={index}

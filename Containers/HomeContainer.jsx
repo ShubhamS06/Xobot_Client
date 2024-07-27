@@ -22,9 +22,9 @@ function HomeContainer({ styles }) {
                 <HeroSection styles={styles} />
                 <TrustedSection styles={styles} />
                 <ConnectToolsSection styles={styles} />
-                <WhatDoWeOfferSection styles={styles} />
+                {/* <WhatDoWeOfferSection styles={styles} /> */}
                 <BusinessesWeServerSection styles={styles} />
-                <WhatOurClientsAreSayingSection styles={styles} />
+                {/* <WhatOurClientsAreSayingSection styles={styles} /> */}
                 <FaqSection styles={styles} />
                 <MaximizeSection styles={styles} />
                 <Footer styles={styles} />

@@ -14,7 +14,7 @@
 }
 
 .streamlineYourSalesProcessParent {
-    width: 60%;
+    width: 55%;
     /* height: 400px; */
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .conversionRateOptimizationA {
-    width: 30%;
+    width: 37%;
     position: relative;
     /* height: 400px; */
     overflow: hidden;
@@ -53,6 +53,7 @@
 .businessContainer {
     display: flex;
     width: 100%;
+    margin-top: 3rem;
 }
 
 .selfServeSection {
@@ -67,7 +68,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: var(--padding-81xl) var(--padding-41xl);
+    padding: calc(var(--padding-81xl) * .7) calc(var(--padding-41xl) * .8);
 }
 
 .frameParent21 {
@@ -85,21 +86,20 @@
     display: none;
 }
 
-.groupParent20 {
+.indicatorRoot {
     position: relative;
-}
-
-.groupParent20 {
     display: flex;
     justify-content: flex-start;
-    width: 30%;
+    width: 25%;
     flex-direction: row;
     align-items: center;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-xl);
     color: var(--color-slategray-100);
 }
 
-.vectorParent13 {
+.indicatorLineParent {
+    display: none !important;
+    /* width: 20%; */
     position: relative;
     height: 100%;
     display: flex;
@@ -111,8 +111,10 @@
     object-fit: contain;
 }
 
-.groupChild68 {
-    max-width: 100%;
+.indicatorLine {
+    /* top: 0;
+    left: 20px; */
+    /* max-width: 100%; */
     overflow: hidden;
     height: 100%;
 }
@@ -125,17 +127,28 @@
     height: 30px;
 }
 
-
 .groupChild69 {
     position: absolute;
     transition: top 0.3s ease;
 }
 
-.smallBusinessParent {
+.indicatorTextParent {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--gap-21xl);
     margin-left: var(--padding-13xl);
+}
+
+.indicatorTextParent::before {
+    position: absolute;
+    content: '';
+    height: 150%;
+    left: -15%;
+    top: 50%;
+    transform: translate(15%, -50%);
+    width: 2px;
+    background: linear-gradient(0deg, #ececec80, #ececec, #ececec80);
 }
 
 .selectedItemIcon {
@@ -168,7 +181,7 @@
 .item {
     position: relative;
     cursor: pointer;
-    color: #b0b0b0;
+    color: var(--paragraph);
 }
 
 .selectedItem {
@@ -176,16 +189,15 @@
     font-weight: var(--font-weight-bold);
 }
 
-.smallBusinessParent {
+.indicatorTextParent {
     display: flex;
     justify-content: flex-start;
 }
 
-.smallBusinessParent {
+.indicatorTextParent {
     width: 80%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 60px;
 }
 
 .headingImageGroup {

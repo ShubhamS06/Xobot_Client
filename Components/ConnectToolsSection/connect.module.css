@@ -9,7 +9,7 @@
     align-items: center;
     /* height: 1161px; */
     height: auto;
-    background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 33%, #18D777 79.5%, #FFFFFF 100%);
+    background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 40%, #18D777 79.5%, #FFFFFF 100%);
     border-radius: var(--br-31xl);
     margin-inline: auto;
 }
@@ -27,7 +27,7 @@
 }
 
 .toolImage {
-    margin-top: .5rem;
+    margin-top: 2.5rem;
     margin-bottom: var(--padding-13xl);
     width: 100%;
 }
