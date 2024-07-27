@@ -2722,12 +2722,16 @@
 
 .whatOurCard {
   position: relative;
-  width: 70%;
+  width: min(70%, 50rem);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  border-radius: var(--br-15xl-3);
   padding: 2rem var(--padding-41xl);
+  background-color: #0b0b0d;
+  border-top: 3px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   box-sizing: border-box;
   gap: var(--gap-3xs);
   color: var(--paragraph);
@@ -2736,13 +2740,16 @@
 }
 
 
-/* .whatOurCard[data-dir=left] {
+.whatOurCard[data-dir=-2],
+.whatOurCard[data-dir=-1] {
   transform: scale(.8) translate(-60%, 0);
 }
 
-.whatOurCard[data-dir=right] {
+.whatOurCard[data-dir=1],
+.whatOurCard[data-dir=2] {
   transform: scale(.8) translate(60%, 0);
-} */
+}
+
 @media screen and (min-width: 1000px) {
   .whatOurCard[data-active=true] {
     position: absolute;
@@ -2830,6 +2837,21 @@
   font-size: var(--font-size-13xl);
   color: var(--white-theme);
 }
+
+/* .whatOurCard::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  box-shadow:
+    20px 20px 50px #44ffec55,
+    -20px -20px 50px #44ffec55;
+    z-index: -1;
+} */
 
 .landingPageChild3 {
   position: absolute;

@@ -21,7 +21,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
             </div>
             <div className={styles.whatOurCardGroup}>
                 {cards/* .slice(0, 1) */.map((card, index) => (
-                    <div key={index} onClick={() => setActiveCard(index)} data-dir={activeCard == index ? '' : (activeCard > index ? 'left' : 'right')} data-active={activeCard == index} className={styles.whatOurCard}>
+                    <div key={index} onClick={() => setActiveCard(index)} data-dir={index - activeCard} data-active={activeCard == index} className={styles.whatOurCard}>
                         <div className={styles.whatOurClientCardBody}>
                             <div className={styles.selfServeCustomerSupportParent}>
                                 <b className={`${styles.sectionMainHeading} ${styles.whatOurCardTitle}`}>
