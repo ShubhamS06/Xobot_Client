@@ -68,7 +68,7 @@
 
 .setupCard {
   display: flex;
-  width: 41%;
+  width: 35rem;
   align-items: center;
   border-radius: 10px;
   padding: 10px 20px;
@@ -196,15 +196,13 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 650px) {
   .setupCard {
     display: flex;
     width: min(25rem, 80vw);
     padding: 5px 10px;
   }
-}
 
-@media screen and (max-width: 650px) {
   .setupCardIcon {
     margin: 12px;
   }
