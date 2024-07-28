@@ -1,6 +1,6 @@
 export default function Card({ styles, title }) {
     return (
-        <div data-is="card" className={styles.card}>
+        <div className={styles.card}>
             <div className={styles.cardBody}>
                 <div className={styles.cardInner}>
                     <div className={styles.cardTopTitle}>

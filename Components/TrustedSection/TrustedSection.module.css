@@ -17,7 +17,6 @@
 }
 
 .companyLogo[data-row='2']::after {
-    /* display: none; */
     top: 0;
     bottom: unset;
 }
@@ -39,7 +38,6 @@
 }
 
 .sectionMainHeading {
-    /* position: relative; */
     line-height: 120%;
     text-align: center;
     background: radial-gradient(50% 50%at 50% 50%,
@@ -50,7 +48,6 @@
 }
 
 .withinACouple {
-    /* width: 746px; */
     position: relative;
     font-size: var(--font-size-xl);
     line-height: 160%;
@@ -60,8 +57,6 @@
 
 .stepCardGroup {
     width: 90%;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,21 +65,13 @@
 }
 
 .setupCard {
-    /* margin-inline: auto; */
     display: flex;
     width: 35rem;
     align-items: center;
-    /* background-color: #1a1a2e; */
     border-radius: 10px;
     padding: 10px 20px;
     color: white;
-    /* box-shadow: 0 4px 6px rgba(0, 255, 170, 0.1); */
     position: relative;
-    /* overflow: hidden; */
-    /* filter: blur(264px); */
-    /* background: linear-gradient(180deg, rgba(24, 215, 119, 0) 82.44%, var(--background-color-primary)); */
-    /* box-shadow: 0 4px 100px rgba(102, 77, 255, 0.2); */
-    /* background-color: var(--color-gray-300); */
 }
 
 .setupCard::after {
@@ -94,8 +81,6 @@
     left: 0;
     right: 0;
     height: 4px;
-    /* background-color: #00ffa9;
-    box-shadow: 0 0 10px #00ffa9; */
 }
 
 .setupCardIcon {
@@ -176,7 +161,6 @@
     right: 0.07%;
     left: 0;
     box-shadow: 0 4px 100px rgba(102, 77, 255, 0.2);
-    /* background-color: var(--color-gray-300); */
     border-top: 1px solid var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
     box-sizing: border-box;
@@ -203,7 +187,6 @@
 
 @media screen and (max-width: 650px) {
     .setupCard {
-        /* margin-inline: auto; */
         display: flex;
         width: min(25rem, 80vw);
         padding: 5px 10px;
@@ -233,7 +216,7 @@
     .companyLogo img {
         width: 29vw;
     }
-    
+
     .backgroundChild,
     .backgroundInner,
     .backgroundItem {

@@ -809,7 +809,7 @@
   transform: rotate(180deg);
 }
 
-.discord,
+.menuItem,
 .lightningIcon {
   position: relative;
 }
@@ -1443,8 +1443,9 @@
 .heroStars2 {
   position: absolute;
   bottom: 6%;
-  /* left: -1%; */
-  transform: translate(-6%, 1%);
+  left: 5%;
+  width: 25%;
+  transform: translate(-6%, 5%);
 }
 
 .icon {
@@ -2020,10 +2021,10 @@
   display: none;
 }
 
-.frameChild12 {
-  width: 140px;
+.headerBrandIcon {
+  width: 6.875rem;
   position: relative;
-  height: 40px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -2050,7 +2051,7 @@
   }
 
   .header .cta,
-  .header .menu {
+  .header .headerMenu {
     display: none;
   }
 
@@ -2066,7 +2067,7 @@
     width: 7rem;
   }
 
-  .frameChild12 {
+  .headerBrandIcon {
     width: 7rem;
     height: auto;
   }
@@ -2106,19 +2107,19 @@
   }
 }
 
-.menu,
+.headerMenu,
 .signInWrapper {
   border-radius: var(--br-21xl);
   align-items: center;
   justify-content: center;
 }
 
-.menu {
+.headerMenu {
   display: flex;
   flex-direction: row;
   padding: var(--padding-base) var(--padding-13xl);
   gap: var(--gap-21xl);
-  font-size: var(--font-size-xl);
+  font-size: calc(var(--font-size-base) * .8);
   list-style: none;
 }
 
@@ -2151,12 +2152,11 @@
 }
 
 .signUpWrapper {
-  /* filter: drop-shadow(0 0 10px #74f); */
   border-radius: var(--br-21xl);
   border: 2px solid #2a2a2a;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-base) var(--padding-21xl);
+  padding: calc(var(--padding-base) * .8) calc(var(--padding-21xl) * .8);
   background: transparent;
   color: var(--white-theme);
 }
@@ -2164,7 +2164,7 @@
 .cta {
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-base);
+  gap: calc(var(--gap-base) * .8);
   color: var(--white-theme);
 }
 
@@ -2176,7 +2176,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 28px var(--padding-81xl);
+  padding: var(--padding-base) calc(var(--padding-81xl) * .8);
   box-sizing: border-box;
   font-size: var(--font-size-base);
 }
@@ -2750,12 +2750,12 @@
 
 
 @media screen and (min-width: 1000px) {
-  
+
   .whatOurCard[data-dir=-2],
   .whatOurCard[data-dir=-1] {
     transform: scale(.8) translate(-60%, 0);
   }
-  
+
   .whatOurCard[data-dir=1],
   .whatOurCard[data-dir=2] {
     transform: scale(.8) translate(60%, 0);
