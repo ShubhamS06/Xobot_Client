@@ -1443,8 +1443,9 @@
 .heroStars2 {
   position: absolute;
   bottom: 6%;
-  /* left: -1%; */
-  transform: translate(-6%, 1%);
+  left: 5%;
+  width: 25%;
+  transform: translate(-6%, 5%);
 }
 
 .icon {
