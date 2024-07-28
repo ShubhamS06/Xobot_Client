@@ -54,7 +54,7 @@ function TrustedSection({ styles }) {
                         </div>
                     </div>
                     <div className={compStyles.stepCardGroup}>
-                        {setupCardData.map((card, index) => (<div className={compStyles.setupCard}>
+                        {setupCardData.map((card, index) => (<div key={index} className={compStyles.setupCard}>
                             <div className={compStyles.background}>
                                 <div className={compStyles.backgroundChild} />
                                 <div className={compStyles.backgroundItem} />
