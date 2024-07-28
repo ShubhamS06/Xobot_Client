@@ -188,7 +188,7 @@
   object-fit: contain;
 }
 
-.englishParent {
+.heroButton {
   box-shadow: 0 0 10px rgba(119, 68, 255, 0.7);
   border-radius: var(--br-21xl);
   background-color: var(--black);
@@ -209,7 +209,7 @@
 
 .caption1,
 .captionInner,
-.englishParent {
+.heroButton {
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -38,7 +38,7 @@ export default function HeroSection({ styles }) {
         <div className={heroStyles.container}>
           <div className={heroStyles.cardGroup}>
             <button
-              className={`${styles.englishParent} ${styles.getStartedFor}`}
+              className={`${styles.heroButton} ${styles.getStartedFor}`}
               onClick={() => onSuffleClick()}
             >
               <img src="/shuffleIcon.svg" alt="shuffleIcon" /> Shuffle
@@ -46,7 +46,7 @@ export default function HeroSection({ styles }) {
             <Card title={suffleText} styles={heroStyles} />
             <div className={heroStyles.selectWrapper}>
               <select
-                className={`${styles.englishParent} ${styles.getStartedFor}`}
+                className={`${styles.heroButton} ${styles.getStartedFor}`}
               >
                 <option value="English">English</option>
                 <option value="English">French</option>

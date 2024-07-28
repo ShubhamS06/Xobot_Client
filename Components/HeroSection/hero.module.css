@@ -92,6 +92,7 @@
 
 .cardGroup {
   display: flex;
+  position: relative;
 }
 
 .card {
@@ -372,4 +373,17 @@
   text-align: center;
   font-size: calc(var(--font-size-base) / 1.5);
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 650px) {
+  .cardGroup>*:not(.card) {
+    position: absolute;
+  }
+  .cardGroup>.selectWrapper {
+    transform: translateX(125%);
+  }
+
+  .cardGroup .card {
+    margin-top: 5rem;
+  }
 }
