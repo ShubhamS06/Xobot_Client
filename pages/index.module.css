@@ -199,9 +199,9 @@
   /* font-size: var(--font-size-5xl); */
   gap: var(--gap-3xs);
   color: var(--white-theme);
-  margin: 6% 3% 0 3%;
+  margin: 7% 3% 0 3%;
   height: 43px;
-  width: 159px;
+  /* width: 159px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2660,7 +2660,7 @@
 }
 
 .everSinceImplementing {
-  width: 80%;
+  /* width: 80%; */
   position: relative;
   font-size: var(--font-size-xl);
   line-height: 160%;
@@ -2669,7 +2669,7 @@
 }
 
 .selfServeCustomerSupportParent {
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2731,7 +2731,7 @@
 }
 
 .whatOurClientCardBody {
-  width: 80%;
+  /* width: 80%; */
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-xl);
@@ -2774,78 +2774,63 @@
   font-size: var(--font-size-5xl);
 }
 
+.whatOurCardGroup {
+  position: relative;
+  max-width: 100%;
+  /* min-height: 25rem; */
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-25xl);
+  justify-content: space-between;
+  font-size: var(--font-size-13xl);
+  color: var(--white-theme);
+  overflow-x: auto;
+}
+
+.whatOurCardGroup::-webkit-scrollbar {
+  display: none;
+  height: 0;
+  -webkit-appearance: none;
+  width: 0;
+}
+
 .whatOurCard {
   position: relative;
-  width: min(70%, 50rem);
+  min-width: min(70%, 30rem);
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
-  border-radius: var(--br-15xl-3);
-  padding: 2rem var(--padding-41xl);
+  border-radius: var(--br-xl);
+  padding: 2rem calc(var(--padding-41xl) * 1.5);
+  text-align: left;
   background-color: #0b0b0d;
   border-top: 3px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  box-sizing: border-box;
   gap: var(--gap-3xs);
   color: var(--paragraph);
-  transform: scale(0.8) translate(0%, 0%);
-  transition: 1s transform;
+  transition: 1s all ease;
 }
 
-@media screen and (min-width: 1000px) {
-  .whatOurCard[data-dir="-2"],
-  .whatOurCard[data-dir="-1"] {
-    transform: scale(0.8) translate(-60%, 0);
-  }
 
-  .whatOurCard[data-dir="1"],
-  .whatOurCard[data-dir="2"] {
-    transform: scale(0.8) translate(60%, 0);
-  }
-
-  .whatOurCard[data-active="true"] {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: scale(1) translate(-50%, -50%);
-    z-index: 1;
-  }
+.whatOurCard[data-active="true"] {
+  background-image: linear-gradient(
+    to right,
+    var(--background-color-primary) 0%,
+    transparent 6%
+  );
+  position: relative;
+  box-shadow: -20px 0 50px #18d77730,
+    20px 0 50px #18d77730;
+    transform: scale(1.1);
+    margin: 0 calc(var(--padding-41xl) * 0.6);
 }
+
 
 .whatOurCardTitle {
   font-size: var(--font-size-5xl);
 }
-
-/* .backgroundParent3 {
-  position: absolute;
-  top: 247px;
-  left: calc(50% + 425.5px);
-  width: 906px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 var(--padding-21xl);
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
-}
-
-.backgroundParent4 {
-  position: absolute;
-  top: 247px;
-  left: calc(50% - 1331.5px);
-  width: 731px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 var(--padding-21xl);
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
-} */
 
 .backgroundIcon2 {
   width: 99.86%;
@@ -2876,17 +2861,6 @@
   width: 559px;
   gap: var(--gap-xl);
   z-index: 1;
-}
-
-.whatOurCardGroup {
-  position: relative;
-  width: 100%;
-  min-height: 25rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--font-size-13xl);
-  color: var(--white-theme);
 }
 
 /* .whatOurCard::before {

@@ -44,13 +44,15 @@ export default function HeroSection({ styles }) {
               <img src="/shuffleIcon.svg" alt="shuffleIcon" /> Shuffle
             </button>
             <Card title={suffleText} styles={heroStyles} />
-            <select
-              className={`${styles.englishParent} ${styles.getStartedFor}`}
-            >
-              <option value="English">English</option>
-              <option value="English">French</option>
-              <option value="English">Spanish</option>
-            </select>
+            <div className={heroStyles.selectWrapper}>
+              <select
+                className={`${styles.englishParent} ${styles.getStartedFor}`}
+              >
+                <option value="English">English</option>
+                <option value="English">French</option>
+                <option value="English">Spanish</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
