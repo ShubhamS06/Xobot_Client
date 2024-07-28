@@ -60,13 +60,13 @@ function Footer({styles}) {
                 </div>
             </div>
             <div className={styles.container1}>
-                <div className={styles.discord}>
+                <div className={styles.menuItem}>
                     © 2023 Wonderc hat. All rights reserved.
                 </div>
                 <div className={styles.links4}>
-                    <div className={styles.discord}>Terms of Service</div>
-                    <div className={styles.discord}>Privacy Policy</div>
-                    <div className={styles.discord}>Cookies</div>
+                    <div className={styles.menuItem}>Terms of Service</div>
+                    <div className={styles.menuItem}>Privacy Policy</div>
+                    <div className={styles.menuItem}>Cookies</div>
                 </div>
             </div>
         </div>
