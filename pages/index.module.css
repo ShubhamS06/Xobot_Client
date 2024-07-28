@@ -2134,6 +2134,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footerLinks {
+    gap: 1ch !important;
+  }
   .frameChild13{
     width: 100% !important;
   }
@@ -2548,6 +2551,7 @@
 
 .whatOurClientsAreSayingRoot {
   position: relative;
+  width: 99%;
 }
 
 .frameParent16,
