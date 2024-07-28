@@ -14,7 +14,7 @@ export default function CommonAccordion({ index, question, answar, isExpanded, o
             >
                 <div className={styles.faqAccordionIndex}>{(index + 1).toString().padStart(2, '0')}</div>
                 <div className={styles.faqAccordionQuestion}>{question}</div>
-                <div className={styles.faqAccordionExpandIcon} onClick={() => onExpand(index)}>+</div>
+                <div className={styles.faqAccordionExpandIcon} onClick={() => onExpand(index)}>{isExpanded ? '-' : '+'}</div>
             </AccordionSummary>
             <AccordionDetails>
                 {answar}
