@@ -3,7 +3,7 @@
 body {
   margin: 0;
   line-height: normal;
-  background-color: #0a0b0d
+  background-color: #0a0b0d;
 }
 
 :root {
@@ -137,7 +137,6 @@ body {
   --br-12xl-8: 31.8px;
   --br-23xl: 42px;
 
-
   --blur-amount: 264px;
   --background-color-primary: #18d777;
   --background-color-secondary: rgba(111, 60, 247, 0);
@@ -151,8 +150,15 @@ body {
   --border-radius-6: var(--br-23xl);
   --border-radius-7: var(--br-11xs);
   --primary-color: #18d777;
-  --primary-gradient: linear-gradient(180deg, var(--background-color-secondary) 82.44%, var(--background-color-primary));
-  --transparent-gradient: linear-gradient(transparent 50%, var(--background-color-primary) 100%);
+  --primary-gradient: linear-gradient(
+    180deg,
+    var(--background-color-secondary) 82.44%,
+    var(--background-color-primary)
+  );
+  --transparent-gradient: linear-gradient(
+    transparent 50%,
+    var(--background-color-primary) 100%
+  );
   --text-gradient: linear-gradient(94.85deg, #18d777 6.96%, #67eeaa 95.58%);
   --gray-color: var(--color-gray-400);
   --white-color: var(--white-theme);
@@ -161,7 +167,6 @@ body {
   --line-height-160: 160%;
   --line-height-120: 120%;
 }
-
 
 @media screen and (max-width: 1200px) {
   :root {

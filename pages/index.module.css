@@ -199,9 +199,9 @@
   /* font-size: var(--font-size-5xl); */
   gap: var(--gap-3xs);
   color: var(--white-theme);
-  margin: 6% 3% 0 3%;
+  margin: 7% 3% 0 3%;
   height: 43px;
-  width: 159px;
+  /* width: 159px; */
   display: flex;
   justify-content: center;
   align-items: center;
