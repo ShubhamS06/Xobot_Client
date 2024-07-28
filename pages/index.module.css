@@ -2798,33 +2798,18 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
   justify-content: center;
   border-radius: var(--br-xl);
-  padding: 2rem var(--padding-81xl);
+  padding: 2rem calc(var(--padding-41xl) * 1.5);
   text-align: left;
   background-color: #0b0b0d;
   border-top: 3px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  /* box-sizing: border-box; */
   gap: var(--gap-3xs);
   color: var(--paragraph);
-  /* transform: scale(0.8) translate(0%, 0%); */
-  transition: 1s transform;
-  box-shadow: 5px -5px 2px #0b0b0b, -5px 5px 2px #0b0b0b;
+  transition: 1s all ease;
 }
 
-/* .whatOurCard::after[data-active="true"] {
-  content: "";
-  width: 30%;
-  height: 100%;
-  background-image: linear-gradient(
-    to right,
-    var(--background-color-primary) 50%,
-    transparent 100%
-  );
-  z-index: -1;
-} */
 
 .whatOurCard[data-active="true"] {
   background-image: linear-gradient(
@@ -2835,61 +2820,14 @@
   position: relative;
   box-shadow: -20px 0 50px #18d77730,
     20px 0 50px #18d77730;
+    transform: scale(1.1);
+    margin: 0 calc(var(--padding-41xl) * 0.6);
 }
 
-/* @media screen and (min-width: 1000px) {
-  .whatOurCard[data-dir="-2"],
-  .whatOurCard[data-dir="-1"] {
-    transform: scale(0.8) translate(-60%, 0);
-  }
-
-  .whatOurCard[data-dir="1"],
-  .whatOurCard[data-dir="2"] {
-    transform: scale(0.8) translate(60%, 0);
-  }
-
-  .whatOurCard[data-active="true"] {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: scale(1) translate(-50%, -50%);
-    z-index: 1;
-  }
-} */
 
 .whatOurCardTitle {
   font-size: var(--font-size-5xl);
 }
-
-/* .backgroundParent3 {
-  position: absolute;
-  top: 247px;
-  left: calc(50% + 425.5px);
-  width: 906px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 var(--padding-21xl);
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
-}
-
-.backgroundParent4 {
-  position: absolute;
-  top: 247px;
-  left: calc(50% - 1331.5px);
-  width: 731px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 var(--padding-21xl);
-  box-sizing: border-box;
-  gap: var(--gap-3xs);
-} */
 
 .backgroundIcon2 {
   width: 99.86%;
