@@ -20,7 +20,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
   const cards = [
     {
       title: "Great to generate leads",
-      content: "",
+      content: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua",
       userIcon: "/ellipse-69@2x.png",
       userName: "JOHN DOE",
       userAbout: "Founder and CEO of 10xTravel",
@@ -35,7 +35,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
     },
     {
       title: "Amazing tool!",
-      content: "",
+      content: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  ut labore et dolore magna aliqua",
       userIcon: "/ellipse-691@2x.png",
       userName: "JOHN DOE",
       userAbout: "Founder and CEO of 10xTravel",
@@ -68,7 +68,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                   {card.title}
                 </b>
                 <div className={styles.everSinceImplementing}>
-                  {card.content}
+                  {activeCard == index && card.content}
                 </div>
               </div>
               <div className={styles.frameChild17} />

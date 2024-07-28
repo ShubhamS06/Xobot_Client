@@ -2084,11 +2084,6 @@
     width: 80%;
   }
 
-  .whatOurCardGroup {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
   .whatOurCard[data-dir="left"],
   .whatOurCard[data-dir="right"],
   .whatOurCard[data-active="true"] {
