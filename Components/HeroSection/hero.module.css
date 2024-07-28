@@ -209,8 +209,7 @@
   position: relative;
   width: 7rem;
   text-align: center;
-  margin-top: 11.85rem;
-  margin-inline: auto;
+  margin: 7rem auto 2.4rem auto;
 }
 
 .chatAction img {

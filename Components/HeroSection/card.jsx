@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Card({ styles, title }) {
-  const [showChat, setShowChat] = useState(true);
+  const [showChat, setShowChat] = useState(false);
   const chats = [
     { content: "hello! how are you?", isCurrentUser: false },
     { content: "i'm good, thanks!", isCurrentUser: true },
