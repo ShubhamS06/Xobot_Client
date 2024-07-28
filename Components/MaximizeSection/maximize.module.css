@@ -1,16 +1,9 @@
 .maximizeSection {
   position: relative;
-  /* position: absolute;
-    top: 9303px;
-    left: 201px; */
   width: 80%;
-  /* aspect-ratio: 16 / 7; */
-  padding: 10vw 0;
+  padding: 6vw 0;
   text-align: center;
   margin-inline: auto;
-  /* background: radial-gradient(50% 50%at 50% 50%,
-          #fff 30%,
-          rgba(255, 255, 255, 0.5)); */
 }
 
 .maximizeHeroStars {
@@ -18,12 +11,14 @@
   top: 50%;
   right: 0%;
   transform: translate(-0%, -50%);
+  width: 22%;
 }
 
 .maximizeHeroStars2 {
   position: absolute;
   top: 50%;
   left: 1%;
+  width: 22%;
   transform: translate(-1%, -50%);
 }
 
@@ -43,6 +38,7 @@
   );
   border-top: 2px solid var(--primary-color);
   box-sizing: border-box;
+  z-index: -1;
 }
 
 .frameParent5 {
