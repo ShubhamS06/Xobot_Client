@@ -13,9 +13,14 @@ export default function Card({ styles, title }) {
                     <div className={styles.cardContent}>
                         <div className={styles.playIconParent}>
                             <div className={styles.playIconGroup}>
+
+                                <img className={styles.playIconGroupBG}
+                                    alt=""
+                                    src="/gradientBg.jpg"
+                                />
                                 <img className={styles.playIconBg}
                                     alt=""
-                                    src="/playBg_green.svg"
+                                    src="/playBg_greenGray.svg"
                                 />
                                 <img className={styles.playIconImg} alt="" src="/play.svg" />
                             </div>

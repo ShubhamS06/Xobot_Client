@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import heroStyles from "./hero.module.css";
 import Card from "./card";
 import TypingAnnimatText from "../../Common/TypingAnnimatText";
@@ -6,11 +6,16 @@ import TypingAnnimatText from "../../Common/TypingAnnimatText";
 export default function HeroSection({ styles }) {
 
     const heroTitles = [
+        "sales lead agent",
         "schedule appointment agent",
         "faq agent",
         "collect missing information agent",
     ]
-
+    const [suffleText, setsuffleText] = useState(heroTitles[0])
+    const onSuffleClick = () => {
+        const randomIndex = Math.floor(Math.random() * heroTitles.length);
+        setsuffleText(heroTitles[randomIndex]);
+    }
     return (
         <div className={heroStyles.heroSectionParent}>
 
@@ -21,11 +26,10 @@ export default function HeroSection({ styles }) {
                     Let us do the TALKING! while you focus on your business
                 </b>
             </div>
-
             <div className={heroStyles.heroSection}>
 
                 <div className={heroStyles.flipTextRoot}>
-                   <span> You can talk with </span>
+                    <span> You can talk with </span>
                     <span className={heroStyles.flipTextGroup}> <TypingAnnimatText textArray={heroTitles} period={2000} />
                     </span>
                 </div>
@@ -35,19 +39,18 @@ export default function HeroSection({ styles }) {
 
 
                 <div className={heroStyles.container}>
-                    <select className={`${styles.englishParent} ${styles.getStartedFor}`}>
-                        <option value="English">English</option>
-                        <option value="English">Hindi</option>
-                        <option value="English">Chinies</option>
-                    </select>
+
                     <div className={heroStyles.cardGroup}>
-
-                        <Card title={"sales lead agent"} styles={heroStyles} />
-
+                        <button className={`${styles.englishParent} ${styles.getStartedFor}`} onClick={() => onSuffleClick()}>
+                            <img src="/shuffleIcon.svg" alt="shuffleIcon" /> Suffle
+                        </button>
+                        <Card title={suffleText} styles={heroStyles} />
+                        <select className={`${styles.englishParent} ${styles.getStartedFor}`}>
+                            <option value="English">English</option>
+                            <option value="English">Hindi</option>
+                            <option value="English">Chinies</option>
+                        </select>
                     </div>
-                    <select className={`${styles.englishParent} ${styles.getStartedFor}`}>
-                        <option value="English">Suffle</option>
-                    </select>
                 </div>
             </div>
 

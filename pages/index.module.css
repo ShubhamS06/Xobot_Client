@@ -92,6 +92,7 @@
   position: relative;
   text-transform: capitalize;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .getStartedForFreeWrapper {
@@ -105,6 +106,7 @@
   padding: var(--padding-3xl) var(--padding-21xl);
   color: var(--white-theme);
   font-size: var(--font-size-lg);
+  cursor: pointer;
 }
 
 .signUpWrapper:nth-child(2),
@@ -178,10 +180,17 @@
   background-color: var(--black);
   border: 1.5px solid var(--primary-color);
   justify-content: center;
-  padding: 15px 25px;
-  font-size: var(--font-size-5xl);
+  padding: 10px 25px;
+  font-size: 18px;
+  /* font-size: var(--font-size-5xl); */
   gap: var(--gap-3xs);
   color: var(--white-theme);
+  margin: 9% 3% 0 3%;
+  height: 43px;
+  width: 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .caption1,
