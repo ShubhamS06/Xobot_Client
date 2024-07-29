@@ -31,7 +31,6 @@
   width: 100%;
   height: 1080px;
 }
-
 .rectangleDiv {
   position: absolute;
   top: 9917px;
@@ -1048,7 +1047,7 @@
   left: calc(50% - 24px);
   width: 47.9px;
   height: 47.9px;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .unionGroup {
@@ -2134,10 +2133,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .trustedSection {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+
   .footerLinks {
     gap: 1ch !important;
   }
-  .frameChild13{
+  .frameChild13 {
     width: 100% !important;
   }
   .groupParent18 {
@@ -2812,7 +2816,6 @@
   transition: 1s all ease;
 }
 
-
 .whatOurCard[data-active="true"] {
   background-image: linear-gradient(
     to right,
@@ -2820,12 +2823,10 @@
     transparent 6%
   );
   position: relative;
-  box-shadow: -20px 0 50px #18d77730,
-    20px 0 50px #18d77730;
-    transform: scale(1.1);
-    margin: 0 calc(var(--padding-41xl) * 0.6);
+  box-shadow: -20px 0 50px #18d77730, 20px 0 50px #18d77730;
+  transform: scale(1.1);
+  margin: 0 calc(var(--padding-41xl) * 0.6);
 }
-
 
 .whatOurCardTitle {
   font-size: var(--font-size-5xl);

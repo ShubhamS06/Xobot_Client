@@ -337,7 +337,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
@@ -384,12 +384,16 @@
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 650px) {
-  .cardGroup>*:not(.card) {
-    position: absolute;
+@media screen and (max-width: 700px) {
+  .heroSectionParent {
+    overflow: hidden;
   }
-  .cardGroup>.selectWrapper {
-    transform: translateX(125%);
+  .cardGroup > *:not(.card) {
+    position: absolute;
+    transform: translateX(-60%);
+  }
+  .cardGroup > .selectWrapper {
+    transform: translateX(70%);
   }
 
   .cardGroup .card {

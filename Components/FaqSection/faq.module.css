@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80vw !important;
+  width: 80vw;
   margin-inline: auto;
   gap: 20px;
   gap: var(--gap-61xl);
@@ -97,4 +97,10 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-5xl);
   line-height: 160%;
+}
+
+@media screen and (max-width: 600px) {
+  .faqSection {
+    width: 95vw;
+  }
 }
