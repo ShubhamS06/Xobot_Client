@@ -1635,7 +1635,7 @@
   background-color: var(--color-gray-300);
   flex-direction: row;
   justify-content: space-between;
-  padding: var(--padding-5xl) 10%;
+  padding: var(--padding-5xl) 6.5%;
   gap: var(--gap-5xs);
   box-sizing: border-box;
   font-size: var(--font-size-sm);
