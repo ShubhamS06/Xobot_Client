@@ -93,10 +93,13 @@
 .cardGroup {
   display: flex;
   position: relative;
+  width: 100%;
+  justify-content: center;
 }
 
 .card {
-  width: 20rem;
+  max-width: 23rem;
+  min-width: 23rem;
   text-align: center;
   position: relative;
 }
@@ -143,10 +146,11 @@
 .cardTitleBack {
   position: absolute;
   top: 50%;
-  left: 2%;
+  left: 4%;
   transform: translate(0, -50%);
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
 }
 
 .chatHeader {
@@ -157,7 +161,7 @@
   width: 100%;
   height: 100%;
   padding: 0.5rem 0;
-  font-size: calc(var(--font-size-base) * 0.5);
+  font-size: calc(var(--font-size-base) * 1);
 }
 .greenDot {
   font-size: calc(var(--font-size-base) * 0.7);
@@ -166,6 +170,8 @@
 .chatRoot {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  padding: 10px 4px;
 }
 
 .chatGroup {
@@ -175,10 +181,10 @@
 }
 .chatRight,
 .chatLeft {
-  padding: 0.4rem;
+  padding: 0.4rem 0.6rem;
   width: max-content;
   max-width: 50%;
-  font-size: calc(var(--font-size-base) * 0.5);
+  font-size: calc(var(--font-size-base) * 1);
   border-radius: 0.2rem;
   text-align: left;
 }
@@ -208,7 +214,7 @@
 
 .chatAction {
   position: relative;
-  width: 7rem;
+  width: 10rem;
   text-align: center;
   margin: 7rem auto 2.4rem auto;
 }
@@ -221,7 +227,7 @@
 }
 
 .selectWrapper {
-  margin: 7% 3% 0 3%;
+  margin: 4% 3% 0 3%;
   position: relative;
   height: fit-content;
 }
@@ -265,6 +271,7 @@
   position: relative;
   width: 10rem;
   aspect-ratio: 1;
+  cursor: pointer;
   border-radius: 50%;
 }
 
@@ -318,6 +325,7 @@
   animation: zoom-in-out 2s infinite ease-in-out;
   margin-top: 30%;
   height: 40%;
+  cursor: pointer;
 }
 
 .playIconBg {
@@ -329,7 +337,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  
+  cursor: pointer;
 }
 
 .iconRoot {
