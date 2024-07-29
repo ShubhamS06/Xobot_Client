@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import HomeContainer from "../Containers/HomeContainer.jsx"
+import HomeContainer from "../Containers/HomeContainer.jsx";
 const LandingPage = () => {
   return (
     <>

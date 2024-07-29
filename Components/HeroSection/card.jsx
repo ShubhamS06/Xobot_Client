@@ -7,13 +7,13 @@ export default function Card({ styles, title }) {
     { content: "i'm good, thanks!", isCurrentUser: true },
     {
       content: "Are you interested in buying a property?",
-      isCurrentUser: false,
+      isCurrentUser: false
     },
     {
       content:
         "Yes, I'm interested but looking for something that fits in my budget",
-      isCurrentUser: true,
-    },
+      isCurrentUser: true
+    }
   ];
 
   return (

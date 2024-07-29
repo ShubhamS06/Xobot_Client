@@ -199,7 +199,7 @@
   /* font-size: var(--font-size-5xl); */
   gap: var(--gap-3xs);
   color: var(--white-theme);
-  margin: 7% 3% 0 3%;
+  margin: 4% 3% 0 3%;
   height: 43px;
   /* width: 159px; */
   display: flex;
@@ -1048,7 +1048,7 @@
   left: calc(50% - 24px);
   width: 47.9px;
   height: 47.9px;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .unionGroup {
