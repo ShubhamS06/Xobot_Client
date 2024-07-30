@@ -64,8 +64,6 @@
   justify-content: center;
   gap: 40px;
   padding: 20px;
-  margin-top: var(--gap-61xl);
-  padding-top: 0 !important;
 }
 
 .setupCard {
