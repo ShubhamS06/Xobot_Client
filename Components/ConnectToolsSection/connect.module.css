@@ -1,13 +1,9 @@
 .connectParent {
     position: relative;
-    /* position: absolute;
-  top: 3024px;
-  left: calc(50% - 860px); */
     width: min(90vw, 1720px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 1161px; */
     height: auto;
     background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 40%, #18D777 79.5%, #FFFFFF 100%);
     border-radius: var(--br-31xl);
@@ -15,9 +11,6 @@
 }
 
 .connectToToolsYouUseParent {
-    /* position: absolute;
-    top: 40px;
-    left: calc(50% - 373px); */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,7 +23,6 @@
     margin-top: 2.5rem;
     margin-bottom: var(--padding-13xl);
     width: 80%;
-    /* width: 100%; */
 }
 
 /* rest are unused for now */
@@ -75,7 +67,6 @@
 
 .union6 {
     position: relative;
-    /* width: 450px; */
     width: 28rem;
     aspect-ratio: 1;
 }

@@ -1,6 +1,4 @@
 .businessesWeServerParent {
-  /* position: absolute;
-    left: calc(50% - 760px); */
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -14,7 +12,6 @@
 
 .streamlineYourSalesProcessParent {
   width: 55%;
-  /* height: 400px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -25,13 +22,11 @@
 .conversionRateOptimizationA {
   width: 30%;
   position: relative;
-  /* height: 400px; */
   overflow: hidden;
   flex-shrink: 0;
 }
 
 .transformYourLead {
-  /* width: 60%; */
   position: relative;
   font-size: 26px;
   line-height: 160%;
@@ -120,7 +115,6 @@
 
 .indicatorLineParent {
   display: none !important;
-  /* width: 20%; */
   position: relative;
   height: 100%;
   display: flex;
@@ -137,9 +131,6 @@
   height: 100%;
 }
 .indicatorLine {
-  /* top: 0;
-    left: 20px; */
-  /* max-width: 100%; */
   overflow: hidden;
   height: 100%;
 }
