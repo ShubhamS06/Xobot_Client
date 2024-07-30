@@ -10,7 +10,7 @@ function ConnectToolsSection({ styles }) {
                     <b className={styles.sectionMainHeading}>
                         Connect to tools you use
                     </b>
-                    <div className={styles.withinACouple}>
+                    <div className={styles.sectionSubHeading}>
                         Within a Couple of Steps your AI Voice Bot is ready to be used.
                     </div>
                 </div>

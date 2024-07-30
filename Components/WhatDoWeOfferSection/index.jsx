@@ -5,7 +5,7 @@ function WhatDoWeOfferSection({styles}) {
         <div className={styles.frameParent16}>
             <div className={styles.whatDoWeOfferParent}>
                 <b className={styles.sectionMainHeading}>What do we offer?</b>
-                <div className={styles.withinACouple}>
+                <div className={styles.sectionSubHeading}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </div>

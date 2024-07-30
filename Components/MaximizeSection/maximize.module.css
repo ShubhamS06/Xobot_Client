@@ -109,3 +109,13 @@
   height: 341px;
   opacity: 0.1;
 }
+
+@media screen and (max-width: 600px) {
+  .maximizeSection,
+  .frameParent5 {
+    width: 90%;
+  }
+  .frameParent {
+    gap: var(--gap-xl);
+  }
+}

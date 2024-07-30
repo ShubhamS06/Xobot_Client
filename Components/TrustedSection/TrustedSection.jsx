@@ -15,14 +15,14 @@ function TrustedSection({ styles }) {
     { logo: "/Group 37.svg" },
     { logo: "/Group 38.svg" },
     { logo: "/Group 39.svg" },
-    { logo: "/Group 40.svg" }
+    { logo: "/Group 40.svg" },
   ];
 
   const setupCardData = [
     { icon: "/target.svg", step: 1, text: "Choose goal for your agent" },
     { icon: "/plugsconnected.svg", step: 2, text: "Connect to your CRM" },
     { icon: "/usercircleplus.svg", step: 3, text: "Add phone numbers" },
-    { icon: "/rocketlaunch.svg", step: 4, text: "Test & deploy" }
+    { icon: "/rocketlaunch.svg", step: 4, text: "Test & deploy" },
   ];
 
   return (
@@ -47,12 +47,11 @@ function TrustedSection({ styles }) {
         </div>
 
         <div className={styles.frameParent9}>
-          <div className={styles.minuteSetUpProcessParent}>
-            <b className={styles.sectionMainHeading}>5 minute set-up process</b>
-            <div className={compStyles.withinACouple}>
-              Within a Couple of Steps your AI Voice Bot is ready to be used.
-            </div>
+          <b className={styles.sectionMainHeading}>5 minute set-up process</b>
+          <div className={styles.sectionSubHeading}>
+            Within a Couple of Steps your AI Voice Bot is ready to be used.
           </div>
+
           <div className={compStyles.stepCardGroup}>
             {setupCardData.map((card, index) => (
               <div key={index} className={compStyles.setupCard}>

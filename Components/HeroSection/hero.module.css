@@ -185,8 +185,31 @@
   width: max-content;
   max-width: 50%;
   font-size: calc(var(--font-size-base) * 1);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   text-align: left;
+  position: relative;
+}
+
+.chatRight::before,
+.chatLeft::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  width: 1ch;
+  height: 1ch;
+  background-color: red;
+  clip-path: polygon(100% 0%, 100% 100%, 0 50%);
+}
+
+.chatLeft::before {
+  background-color: #262833;
+  left: -1ch;
+}
+
+.chatRight::before {
+  background-color: var(--primary-color);
+  right: -0.7ch;
+  transform: rotate(180deg);
 }
 
 .chatLeft {
@@ -397,6 +420,8 @@
   }
 
   .cardGroup .card {
+    max-width: min(80vw, 23rem);
+    min-width: min(80vw, 23rem);
     margin-top: 5rem;
   }
 }

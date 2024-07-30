@@ -46,7 +46,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
     <div className={styles.whatOurClientsAreSayingRoot}>
       <div className={styles.whatOurClientsAreSayingParent}>
         <b className={styles.sectionMainHeading}>What our clients are saying</b>
-        <div className={styles.withinACouple}>
+        <div className={styles.sectionSubHeading}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod
         </div>
