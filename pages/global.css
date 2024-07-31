@@ -167,6 +167,7 @@ body {
   --letter-spacing: 0.4em;
   --line-height-160: 160%;
   --line-height-120: 120%;
+  --transition: .5s;
 }
 
 @media screen and (max-width: 1200px) {
