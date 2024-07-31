@@ -8,7 +8,7 @@ function Header({ styles }) {
       <div className={styles.headerInner}>
         <img className={styles.headerBrandIcon} alt="" src="/group-15@2x.png" />
       </div>
-      <div onClick={() => setShowMenu(!showMenu)} className={styles.togglerRoot}>
+      <div onClick={() => setShowMenu(!showMenu)} className={styles.togglerRoot} data-show={showMenu}>
         <button className={styles.menuToggler}></button>
       </div>
 

@@ -835,10 +835,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/menu.svg");
+  cursor: pointer;
+}
+
+.header .togglerRoot[data-show="true"] {
+  transition: 300ms all;
+  transform: rotate(90deg) translateY(10%);
+}
+
+.header .togglerRoot:active {
+  transform: scale(.9);
 }
 
 .togglerRoot {
   display: none;
+  cursor: pointer;
 }
 
 .signInWrapper {
