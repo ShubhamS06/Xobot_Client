@@ -710,9 +710,23 @@
     transform: none;
   }
 
-  .header .headerAuthGroup,
-  .header .headerMenu {
+  .header .headerAuthGroup:not([data-show="true"]),
+  .header .headerMenu:not([data-show="true"]) {
     display: none;
+  }
+
+  .header {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: var(--gap-5xl);
+  }
+
+  .headerAuthGroup,
+  .headerMenu {
+    margin-inline: auto;
+    transition: 300ms all;
+    width: 100%;
+    justify-content: center !important;
   }
 
   .header .togglerRoot {
