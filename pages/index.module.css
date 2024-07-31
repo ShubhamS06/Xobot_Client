@@ -100,13 +100,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .footerLinks {
     gap: 2ch;
     justify-content: space-between;
     flex: 1;
   }
-
 }
 
 .heroStars {
@@ -246,7 +244,7 @@
   gap: var(--gap-xl);
 }
 
-.footerContainer>* {
+.footerContainer > * {
   margin-inline: auto;
 }
 
@@ -282,8 +280,10 @@
   font-size: var(--font-size-11xl);
   color: var(--white-theme);
   padding-top: 12rem;
-  background: linear-gradient(transparent 65%,
-      var(--background-color-primary) 100%);
+  background: linear-gradient(
+    transparent 65%,
+    var(--background-color-primary) 100%
+  );
   padding-bottom: 1rem;
 }
 
@@ -297,9 +297,11 @@
   position: relative;
   line-height: 160%;
   font-weight: 500;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5));
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #fff 30%,
+    rgba(255, 255, 255, 0.5)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -336,9 +338,11 @@
   left: 32px;
   line-height: 160%;
   font-weight: 500;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5));
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #fff 30%,
+    rgba(255, 255, 255, 0.5)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -381,9 +385,11 @@
   left: 32px;
   line-height: 160%;
   font-weight: 500;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5));
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #fff 30%,
+    rgba(255, 255, 255, 0.5)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -487,8 +493,8 @@
   place-content: center;
 }
 
-.logoAndBgParent>*,
-.stack>* {
+.logoAndBgParent > *,
+.stack > * {
   grid-area: 1 / 1;
 }
 
@@ -502,9 +508,11 @@
 
 .sectionMainHeading {
   line-height: 120%;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5) 84.77%);
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #fff 30%,
+    rgba(255, 255, 255, 0.5) 84.77%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: var(--font-size-25xl);
@@ -555,9 +563,11 @@
   font-size: var(--font-size-17xl);
   line-height: 120%;
   font-weight: 500;
-  background: radial-gradient(50% 50%at 50% 50%,
-      #fff 30%,
-      rgba(255, 255, 255, 0.5) 84.77%);
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #fff 30%,
+    rgba(255, 255, 255, 0.5) 84.77%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -638,7 +648,6 @@
   gap: var(--gap-5xl);
   font-size: var(--font-size-lg);
   color: var(--white-theme);
-
 }
 
 .frameParent9 {
@@ -742,7 +751,6 @@
   .footerLinks {
     gap: 1ch !important;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -750,6 +758,7 @@
     width: 15px;
     height: 15px;
   }
+
   .trustedSection {
     max-width: 95%;
     margin-inline: auto;
@@ -762,6 +771,10 @@
   .whatDoWeOfferCard {
     flex-wrap: wrap;
     justify-content: center !important;
+  }
+
+  .whatOurCard[data-active="true"] {
+    transform: none !important;
   }
 
   .buttonInnerIcon {
@@ -1066,9 +1079,11 @@
 }
 
 .whatOurCard[data-active="true"] {
-  background-image: linear-gradient(to right,
-      var(--background-color-primary) 0%,
-      transparent 6%);
+  background-image: linear-gradient(
+    to right,
+    var(--background-color-primary) 0%,
+    transparent 6%
+  );
   position: relative;
   box-shadow: -20px 0 50px #18d77730, 20px 0 50px #18d77730;
   transform: scale(1.1);
@@ -1089,12 +1104,12 @@
   font-family: var(--font-poppins);
 }
 
-.landingPage>* {
+.landingPage > * {
   margin-top: 180px;
 }
 
-.landingPage>.header,
-.landingPage>*:nth-child(2),
-.landingPage>.footer {
+.landingPage > .header,
+.landingPage > *:nth-child(2),
+.landingPage > .footer {
   margin-top: unset;
 }

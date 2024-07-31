@@ -13,14 +13,18 @@ function WhatOurClientsAreSayingSection({ styles }) {
 
   function selectCard(index) {
     setActiveCard(index);
-    const w = cardGroupRef.current.offsetWidth;
-    cardGroupRef.current.scrollLeft = index === 0 ? 0 : index == 1 ? w / 4 : w;
+    if (document.body.offsetWidth > 450) {
+      const w = cardGroupRef.current.offsetWidth;
+      cardGroupRef.current.scrollLeft =
+        index === 0 ? 0 : index == 1 ? w / 4 : w;
+    }
   }
 
   const cards = [
     {
       title: "Great to generate leads",
-      content: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua",
+      content:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua",
       userIcon: "/ellipse-69@2x.png",
       userName: "JOHN DOE",
       userAbout: "Founder and CEO of 10xTravel",
@@ -35,7 +39,8 @@ function WhatOurClientsAreSayingSection({ styles }) {
     },
     {
       title: "Amazing tool!",
-      content: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  ut labore et dolore magna aliqua",
+      content:
+        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  ut labore et dolore magna aliqua",
       userIcon: "/ellipse-691@2x.png",
       userName: "JOHN DOE",
       userAbout: "Founder and CEO of 10xTravel",

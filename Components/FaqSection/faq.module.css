@@ -42,28 +42,29 @@
   border-bottom: 1px solid var(--stock);
 }
 
-.faqAccordionIndex {
+.faqAccordionIndex,
+.faqAccordionExpandIcon {
   width: 5rem;
-  height: 6rem;
+  min-height: 6rem;
+  height: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.faqAccordionIndex {
   border-right: 1px solid var(--stock);
 }
 
 .faqAccordionQuestion {
-  padding-inline: 2rem;
+  flex: 1;
+  padding: 0 2rem;
   width: calc(100% - 10rem);
 }
 
 .faqAccordionExpandIcon {
-  width: 5rem;
-  height: 6rem;
-  color: var(--paragraph);
   margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--paragraph);
   border-left: 1px solid var(--stock);
   font-size: var(--font-size-17xl);
   font-family: "Courier New", Courier, monospace;
@@ -102,5 +103,15 @@
 @media screen and (max-width: 600px) {
   .faqSection {
     width: 95vw;
+  }
+  .faqAccordionQuestion {
+    font-size: var(--font-size-xl);
+    padding: 0 .5rem;
+  }
+
+  .faqAccordionIndex,
+  .faqAccordionExpandIcon {
+    width: 4rem;
+    min-height: 5rem;
   }
 }
