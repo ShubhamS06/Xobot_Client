@@ -86,6 +86,7 @@
 }
 
 .menuItem {
+  width: fit-content;
   cursor: pointer;
 }
 
@@ -729,6 +730,12 @@
     justify-content: center !important;
   }
 
+  .headerMenu {
+    padding: var(--padding-base) var(--padding-13xl) !important;
+    gap: var(--gap-5xl) !important;
+    font-size: var(--font-size-base) !important;
+  }
+
   .header .togglerRoot {
     display: inline-block;
   }
@@ -844,7 +851,7 @@
 }
 
 .header .togglerRoot:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .togglerRoot {
