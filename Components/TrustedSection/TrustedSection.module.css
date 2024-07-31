@@ -71,9 +71,10 @@
   width: 40%;
   align-items: center;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: white;
   position: relative;
+  text-align: left;
 }
 
 .setupCard::after {
@@ -126,7 +127,7 @@
 
 .setupCardText {
   align-self: stretch;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   position: relative;
   font-size: var(--font-size-17xl);
   line-height: 120%;
