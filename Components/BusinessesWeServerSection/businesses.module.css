@@ -67,14 +67,6 @@
   padding: calc(var(--padding-81xl) * 0.7) calc(var(--padding-41xl) * 0.8);
 }
 
-.frameParent21 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
 .selfServeSectionChild {
   width: 60%;
   position: relative;

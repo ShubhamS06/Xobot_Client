@@ -28,14 +28,14 @@ function MaximizeSection({ styles }) {
         </div>
         <div className={compStyles.frameParent}>
           <button
-            className={`${styles.getStartedForFreeWrapper} ${styles.getStartedFor}`}
+            className={`${styles.button} ${styles.getStartedFor}`}
           >
             Get started for free
           </button>
           <button
-            className={`${styles.getStartedForFreeWrapper} ${styles.vectorParent}`}
+            className={`${styles.button} ${styles.buttonWithIcon}`}
           >
-            <img className={styles.frameChild} alt="" src="/polygon-2.svg" />{" "}
+            <img className={styles.buttonInnerIcon} alt="" src="/polygon-2.svg" />{" "}
             Watch Video
           </button>
         </div>

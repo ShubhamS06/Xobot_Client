@@ -16,9 +16,9 @@ function Header({ styles }) {
                 <li className={styles.menuItem}>Contact</li>
                 <li className={styles.menuItem}>Blogs</li>
             </div>
-            <div className={styles.cta}>
-                <button className={`${styles.signUpWrapper} ${styles.platform}`}>Sign In</button>
-                <button className={`${styles.signUpWrapper} ${styles.platform}`}>Sign Up</button>
+            <div className={styles.headerAuthGroup}>
+                <button className={`${styles.signUpWrapper} ${styles.footerLinksHeader}`}>Sign In</button>
+                <button className={`${styles.signUpWrapper} ${styles.footerLinksHeader}`}>Sign Up</button>
             </div>
         </div>
     )

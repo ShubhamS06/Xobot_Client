@@ -2,24 +2,23 @@ import React from 'react'
 
 function WhatDoWeOfferSection({styles}) {
     return (
-        <div className={styles.frameParent16}>
-            <div className={styles.whatDoWeOfferParent}>
+        <div className={styles.whatDoWeOfferSection}>
+            <div className={styles.whatDoWeOfferHeadingParent}>
                 <b className={styles.sectionMainHeading}>What do we offer?</b>
                 <div className={styles.sectionSubHeading}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </div>
             </div>
-            <div className={styles.groupParent18}>
-                <img className={styles.frameChild13} alt="" src="/group-43@2x.png" />
-                <div className={styles.frameParent17}>
-                    <div className={styles.unionParent5}>
-                        <img className={styles.unionIcon21} alt="" src="/union6.svg" />
-                        <div className={styles.analytics}>Analytics</div>
+            <div className={styles.whatDoWeOfferCard}>
+                <img className={styles.whatDoWeOfferCardImg} alt="" src="/group-43@2x.png" />
+                <div className={styles.whatDoWeOfferCardInner}>
+                    <div className={styles.whatDoWeOfferCardTitleParent}>
+                        <div className={styles.whatDoWeOfferCardTitle}>Analytics</div>
                     </div>
-                    <div className={styles.callAnalyticsDataParent}>
-                        <b className={styles.sectionMainHeading}>Call  Analytics data</b>
-                        <div className={styles.ourSoftwareWith}>
+                    <div className={styles.whatDoWeOfferCardBody}>
+                        <b className={styles.sectionMainHeading}>Call Analytics data</b>
+                        <div className={styles.whatDoWeOfferCardText}>
                             Our software, with its intuitive dashboard, allows users to gain
                             a comprehensive overview of their calls, from average duration
                             to successful AI outcomes. As a leading provider, we harness the
@@ -29,15 +28,14 @@ function WhatDoWeOfferSection({styles}) {
                     </div>
                 </div>
             </div>
-            <div className={styles.groupParent18}>
-                <div className={styles.frameParent17}>
-                    <div className={styles.unionParent5}>
-                        <img className={styles.unionIcon21} alt="" src="/union6.svg" />
-                        <div className={styles.analytics}>AGENTS</div>
+            <div className={styles.whatDoWeOfferCard}>
+                <div className={styles.whatDoWeOfferCardInner}>
+                    <div className={styles.whatDoWeOfferCardTitleParent}>
+                        <div className={styles.whatDoWeOfferCardTitle}>AGENTS</div>
                     </div>
-                    <div className={styles.callAnalyticsDataParent}>
+                    <div className={styles.whatDoWeOfferCardBody}>
                         <b className={styles.sectionMainHeading}>Range of agents</b>
-                        <div className={styles.ourSoftwareWith}>
+                        <div className={styles.whatDoWeOfferCardText}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -45,18 +43,17 @@ function WhatDoWeOfferSection({styles}) {
                         </div>
                     </div>
                 </div>
-                <img className={styles.frameChild13} alt="" src="/group-431@2x.png" />
+                <img className={styles.whatDoWeOfferCardImg} alt="" src="/group-431@2x.png" />
             </div>
-            <div className={styles.groupParent18}>
-                <img className={styles.frameChild13} alt="" src="/group-432@2x.png" />
-                <div className={styles.frameParent17}>
-                    <div className={styles.unionParent5}>
-                        <img className={styles.unionIcon21} alt="" src="/union6.svg" />
-                        <div className={styles.analytics}>Testing</div>
+            <div className={styles.whatDoWeOfferCard}>
+                <img className={styles.whatDoWeOfferCardImg} alt="" src="/group-432@2x.png" />
+                <div className={styles.whatDoWeOfferCardInner}>
+                    <div className={styles.whatDoWeOfferCardTitleParent}>
+                        <div className={styles.whatDoWeOfferCardTitle}>Testing</div>
                     </div>
-                    <div className={styles.callAnalyticsDataParent}>
+                    <div className={styles.whatDoWeOfferCardBody}>
                         <b className={styles.sectionMainHeading}>Test on the go!</b>
-                        <div className={styles.ourSoftwareWith}>
+                        <div className={styles.whatDoWeOfferCardText}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim veniam, quis nostrud exercitation ullamco

@@ -3,53 +3,53 @@ import React from 'react'
 function Footer({styles}) {
     return (
         <div className={styles.footer}>
-            <div className={styles.container}>
-                <div className={styles.logoAndText}>
+            <div className={styles.footerContainer}>
+                <div className={styles.footerLogoTextParent}>
                     <img className={styles.footerIcon} src="/group-15@2x.png" alt="" />
-                    <div className={styles.weGrowingUp}>
+                    <div className={styles.footerText}>
                         Let us do the TALKING! While you focus on the Business.
                     </div>
-                    <div className={styles.xobot}>Xobot</div>
+                    <div className={styles.footerBrandText}>Xobot</div>
                 </div>
                 <div className={styles.footerLinks}>
-                    <div className={styles.linksColumn}>
-                        <div className={styles.platform}>Platform</div>
-                        <div className={styles.links}>
-                            <div className={styles.plansPricing}>{`Plans & Pricing`}</div>
-                            <div className={styles.plansPricing}>Personal AI Manager</div>
-                            <div className={styles.plansPricing}>AI Business Writer</div>
+                    <div className={styles.footerLinksColumn}>
+                        <div className={styles.footerLinksHeader}>Platform</div>
+                        <div className={styles.footerLinkGroup}>
+                            <div className={styles.footerLink}>{`Plans & Pricing`}</div>
+                            <div className={styles.footerLink}>Personal AI Manager</div>
+                            <div className={styles.footerLink}>AI Business Writer</div>
                         </div>
                     </div>
-                    <div className={styles.linksColumn}>
-                        <div className={styles.platform}>Company</div>
-                        <div className={styles.links}>
-                            <div className={styles.plansPricing}>Blog</div>
-                            <div className={styles.plansPricing}>Careers</div>
-                            <div className={styles.plansPricing}>News</div>
+                    <div className={styles.footerLinksColumn}>
+                        <div className={styles.footerLinksHeader}>Company</div>
+                        <div className={styles.footerLinkGroup}>
+                            <div className={styles.footerLink}>Blog</div>
+                            <div className={styles.footerLink}>Careers</div>
+                            <div className={styles.footerLink}>News</div>
                         </div>
                     </div>
-                    <div className={styles.linksColumn}>
-                        <div className={styles.platform}>Resources</div>
-                        <div className={styles.links}>
-                            <div className={styles.plansPricing}>Documentation</div>
-                            <div className={styles.plansPricing}>Papers</div>
-                            <div className={styles.plansPricing}>Press Conferences</div>
+                    <div className={styles.footerLinksColumn}>
+                        <div className={styles.footerLinksHeader}>Resources</div>
+                        <div className={styles.footerLinkGroup}>
+                            <div className={styles.footerLink}>Documentation</div>
+                            <div className={styles.footerLink}>Papers</div>
+                            <div className={styles.footerLink}>Press Conferences</div>
                         </div>
                     </div>
-                    <div className={styles.linksColumn}>
-                        <div className={styles.platform}>Get the app</div>
-                        <div className={styles.links3}>
-                            <button className={`${styles.platform1} ${styles.plansPricing}`}>
+                    <div className={styles.footerLinksColumn}>
+                        <div className={styles.footerLinksHeader}>Get the app</div>
+                        <div className={styles.footerLinkButtonGroup}>
+                            <button className={`${styles.footerLinkButton} ${styles.footerLink}`}>
                                 <img
-                                    className={styles.riwindowsFillIcon}
+                                    className={styles.footerButtonInnerIcon}
                                     alt=""
                                     src="/riwindowsfill.svg"
                                 />
                                     Windows
                             </button>
-                            <button className={`${styles.platform1} ${styles.plansPricing}`}>
+                            <button className={`${styles.footerLinkButton} ${styles.footerLink}`}>
                                 <img
-                                    className={styles.riwindowsFillIcon}
+                                    className={styles.footerButtonInnerIcon}
                                     alt=""
                                     src="/icroundapple.svg"
                                 />
@@ -59,7 +59,7 @@ function Footer({styles}) {
                     </div>
                 </div>
             </div>
-            <div className={styles.container1}>
+            <div className={styles.footerBottomContainer}>
                 <div className={styles.menuItem}>
                     © 2023 Wonderc hat. All rights reserved.
                 </div>

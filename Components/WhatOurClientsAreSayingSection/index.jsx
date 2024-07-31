@@ -43,7 +43,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
   ];
 
   return (
-    <div className={styles.whatOurClientsAreSayingRoot}>
+    <div className={styles.whatOurClientsAreSayingSection}>
       <div className={styles.whatOurClientsAreSayingParent}>
         <b className={styles.sectionMainHeading}>What our clients are saying</b>
         <div className={styles.sectionSubHeading}>
@@ -67,7 +67,7 @@ function WhatOurClientsAreSayingSection({ styles }) {
                 >
                   {card.title}
                 </b>
-                <div className={styles.everSinceImplementing}>
+                <div className={styles.whatOurCardContent}>
                   {activeCard == index && card.content}
                 </div>
               </div>
