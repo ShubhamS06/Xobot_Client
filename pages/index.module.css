@@ -14,10 +14,6 @@
   border-radius: var(--br-21xl);
   background-color: var(--black);
   border: 2px solid #2a2a2a;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding: var(--padding-3xl) var(--padding-21xl);
   color: var(--white-theme);
   font-size: var(--font-size-lg);
@@ -40,11 +36,13 @@
 }
 
 .buttonWithIcon {
-  display: flex;
   gap: var(--gap-xs);
 }
 
+.heroButton,
+.button,
 .buttonWithIcon {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -54,11 +52,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.heroSection {
-  margin: 5rem;
   align-items: flex-start;
+  margin: 5rem;
   gap: var(--gap-3xl);
 }
 
@@ -67,22 +62,12 @@
   border-radius: var(--br-21xl);
   background-color: var(--black);
   border: 1.5px solid var(--primary-color);
-  justify-content: center;
   padding: 10px 25px;
   font-size: var(--font-size-base);
   gap: var(--gap-3xs);
   color: var(--white-theme);
   margin: 4% 3% 0 3%;
   height: 43px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heroButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .menuItem {
@@ -154,10 +139,6 @@
 
 .footerLogoTextParent {
   min-width: 30vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-base);
 }
 
@@ -174,6 +155,9 @@
   display: inline-block;
 }
 
+.parent,
+.footerLinkButton,
+.footerLogoTextParent,
 .footerLinkGroup,
 .footerLinksColumn {
   display: flex;
@@ -203,10 +187,8 @@
 .footerLinkButton {
   border-radius: var(--br-81xl);
   border: 1px solid var(--color-gray-600);
-  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   padding: var(--padding-5xs) var(--padding-sm);
   gap: var(--gap-7xs);
   font-size: var(--font-size-mid);
@@ -313,10 +295,7 @@
 }
 
 .parent {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-53xl);
 }
 
@@ -326,182 +305,8 @@
   height: 23px;
 }
 
-.frameParent7 {
-  position: absolute;
-  top: 41px;
-  left: 32px;
-  width: 1454px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.div1,
-.doesItSupport {
-  position: absolute;
-  top: 159px;
-  left: 32px;
-  line-height: 160%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.doesItSupport {
-  left: 130px;
-}
-
-.unionIcon12 {
-  top: 159px;
-  right: 35px;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-}
-
-.unionIcon12:nth-of-type(2) {
-  top: calc(159px + 118px);
-  right: 35px;
-}
-
-.unionIcon12:nth-of-type(3) {
-  top: calc(159px + 118px * 2);
-  right: 35px;
-}
-
-.unionIcon12:nth-of-type(4) {
-  top: calc(159px + 118px * 3);
-  right: 35px;
-}
-
-.canMultipleTeam,
-.div2,
-.div3,
-.div4,
-.doINeed,
-.willIBe {
-  position: absolute;
-  top: 277px;
-  left: 32px;
-  line-height: 160%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.canMultipleTeam,
-.div3,
-.div4,
-.doINeed,
-.willIBe {
-  left: 130px;
-}
-
-.canMultipleTeam,
-.div3,
-.div4,
-.willIBe {
-  top: 395px;
-  left: 32px;
-}
-
-.canMultipleTeam,
-.div4,
-.willIBe {
-  left: 130px;
-}
-
-.canMultipleTeam,
-.div4 {
-  top: 513px;
-  left: 32px;
-}
-
-.canMultipleTeam {
-  left: 130px;
-}
-
-.unionParent4 {
-  width: 1521px;
-  position: relative;
-  height: 591px;
-  font-size: var(--font-size-5xl);
-}
-
-.faqSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-61xl);
-}
-
-.faqItem {
-  border-bottom: 1px solid #555;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faqItem:last-child {
-  border-bottom: none;
-}
-
-.faqItem h3 {
-  margin: 0;
-  font-weight: normal;
-}
-
-.faqItem .number {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.faqItem .toggle {
-  cursor: pointer;
-}
-
 .groupIcon {
   width: 100%;
-}
-
-.logosIcon {
-  width: 1521px;
-  position: relative;
-  height: 281px;
-}
-
-.logoAndBgParent img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.logoAndBgParent {
-  align-items: center;
-  width: min(80vw, 1600px);
-}
-
-.logoAndBgParent,
-.stack {
-  display: grid;
-  place-content: center;
-}
-
-.logoAndBgParent > *,
-.stack > * {
-  grid-area: 1 / 1;
 }
 
 .trustedBy100BusinessesParent {
@@ -533,28 +338,6 @@
   display: inline-block;
 }
 
-.minuteSetUpProcessParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-}
-
-.targetIcon {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.unionIcon16 {
-  width: 27.4px;
-  position: relative;
-  height: 26px;
-}
-
 .whatDoWeOfferCardTitleParent {
   display: flex;
   flex-direction: row;
@@ -563,76 +346,11 @@
   gap: var(--gap-xs);
 }
 
-.chooseGoalFor {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-17xl);
-  line-height: 120%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5) 84.77%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.frameParent11 {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-
-.backgroundParent,
-.targetParent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-inline: auto;
-}
-
-.targetParent {
-  flex-direction: row;
-  gap: var(--gap-21xl);
-  z-index: 1;
-}
-
-.backgroundParent {
-  width: 728px;
-  height: 180px;
-  flex-direction: column;
-  padding: 0 var(--padding-31xl);
-  box-sizing: border-box;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-
-.plugsconnectedIcon {
-  width: 90px;
-  position: relative;
-  height: 90px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
 .buttonGroup,
-.buttonInner,
-.frameParent10 {
+.buttonInner {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.frameParent10 {
-  width: 80%;
-  flex-wrap: wrap;
-  font-size: var(--font-size-base);
-  color: var(--primary-color);
-  gap: var(--gap-40xl);
 }
 
 .buttonGroup,
@@ -678,15 +396,6 @@
 .trustedSection {
   align-items: center;
   text-align: center;
-}
-
-.landingPageChild2 {
-  position: absolute;
-  top: 919.4px;
-  left: calc(50% - 730px);
-  width: 1461px;
-  height: 186.8px;
-  display: none;
 }
 
 .headerBrandIcon {
