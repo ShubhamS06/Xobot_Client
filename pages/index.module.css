@@ -79,25 +79,6 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1500px) {
-  .footerLinks {
-    gap: var(--gap-25xl) !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .headerMenu {
-    padding: var(--padding-base) var(--padding-13xl) !important;
-    gap: var(--gap-5xl) !important;
-  }
-
-  .footerLinks {
-    gap: 2ch;
-    justify-content: space-between;
-    flex: 1;
-  }
-}
-
 .heroStars {
   position: absolute;
   top: 2%;
@@ -305,15 +286,26 @@
   height: 23px;
 }
 
+.sectionHeader,
 .groupIcon {
   width: 100%;
 }
 
+.sectionHeader {
+  text-align: center;
+  gap: var(--gap-5xl);
+  margin-bottom: var(--gap-61xl);
+}
+
+.sectionHeader,
 .trustedBy100BusinessesParent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.trustedBy100BusinessesParent {
   gap: var(--gap-61xl);
 }
 
@@ -333,15 +325,16 @@
   max-width: 46rem;
   position: relative;
   font-size: var(--font-size-xl);
+  color: var(--paragraph);
   line-height: 160%;
   text-align: center;
   display: inline-block;
 }
 
 .whatDoWeOfferCardTitleParent {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
@@ -390,7 +383,6 @@
 
 .frameParent8 {
   align-items: center;
-  gap: 180px;
 }
 
 .trustedSection {
@@ -407,9 +399,9 @@
 
 .headerInner {
   width: 30%;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -419,148 +411,6 @@
   flex-direction: row;
   justify-content: space-between;
   row-gap: var(--gap-xl);
-}
-
-@media screen and (max-width: 1000px) {
-  .headerMenu {
-    margin-inline: auto;
-  }
-
-  .footerText {
-    width: 80%;
-  }
-
-  .whatOurCard[data-dir="left"],
-  .whatOurCard[data-dir="right"],
-  .whatOurCard[data-active="true"] {
-    position: relative !important;
-    transform: none;
-  }
-
-  .header {
-    padding: 15px 30px !important;
-  }
-
-  .headerInner {
-    width: 7rem;
-  }
-
-  .headerBrandIcon {
-    width: 7rem;
-    height: auto;
-  }
-
-  .footerLogoTextParent {
-    min-width: 20% !important;
-  }
-
-  .footerContainer {
-    flex-wrap: wrap;
-  }
-
-  .footerBottomContainer {
-    padding: var(--padding-sm) var(--padding-5xl);
-  }
-
-  .footer .footerLinkGroup {
-    text-align: left;
-  }
-
-  .footerLinks {
-    gap: 1ch !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .header[data-show="true"] {
-    position: relative;
-  }
-
-  .header:not([data-show="true"]) .headerContent {
-    transform: translateY(-500px);
-  }
-
-  .header {
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: var(--gap-5xl);
-  }
-
-  .headerContent {
-    transition: var(--transition) all;
-    position: absolute !important;
-    top: 100%;
-    z-index: 10;
-    background-color: var(--black);
-    left: 0;
-    padding: 1rem 0;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .headerAuthGroup,
-  .headerMenu {
-    transition: var(--transition) all;
-  }
-
-  .headerMenu {
-    flex-direction: column !important;
-    text-align: left;
-    justify-content: flex-start;
-    font-size: var(--font-size-xl) !important;
-  }
-
-  .headerAuthGroup {
-    margin-inline: auto;
-  }
-
-  .header .togglerRoot {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footerButtonInnerIcon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .trustedSection {
-    max-width: 95%;
-    margin-inline: auto;
-  }
-
-  .whatDoWeOfferCardImg {
-    width: 100% !important;
-  }
-
-  .whatDoWeOfferCard {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-  .whatOurCard[data-active="true"] {
-    transform: none !important;
-  }
-
-  .buttonInnerIcon {
-    width: 10px;
-    height: 12px;
-  }
-
-  .button {
-    border-radius: var(--br-xl);
-    padding: var(--padding-2xs-6) var(--padding-sm);
-  }
-
-  .footerBottomContainer {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .footerLink {
-    font-size: calc(var(--font-size-base) * 0.8);
-  }
 }
 
 .headerMenu,
@@ -647,19 +497,6 @@
   font-size: var(--font-size-base);
 }
 
-.whatDoWeOfferHeadingParent {
-  width: 100%;
-  margin-inline: auto;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  font-size: var(--font-size-35xl);
-  color: var(--paragraph);
-}
-
 .whatDoWeOfferCardImg {
   width: 40%;
   position: relative;
@@ -713,6 +550,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--gap-xl);
+  margin-top: var(--gap-5xl);
 }
 
 .whatOurClientsAreSayingSection {
@@ -720,25 +558,15 @@
   width: 99%;
 }
 
-.whatDoWeOfferSection,
-.whatOurClientsAreSayingParent {
+.whatDoWeOfferSection {
   width: 80%;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.whatDoWeOfferSection {
   align-items: flex-start;
-  gap: var(--gap-61xl);
   font-size: var(--font-size-base);
   color: var(--primary-color);
-}
-
-.whatOurClientsAreSayingParent {
-  align-items: center;
-  gap: var(--gap-5xs);
 }
 
 .whatOurCardContent {
@@ -820,7 +648,6 @@
 .whatOurCardGroup {
   position: relative;
   max-width: 100%;
-  padding: 4rem;
   display: flex;
   align-items: center;
   gap: var(--gap-25xl);
@@ -881,6 +708,7 @@
   font-family: var(--font-poppins);
 }
 
+.sectionMargin,
 .landingPage > * {
   margin-top: 180px;
 }
@@ -888,5 +716,167 @@
 .landingPage > .header,
 .landingPage > *:nth-child(2),
 .landingPage > .footer {
-  margin-top: unset;
+  margin-top: unset !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .footerLinks {
+    gap: var(--gap-25xl) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .headerMenu {
+    padding: var(--padding-base) var(--padding-13xl) !important;
+    gap: var(--gap-5xl) !important;
+  }
+
+  .footerLinks {
+    gap: 2ch;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headerMenu {
+    margin-inline: auto;
+  }
+
+  .footerText {
+    width: 80%;
+  }
+
+  .whatOurCard[data-dir="left"],
+  .whatOurCard[data-dir="right"],
+  .whatOurCard[data-active="true"] {
+    position: relative !important;
+    transform: none;
+  }
+
+  .header {
+    padding: 15px 30px !important;
+  }
+
+  .headerInner {
+    width: 7rem;
+  }
+
+  .headerBrandIcon {
+    width: 7rem;
+    height: auto;
+  }
+
+  .footerLogoTextParent {
+    min-width: 20% !important;
+  }
+
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+
+  .footerBottomContainer {
+    padding: var(--padding-sm) var(--padding-5xl);
+  }
+
+  .footer .footerLinkGroup {
+    text-align: left;
+  }
+
+  .footerLinks {
+    gap: 1ch !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header:not([data-show="true"]) .headerContent {
+    transform: translateY(-500px);
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: var(--gap-5xl);
+  }
+
+  .headerContent {
+    transition: var(--transition) all;
+    position: absolute !important;
+    top: 100%;
+    z-index: 10;
+    background-color: var(--black);
+    left: 0;
+    padding: 1rem 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .headerAuthGroup,
+  .headerMenu {
+    transition: var(--transition) all;
+  }
+
+  .headerMenu {
+    flex-direction: column !important;
+    text-align: left;
+    justify-content: flex-start;
+    font-size: var(--font-size-xl) !important;
+  }
+
+  .headerAuthGroup {
+    margin-inline: auto;
+  }
+
+  .header .togglerRoot {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landingPage > * {
+    margin-top: var(--gap-13xl);
+  }
+
+  .footerButtonInnerIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .trustedSection {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+
+  .whatDoWeOfferCardImg {
+    width: 100% !important;
+  }
+
+  .whatDoWeOfferCard {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .whatOurCard[data-active="true"] {
+    transform: none !important;
+  }
+
+  .buttonInnerIcon {
+    width: 10px;
+    height: 12px;
+  }
+
+  .button {
+    border-radius: var(--br-xl);
+    padding: var(--padding-2xs-6) var(--padding-sm);
+  }
+
+  .footerBottomContainer {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footerLink {
+    font-size: calc(var(--font-size-base) * 0.8);
+  }
 }

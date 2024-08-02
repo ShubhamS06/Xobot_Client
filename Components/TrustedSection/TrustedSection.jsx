@@ -29,9 +29,12 @@ function TrustedSection({ styles }) {
     <div className={styles.trustedSection}>
       <div className={styles.frameParent8}>
         <div className={styles.trustedBy100BusinessesParent}>
-          <b className={styles.sectionMainHeading}>
-            Trusted by 100+ businesses
-          </b>
+          <div className={styles.sectionHeader}>
+            <b className={styles.sectionMainHeading}>
+              Trusted by 100+ businesses
+            </b>
+          </div>
+
           <div className={compStyles.companyLogoGroup}>
             {companies.map((company, index) => (
               <div
@@ -47,9 +50,11 @@ function TrustedSection({ styles }) {
         </div>
 
         <div className={styles.frameParent9}>
-          <b className={styles.sectionMainHeading}>5 minute set-up process</b>
-          <div className={styles.sectionSubHeading}>
-            Within a Couple of Steps your AI Voice Bot is ready to be used.
+          <div className={`${styles.sectionHeader} ${styles.sectionMargin}`}>
+            <b className={styles.sectionMainHeading}>5 minute set-up process</b>
+            <div className={styles.sectionSubHeading}>
+              Within a Couple of Steps your AI Voice Bot is ready to be used.
+            </div>
           </div>
 
           <div className={compStyles.stepCardGroup}>
@@ -73,15 +78,15 @@ function TrustedSection({ styles }) {
             ))}
           </div>
           <div className={styles.buttonGroup}>
-            <button
-              className={`${styles.button} ${styles.getStartedFor}`}
-            >
+            <button className={`${styles.button} ${styles.getStartedFor}`}>
               Get started for free
             </button>
-            <button
-              className={`${styles.button} ${styles.buttonWithIcon}`}
-            >
-              <img className={styles.buttonInnerIcon} alt="" src="/polygon-2.svg" />{" "}
+            <button className={`${styles.button} ${styles.buttonWithIcon}`}>
+              <img
+                className={styles.buttonInnerIcon}
+                alt=""
+                src="/polygon-2.svg"
+              />{" "}
               Watch Video
             </button>
           </div>
