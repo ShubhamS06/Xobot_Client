@@ -48,11 +48,15 @@
   justify-content: center;
 }
 
-.heroSection {
+.heroSection,
+.whatDoWeOfferSection {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.heroSection {
   margin: 5rem;
   gap: var(--gap-3xl);
 }
@@ -395,10 +399,6 @@
 
 .headerInner {
   width: 30%;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .headerContent {
@@ -519,11 +519,13 @@
   display: inline-block;
 }
 
+.selfServeCustomerSupportParent,
+.headerInner,
 .whatDoWeOfferCardBody,
 .whatDoWeOfferCardInner {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -541,9 +543,9 @@
 
 .whatDoWeOfferCard {
   align-self: stretch;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   gap: var(--gap-xl);
   margin-top: var(--gap-5xl);
@@ -557,10 +559,6 @@
 .whatDoWeOfferSection {
   width: 80%;
   margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-size: var(--font-size-base);
   color: var(--primary-color);
 }
@@ -574,10 +572,6 @@
 }
 
 .selfServeCustomerSupportParent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-5xs);
 }
 
