@@ -305,10 +305,6 @@
   justify-content: center;
 }
 
-.trustedBy100BusinessesParent {
-  gap: var(--gap-61xl);
-}
-
 .sectionMainHeading {
   line-height: 120%;
   background: radial-gradient(
@@ -650,6 +646,7 @@
   max-width: 100%;
   display: flex;
   align-items: center;
+  padding: 4rem;
   gap: var(--gap-25xl);
   justify-content: space-between;
   font-size: var(--font-size-13xl);
@@ -834,8 +831,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .whatOurCardGroup {
+    padding: 2rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: var(--gap-13xl);
+  }
+
+  .sectionMargin,
   .landingPage > * {
-    margin-top: var(--gap-13xl);
+    margin-top: var(--gap-21xl);
   }
 
   .footerButtonInnerIcon {
