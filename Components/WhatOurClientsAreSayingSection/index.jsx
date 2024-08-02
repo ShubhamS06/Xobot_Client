@@ -49,13 +49,14 @@ function WhatOurClientsAreSayingSection({ styles }) {
 
   return (
     <div className={styles.whatOurClientsAreSayingSection}>
-      <div className={styles.whatOurClientsAreSayingParent}>
+      <div className={styles.sectionHeader}>
         <b className={styles.sectionMainHeading}>What our clients are saying</b>
         <div className={styles.sectionSubHeading}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod
         </div>
       </div>
+
       <div ref={cardGroupRef} className={styles.whatOurCardGroup}>
         {cards.map((card, index) => (
           <div

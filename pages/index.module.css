@@ -14,10 +14,6 @@
   border-radius: var(--br-21xl);
   background-color: var(--black);
   border: 2px solid #2a2a2a;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding: var(--padding-3xl) var(--padding-21xl);
   color: var(--white-theme);
   font-size: var(--font-size-lg);
@@ -40,25 +36,28 @@
 }
 
 .buttonWithIcon {
-  display: flex;
   gap: var(--gap-xs);
 }
 
+.heroButton,
+.button,
 .buttonWithIcon {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.heroSection {
+.heroSection,
+.whatDoWeOfferSection {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .heroSection {
   margin: 5rem;
-  align-items: flex-start;
   gap: var(--gap-3xl);
 }
 
@@ -67,22 +66,12 @@
   border-radius: var(--br-21xl);
   background-color: var(--black);
   border: 1.5px solid var(--primary-color);
-  justify-content: center;
   padding: 10px 25px;
   font-size: var(--font-size-base);
   gap: var(--gap-3xs);
   color: var(--white-theme);
   margin: 4% 3% 0 3%;
   height: 43px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heroButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .menuItem {
@@ -92,25 +81,6 @@
 
 .menuItem:hover {
   color: #fff;
-}
-
-@media screen and (max-width: 1500px) {
-  .footerLinks {
-    gap: var(--gap-25xl) !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .headerMenu {
-    padding: 0 var(--padding-13xl) !important;
-    gap: var(--gap-5xl) !important;
-  }
-
-  .footerLinks {
-    gap: 2ch;
-    justify-content: space-between;
-    flex: 1;
-  }
 }
 
 .heroStars {
@@ -154,10 +124,6 @@
 
 .footerLogoTextParent {
   min-width: 30vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-base);
 }
 
@@ -174,6 +140,9 @@
   display: inline-block;
 }
 
+.parent,
+.footerLinkButton,
+.footerLogoTextParent,
 .footerLinkGroup,
 .footerLinksColumn {
   display: flex;
@@ -203,10 +172,8 @@
 .footerLinkButton {
   border-radius: var(--br-81xl);
   border: 1px solid var(--color-gray-600);
-  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   padding: var(--padding-5xs) var(--padding-sm);
   gap: var(--gap-7xs);
   font-size: var(--font-size-mid);
@@ -313,10 +280,7 @@
 }
 
 .parent {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-53xl);
 }
 
@@ -326,184 +290,18 @@
   height: 23px;
 }
 
-.frameParent7 {
-  position: absolute;
-  top: 41px;
-  left: 32px;
-  width: 1454px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.div1,
-.doesItSupport {
-  position: absolute;
-  top: 159px;
-  left: 32px;
-  line-height: 160%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.doesItSupport {
-  left: 130px;
-}
-
-.unionIcon12 {
-  top: 159px;
-  right: 35px;
-  position: absolute;
-  width: 23px;
-  height: 23px;
-}
-
-.unionIcon12:nth-of-type(2) {
-  top: calc(159px + 118px);
-  right: 35px;
-}
-
-.unionIcon12:nth-of-type(3) {
-  top: calc(159px + 118px * 2);
-  right: 35px;
-}
-
-.unionIcon12:nth-of-type(4) {
-  top: calc(159px + 118px * 3);
-  right: 35px;
-}
-
-.canMultipleTeam,
-.div2,
-.div3,
-.div4,
-.doINeed,
-.willIBe {
-  position: absolute;
-  top: 277px;
-  left: 32px;
-  line-height: 160%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.canMultipleTeam,
-.div3,
-.div4,
-.doINeed,
-.willIBe {
-  left: 130px;
-}
-
-.canMultipleTeam,
-.div3,
-.div4,
-.willIBe {
-  top: 395px;
-  left: 32px;
-}
-
-.canMultipleTeam,
-.div4,
-.willIBe {
-  left: 130px;
-}
-
-.canMultipleTeam,
-.div4 {
-  top: 513px;
-  left: 32px;
-}
-
-.canMultipleTeam {
-  left: 130px;
-}
-
-.unionParent4 {
-  width: 1521px;
-  position: relative;
-  height: 591px;
-  font-size: var(--font-size-5xl);
-}
-
-.faqSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-61xl);
-}
-
-.faqItem {
-  border-bottom: 1px solid #555;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faqItem:last-child {
-  border-bottom: none;
-}
-
-.faqItem h3 {
-  margin: 0;
-  font-weight: normal;
-}
-
-.faqItem .number {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.faqItem .toggle {
-  cursor: pointer;
-}
-
+.sectionHeader,
 .groupIcon {
   width: 100%;
 }
 
-.logosIcon {
-  width: 1521px;
-  position: relative;
-  height: 281px;
+.sectionHeader {
+  text-align: center;
+  gap: var(--gap-5xl);
+  margin-bottom: var(--gap-61xl);
 }
 
-.logoAndBgParent img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.logoAndBgParent {
-  align-items: center;
-  width: min(80vw, 1600px);
-}
-
-.logoAndBgParent,
-.stack {
-  display: grid;
-  place-content: center;
-}
-
-.logoAndBgParent > *,
-.stack > * {
-  grid-area: 1 / 1;
-}
-
+.sectionHeader,
 .trustedBy100BusinessesParent {
   display: flex;
   flex-direction: column;
@@ -528,111 +326,25 @@
   max-width: 46rem;
   position: relative;
   font-size: var(--font-size-xl);
+  color: var(--paragraph);
   line-height: 160%;
   text-align: center;
   display: inline-block;
 }
 
-.minuteSetUpProcessParent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-}
-
-.targetIcon {
-  width: 100px;
-  position: relative;
-  height: 100px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.unionIcon16 {
-  width: 27.4px;
-  position: relative;
-  height: 26px;
-}
-
 .whatDoWeOfferCardTitleParent {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
 
-.chooseGoalFor {
-  align-self: stretch;
-  position: relative;
-  font-size: var(--font-size-17xl);
-  line-height: 120%;
-  font-weight: 500;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5) 84.77%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.frameParent11 {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-
-.backgroundParent,
-.targetParent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-inline: auto;
-}
-
-.targetParent {
-  flex-direction: row;
-  gap: var(--gap-21xl);
-  z-index: 1;
-}
-
-.backgroundParent {
-  width: 728px;
-  height: 180px;
-  flex-direction: column;
-  padding: 0 var(--padding-31xl);
-  box-sizing: border-box;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-
-.plugsconnectedIcon {
-  width: 90px;
-  position: relative;
-  height: 90px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
 .buttonGroup,
-.buttonInner,
-.frameParent10 {
+.buttonInner {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.frameParent10 {
-  width: 80%;
-  flex-wrap: wrap;
-  font-size: var(--font-size-base);
-  color: var(--primary-color);
-  gap: var(--gap-40xl);
 }
 
 .buttonGroup,
@@ -672,21 +384,11 @@
 
 .frameParent8 {
   align-items: center;
-  gap: 180px;
 }
 
 .trustedSection {
   align-items: center;
   text-align: center;
-}
-
-.landingPageChild2 {
-  position: absolute;
-  top: 919.4px;
-  left: calc(50% - 730px);
-  width: 1461px;
-  height: 186.8px;
-  display: none;
 }
 
 .headerBrandIcon {
@@ -698,10 +400,6 @@
 
 .headerInner {
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .headerContent {
@@ -710,148 +408,6 @@
   flex-direction: row;
   justify-content: space-between;
   row-gap: var(--gap-xl);
-}
-
-@media screen and (max-width: 1000px) {
-  .headerMenu {
-    margin-inline: auto;
-  }
-
-  .footerText {
-    width: 80%;
-  }
-
-  .whatOurCard[data-dir="left"],
-  .whatOurCard[data-dir="right"],
-  .whatOurCard[data-active="true"] {
-    position: relative !important;
-    transform: none;
-  }
-
-  .header {
-    padding: 15px 30px !important;
-  }
-
-  .headerInner {
-    width: 7rem;
-  }
-
-  .headerBrandIcon {
-    width: 7rem;
-    height: auto;
-  }
-
-  .footerLogoTextParent {
-    min-width: 20% !important;
-  }
-
-  .footerContainer {
-    flex-wrap: wrap;
-  }
-
-  .footerBottomContainer {
-    padding: var(--padding-sm) var(--padding-5xl);
-  }
-
-  .footer .footerLinkGroup {
-    text-align: left;
-  }
-
-  .footerLinks {
-    gap: 1ch !important;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .header[data-show="true"] {
-    position: relative;
-  }
-
-  .header:not([data-show="true"]) .headerContent {
-    transform: translateY(-500px);
-  }
-
-  .header {
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: var(--gap-5xl);
-  }
-
-  .headerContent {
-    transition: var(--transition) all;
-    position: absolute !important;
-    top: 100%;
-    z-index: 10;
-    background-color: var(--black);
-    left: 0;
-    padding: 1rem 0;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .headerAuthGroup,
-  .headerMenu {
-    transition: var(--transition) all;
-  }
-
-  .headerMenu {
-    flex-direction: column !important;
-    text-align: left;
-    justify-content: flex-start;
-    font-size: var(--font-size-xl) !important;
-  }
-
-  .headerAuthGroup {
-    margin-inline: auto;
-  }
-
-  .header .togglerRoot {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footerButtonInnerIcon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .trustedSection {
-    max-width: 95%;
-    margin-inline: auto;
-  }
-
-  .whatDoWeOfferCardImg {
-    width: 100% !important;
-  }
-
-  .whatDoWeOfferCard {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-  .whatOurCard[data-active="true"] {
-    transform: none !important;
-  }
-
-  .buttonInnerIcon {
-    width: 10px;
-    height: 12px;
-  }
-
-  .button {
-    border-radius: var(--br-xl);
-    padding: var(--padding-2xs-6) var(--padding-sm);
-  }
-
-  .footerBottomContainer {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .footerLink {
-    font-size: calc(var(--font-size-base) * 0.8);
-  }
 }
 
 .headerMenu,
@@ -938,19 +494,6 @@
   font-size: var(--font-size-base);
 }
 
-.whatDoWeOfferHeadingParent {
-  width: 100%;
-  margin-inline: auto;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-5xs);
-  font-size: var(--font-size-35xl);
-  color: var(--paragraph);
-}
-
 .whatDoWeOfferCardImg {
   width: 40%;
   position: relative;
@@ -977,11 +520,13 @@
   display: inline-block;
 }
 
+.selfServeCustomerSupportParent,
+.headerInner,
 .whatDoWeOfferCardBody,
 .whatDoWeOfferCardInner {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -999,11 +544,12 @@
 
 .whatDoWeOfferCard {
   align-self: stretch;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   gap: var(--gap-xl);
+  margin-top: var(--gap-5xl);
 }
 
 .whatOurClientsAreSayingSection {
@@ -1011,25 +557,11 @@
   width: 99%;
 }
 
-.whatDoWeOfferSection,
-.whatOurClientsAreSayingParent {
+.whatDoWeOfferSection {
   width: 80%;
   margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.whatDoWeOfferSection {
-  align-items: flex-start;
-  gap: var(--gap-61xl);
   font-size: var(--font-size-base);
   color: var(--primary-color);
-}
-
-.whatOurClientsAreSayingParent {
-  align-items: center;
-  gap: var(--gap-5xs);
 }
 
 .whatOurCardContent {
@@ -1041,10 +573,6 @@
 }
 
 .selfServeCustomerSupportParent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-5xs);
 }
 
@@ -1111,9 +639,9 @@
 .whatOurCardGroup {
   position: relative;
   max-width: 100%;
-  padding: 4rem;
   display: flex;
   align-items: center;
+  padding: 4rem;
   gap: var(--gap-25xl);
   justify-content: space-between;
   font-size: var(--font-size-13xl);
@@ -1172,6 +700,7 @@
   font-family: var(--font-poppins);
 }
 
+.sectionMargin,
 .landingPage > * {
   margin-top: 180px;
 }
@@ -1179,5 +708,176 @@
 .landingPage > .header,
 .landingPage > *:nth-child(2),
 .landingPage > .footer {
-  margin-top: unset;
+  margin-top: unset !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .footerLinks {
+    gap: var(--gap-25xl) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .headerMenu {
+    padding: var(--padding-base) var(--padding-13xl) !important;
+    gap: var(--gap-5xl) !important;
+  }
+
+  .footerLinks {
+    gap: 2ch;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headerMenu {
+    margin-inline: auto;
+  }
+
+  .footerText {
+    width: 80%;
+  }
+
+  .whatOurCard[data-dir="left"],
+  .whatOurCard[data-dir="right"],
+  .whatOurCard[data-active="true"] {
+    position: relative !important;
+    transform: none;
+  }
+
+  .header {
+    padding: 15px 30px !important;
+  }
+
+  .headerInner {
+    width: 7rem;
+  }
+
+  .headerBrandIcon {
+    width: 7rem;
+    height: auto;
+  }
+
+  .footerLogoTextParent {
+    min-width: 20% !important;
+  }
+
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+
+  .footerBottomContainer {
+    padding: var(--padding-sm) var(--padding-5xl);
+  }
+
+  .footer .footerLinkGroup {
+    text-align: left;
+  }
+
+  .footerLinks {
+    gap: 1ch !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header:not([data-show="true"]) .headerContent {
+    transform: translateY(-500px);
+  }
+
+  .header {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: var(--gap-5xl);
+  }
+
+  .headerContent {
+    transition: var(--transition) all;
+    position: absolute !important;
+    top: 100%;
+    z-index: 10;
+    background-color: var(--black);
+    left: 0;
+    padding: 1rem 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .headerAuthGroup,
+  .headerMenu {
+    transition: var(--transition) all;
+  }
+
+  .headerMenu {
+    flex-direction: column !important;
+    text-align: left;
+    justify-content: flex-start;
+    font-size: var(--font-size-xl) !important;
+  }
+
+  .headerAuthGroup {
+    margin-inline: auto;
+  }
+
+  .header .togglerRoot {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .whatOurCardGroup {
+    padding: 2rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: var(--gap-13xl);
+  }
+
+  .sectionMargin,
+  .landingPage > * {
+    margin-top: var(--gap-21xl);
+  }
+
+  .footerButtonInnerIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .trustedSection {
+    max-width: 95%;
+    margin-inline: auto;
+  }
+
+  .whatDoWeOfferCardImg {
+    width: 100% !important;
+  }
+
+  .whatDoWeOfferCard {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .whatOurCard[data-active="true"] {
+    transform: none !important;
+  }
+
+  .buttonInnerIcon {
+    width: 10px;
+    height: 12px;
+  }
+
+  .button {
+    border-radius: var(--br-xl);
+    padding: var(--padding-2xs-6) var(--padding-sm);
+  }
+
+  .footerBottomContainer {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footerLink {
+    font-size: calc(var(--font-size-base) * 0.8);
+  }
 }

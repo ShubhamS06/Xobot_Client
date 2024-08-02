@@ -4,29 +4,7 @@
   flex-direction: column;
   width: 80vw;
   margin-inline: auto;
-  gap: 20px;
-  gap: var(--gap-61xl);
   font-size: var(--font-size-base);
-}
-
-.sectionMainHeading {
-  line-height: 120%;
-  font-family: var(--font-poppins);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5) 84.77%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-  text-fill-color: transparent;
-  text-align: center;
-  font-size: var(--font-size-35xl);
-}
-
-.faqQuestionGroup {
 }
 
 .faqAccordion {

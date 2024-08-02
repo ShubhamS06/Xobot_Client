@@ -18,6 +18,7 @@
   background-color: #0b0b0d;
   backdrop-filter: blur(10px);
   margin: 1rem 0;
+  margin-bottom: 0;
   padding: 1rem;
   margin-inline: auto;
 }

@@ -37,26 +37,6 @@
   align-items: center;
 }
 
-.sectionMainHeading {
-  line-height: 120%;
-  text-align: center;
-  background: radial-gradient(
-    50% 50%at 50% 50%,
-    #fff 30%,
-    rgba(255, 255, 255, 0.5) 84.77%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.sectionSubHeading {
-  position: relative;
-  font-size: var(--font-size-xl);
-  line-height: 160%;
-  text-align: center;
-  display: inline-block;
-}
-
 .stepCardGroup {
   width: 90%;
   display: flex;
@@ -251,7 +231,7 @@
   }
 
   .companyLogo img {
-    width: 29vw;
+    width: 40vw;
   }
 
   .backgroundChild,

@@ -10,15 +10,6 @@
     margin-inline: auto;
 }
 
-.connectToToolsYouUseParent {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-5xl);
-}
-
 .toolImage {
     margin-top: 2.5rem;
     margin-bottom: var(--padding-13xl);
