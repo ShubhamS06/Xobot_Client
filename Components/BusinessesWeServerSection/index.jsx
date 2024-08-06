@@ -15,13 +15,18 @@ function BusinessesWeServerSection({ styles }) {
       content: "Good for -",
       subcontent: [
         {
-          heading: "",
-          points: [
-            "Easy booking setup.",
-            "Across-industry reservations",
-            "Calendar voice sync",
-            "Any scheduling business.ex: Restaurants, Travel, Hospital, Education Consultants",
-          ],
+          points: [],
+          heading:"Easy booking setup"
+        },
+        {
+          heading:"Across-industry reservations",points: []
+        },
+        {
+          heading: "Calendar voice sync", points: []
+        },
+        {
+          heading:"Any scheduling business.ex: Restaurants, Travel, Hospital, Education Consultants",
+          points: []
         },
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
@@ -35,12 +40,13 @@ function BusinessesWeServerSection({ styles }) {
       content: "Good for -",
       subcontent: [
         {
-          heading: "",
-          points: [
-            "Initiating contact with potential customers to introduce products or services. Asks qualifying questions to assess the potential lead's interest and needs.Provides information about products or services.",
-            "Businesses which can Benefit: Real Estate, Finance, Education",
-          ],
+          heading: "Initiating contact with potential customers to introduce products or services. Asks qualifying questions to assess the potential lead's interest and needs.Provides information about products or services.",
+          points: [],
         },
+        {
+          heading: "Businesses which can Benefit: Real Estate, Finance, Education",
+          points: [],
+        }
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
       integrations: {
@@ -201,7 +207,7 @@ function BusinessesWeServerSection({ styles }) {
                           </div>
                         ))}
                       <div className={compStyles.integration}>
-                        + <div>and more</div>
+                        + <div style={{fontSize: "1.2em"}}>and more</div>
                       </div>
                     </div>
                   </>
