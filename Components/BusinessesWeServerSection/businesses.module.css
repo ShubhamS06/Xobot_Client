@@ -10,8 +10,9 @@
   align-items: center;
 }
 
-.streamlineYourSalesProcessParent {
+.cardContentParent {
   width: 55%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,7 +34,7 @@
   display: inline-block;
 }
 
-.streamlineYourSales {
+.contentHeading {
   align-self: stretch;
   position: relative;
   line-height: 120%;
@@ -44,7 +45,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .businessContainer {
@@ -64,7 +65,6 @@
   width: 80%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   padding: calc(var(--padding-41xl) * 0.2) calc(var(--padding-41xl) * 0.8);
   aspect-ratio: 16 / 10;
@@ -213,13 +213,13 @@
   align-items: center;
   gap: 10px;
   line-height: 2ch;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #ececec;
 }
 
 .points {
   margin: 0.2rem 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
@@ -239,7 +239,7 @@
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
-  width: 2.5rem;
+  width: 3.5rem;
   border: 1px solid #ececec;
   padding: 0.5rem;
   aspect-ratio: 1;
@@ -252,7 +252,7 @@
 }
 
 .heading ~ .points {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -260,7 +260,7 @@
     font-size: var(--font-size-xl);
   }
 
-  .streamlineYourSales {
+  .contentHeading {
     font-size: 20px;
   }
 
@@ -316,11 +316,11 @@
     width: 100%;
     display: block;
   }
-  .streamlineYourSalesProcessParent {
+  .cardContentParent {
     width: 100%;
     font-size: 28px;
   }
-  .streamlineYourSales {
+  .contentHeading {
     font-size: 28px;
   }
   .conversionRateOptimizationA {

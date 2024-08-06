@@ -165,8 +165,8 @@ function BusinessesWeServerSection({ styles }) {
         </div>
         <div className={compStyles.selfServeSection}>
           <div className={compStyles.headingImageGroup}>
-            <div className={compStyles.streamlineYourSalesProcessParent}>
-              <b className={compStyles.streamlineYourSales}>
+            <div className={compStyles.cardContentParent}>
+              <b className={compStyles.contentHeading}>
                 {content[selectedItem].content}
               </b>
               <div className={compStyles.transformYourLead}>
@@ -189,7 +189,7 @@ function BusinessesWeServerSection({ styles }) {
                 ))}
                 {!!content[selectedItem].integrations && (
                   <>
-                    <b className={compStyles.streamlineYourSales}>
+                    <b className={compStyles.contentHeading}>
                       Integrats with -
                     </b>
                     <div className={compStyles.integrations}>
