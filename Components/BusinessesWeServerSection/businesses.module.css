@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-13xl);
+  gap: var(--gap-xl);
 }
 
 .conversionRateOptimizationA {
@@ -66,6 +66,7 @@
   align-items: center;
   justify-content: center;
   padding: calc(var(--padding-81xl) * 0.7) calc(var(--padding-41xl) * 0.8);
+  aspect-ratio: 16 / 10;
 }
 
 .selfServeSectionChild {
@@ -224,6 +225,57 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.heading img {
+  width: 1rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 2ch;
+  font-size: 1rem;
+  color: #ececec;
+}
+
+.points {
+  margin: .2rem 0;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+.point {
+  margin: .2rem 0;
+  line-height: 2ch;
+}
+
+.integrations {
+  display: flex;
+  gap: 10px;
+}
+
+.integration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 2.5rem;
+  border: 1px solid #ececec;
+  padding: .5rem;
+  aspect-ratio: 1;
+  font-size: .5rem;
+  line-height: 1.5ch;
+}
+
+.integration img {
+  width: 80%;
+}
+
+.heading ~ .points {
+  font-size: .7rem;
 }
 
 @media screen and (max-width: 1000px) {

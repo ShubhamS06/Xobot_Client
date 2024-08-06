@@ -2,41 +2,118 @@ import React, { useState } from "react";
 import compStyles from "./businesses.module.css";
 
 function BusinessesWeServerSection({ styles }) {
-  const [selectedItem, setSelectedItem] = useState("Saas");
-
-  const items = [
-    "Small Business",
-    "Professional service",
-    "Saas",
-    "Enterprise",
-  ];
+  const imageMap = {
+    salesforce: "/image-7@2x.png",
+    zoho: "/zoho-icon.webp",
+    calendly: "/Calendly-Icon.svg",
+    googleCalendar: "/google-calendar-icon.svg",
+  };
 
   const content = {
-    "Small Business": {
-      title: "Optimize your small business operations",
-      description:
-        "Enhance efficiency and customer engagement with Xobot, providing 24/7 support and automating repetitive tasks.",
+    "Schedule Appointment": {
+      content: "Good for -",
+      subcontent: [
+        {
+          heading: "",
+          points: [
+            "Easy booking setup.",
+            "Across-industry reservations",
+            "Calendar voice sync",
+            "Any scheduling business.ex: Restaurants, Travel, Hospital, Education Consultants",
+          ],
+        },
+      ],
       image: "/conversion-rate-optimizationamico-1.svg",
+      integrations: imageMap,
     },
-    "Professional service": {
-      title: "Streamline your professional services",
-      description:
-        "Deliver top-notch professional services by automating client interactions and scheduling appointments with Xobot.",
+    "Sales Lead": {
+      content: "Good for -",
+      subcontent: [
+        {
+          heading: "",
+          points: [
+            "Initiating contact with potential customers to introduce products or services. Asks qualifying questions to assess the potential lead's interest and needs.Provides information about products or services.",
+            "Businesses which can Benefit: Real Estate, Finance, Education",
+          ],
+        },
+      ],
       image: "/conversion-rate-optimizationamico-1.svg",
+      integrations: imageMap,
     },
-    Saas: {
-      title: "Streamline your sales process",
-      description:
-        "Transform your lead management by having Xobot immediately respond to inquiries, qualify your leads, and book demos for your sales team, all whilst integrating with your CRM.",
+    "Missing Info": {
+      content: "Good for -",
+      subcontent: [
+        {
+          heading: "Real Estate",
+          points: [
+            "Gathering additional details from prospective buyers or renters.",
+            "Confirming missing information on property listings or client profiles.",
+          ],
+        },
+        {
+          heading: "Education",
+          points: [
+            "Collecting missing information from student applications or registrations.",
+            "Following up on incomplete scholarship or financial aid forms.",
+          ],
+        },
+        {
+          heading: "Government and Public Services",
+          points: [
+            "Collecting additional information required for public service applications or registrations",
+            "Following up on incomplete government forms or documents.",
+          ],
+        },
+        {
+          heading: "Finance",
+          points: [
+            "Gathering additional information required for loan applications, account openings, or insurance policies.",
+            "Confirming missing financial details or documents.",
+          ],
+        },
+      ],
       image: "/conversion-rate-optimizationamico-1.svg",
+      integrations: imageMap,
     },
-    Enterprise: {
-      title: "Scale your enterprise operations",
-      description:
-        "Leverage Xobot to handle large volumes of customer interactions, ensuring consistency and efficiency across your enterprise.",
+    "FAQ Voice Agent": {
+      content: "Good for -",
+      subcontent: [
+        {
+          heading: "Real Estate",
+          points: [
+            "Providing information about available properties, pricing, and viewing schedules",
+            "Answering questions about the buying, selling, or renting process.",
+          ],
+        },
+        {
+          heading: "E-commerce",
+          points: [
+            "Offering assistance with order tracking, shipping, returns, and refunds.",
+            "Providing information about product availability, specifications, and customer reviews.",
+          ],
+        },
+        {
+          heading: "Travel and Tourism",
+          points: [
+            "Providing information about destinations, travel packages, and booking procedures",
+            "Answering queries about visas, travel insurance, and itinerary planning.",
+          ],
+        },
+        {
+          heading: "Education",
+          points: [
+            "Answering queries about Accomodation, courses, admission processes, fees, and campus facilities.",
+          ],
+        },
+      ],
       image: "/conversion-rate-optimizationamico-1.svg",
+      integrations: imageMap,
     },
   };
+
+  const items = Object.keys(content);
+
+  const [selectedItem, setSelectedItem] = useState(items[0]);
 
   return (
     <div className={compStyles.businessesWeServerParent}>
@@ -80,10 +157,36 @@ function BusinessesWeServerSection({ styles }) {
           <div className={compStyles.headingImageGroup}>
             <div className={compStyles.streamlineYourSalesProcessParent}>
               <b className={compStyles.streamlineYourSales}>
-                {content[selectedItem].title}
+                {content[selectedItem].content}
               </b>
               <div className={compStyles.transformYourLead}>
-                {content[selectedItem].description}
+                {content[selectedItem].subcontent.map((item, index) => (
+                  <div className={compStyles.subcontent} key={index}>
+                    {!!item.heading && (
+                      <div className={compStyles.heading}>
+                        <img src="/circle-right-sign.svg" alt="" />
+                        {item.heading}
+                      </div>
+                    )}
+                    <ul className={compStyles.points}>
+                      {item.points.map((point, index) => (
+                        <li className={compStyles.point} key={index}>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+                <div className={compStyles.integrations}>
+                  {Object.entries(content[selectedItem].integrations)
+                    .slice(0, 2)
+                    ?.map(([key, src]) => (
+                      <div key={key} className={compStyles.integration}>
+                        <img src={src} alt="" />
+                      </div>
+                    ))}
+                  <div className={compStyles.integration}>+ <div>and more</div></div>
+                </div>
               </div>
             </div>
             <img
