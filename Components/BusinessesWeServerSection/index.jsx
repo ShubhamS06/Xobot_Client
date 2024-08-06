@@ -5,6 +5,7 @@ function BusinessesWeServerSection({ styles }) {
   const imageMap = {
     salesforce: "/image-7@2x.png",
     zoho: "/zoho-icon.webp",
+    zoom: "/zoom-icon.png",
     calendly: "/Calendly-Icon.svg",
     googleCalendar: "/google-calendar-icon.svg",
   };
@@ -24,7 +25,11 @@ function BusinessesWeServerSection({ styles }) {
         },
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
-      integrations: imageMap,
+      integrations: {
+        calendly: imageMap["calendly"],
+        zoom: imageMap["zoom"],
+        googleCalendar: imageMap["googleCalendar"],
+      },
     },
     "Sales Lead": {
       content: "Good for -",
@@ -38,7 +43,10 @@ function BusinessesWeServerSection({ styles }) {
         },
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
-      integrations: imageMap,
+      integrations: {
+        salesforce: imageMap["salesforce"],
+        zoho: imageMap["zoho"],
+      },
     },
     "Missing Info": {
       content: "Good for -",
@@ -73,7 +81,10 @@ function BusinessesWeServerSection({ styles }) {
         },
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
-      integrations: imageMap,
+      integrations: {
+        salesforce: imageMap["salesforce"],
+        zoho: imageMap["zoho"],
+      },
     },
     "FAQ Voice Agent": {
       content: "Good for -",
@@ -107,7 +118,6 @@ function BusinessesWeServerSection({ styles }) {
         },
       ],
       image: "/conversion-rate-optimizationamico-1.svg",
-      integrations: imageMap,
     },
   };
 
@@ -177,16 +187,25 @@ function BusinessesWeServerSection({ styles }) {
                     </ul>
                   </div>
                 ))}
-                <div className={compStyles.integrations}>
-                  {Object.entries(content[selectedItem].integrations)
-                    .slice(0, 2)
-                    ?.map(([key, src]) => (
-                      <div key={key} className={compStyles.integration}>
-                        <img src={src} alt="" />
+                {!!content[selectedItem].integrations && (
+                  <>
+                    <b className={compStyles.streamlineYourSales}>
+                      Integrats with -
+                    </b>
+                    <div className={compStyles.integrations}>
+                      {Object.entries(content[selectedItem].integrations)
+                        .slice(0, 2)
+                        ?.map(([key, src]) => (
+                          <div key={key} className={compStyles.integration}>
+                            <img src={src} alt="" />
+                          </div>
+                        ))}
+                      <div className={compStyles.integration}>
+                        + <div>and more</div>
                       </div>
-                    ))}
-                  <div className={compStyles.integration}>+ <div>and more</div></div>
-                </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
             <img
