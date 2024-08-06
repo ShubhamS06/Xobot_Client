@@ -49,6 +49,7 @@
 
 .businessContainer {
   display: flex;
+  align-items: center;
   width: 100%;
   margin-top: var(--gap-13xl);
 }
@@ -76,26 +77,25 @@
   display: none;
 }
 
-.groupParent20 {
+.togglerParent {
   position: relative;
-}
-
-.groupParent20 {
   display: flex;
   justify-content: flex-start;
   width: 30%;
+  height: 70%;
   flex-direction: row;
   align-items: center;
   font-size: var(--font-size-base);
   color: var(--color-slategray-100);
 }
 
-.vectorParent13 {
+.togglerLine {
   position: relative;
-  height: 100%;
+  height: 60%;
   display: flex;
   align-items: center;
 }
+
 .indicatorRoot {
   position: relative;
   display: flex;
@@ -114,39 +114,18 @@
   display: flex;
   align-items: center;
 }
-.groupChild69 {
-  position: absolute;
-  object-fit: contain;
-}
 
-.groupChild68 {
+.togglerLineImg {
   max-width: 100%;
   overflow: hidden;
-  height: 100%;
+  height: 80%;
 }
+
 .indicatorLine {
   overflow: hidden;
-  height: 100%;
-}
-.groupChild69 {
-  top: 269px;
-  left: 10px;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
+  height: 80%;
 }
 
-.groupChild69 {
-  position: absolute;
-  transition: top 0.3s ease;
-}
-
-.smallBusinessParent {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-left: var(--padding-13xl);
-}
 .indicatorTextParent {
   position: relative;
   display: flex;
@@ -208,15 +187,13 @@
 }
 
 .smallBusinessParent {
+  margin-left: var(--padding-13xl);
   display: flex;
   justify-content: flex-start;
-}
-
-.smallBusinessParent {
   width: 80%;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
+  gap: 50px;
 }
 
 .headingImageGroup {
@@ -293,7 +270,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .vectorParent13 {
+  .togglerLine {
     display: none !important;
   }
   .transformYourLead {
@@ -307,7 +284,7 @@
     flex-direction: column;
   }
 
-  .groupParent20 {
+  .togglerParent {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;

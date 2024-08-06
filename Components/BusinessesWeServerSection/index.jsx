@@ -136,10 +136,10 @@ function BusinessesWeServerSection({ styles }) {
       </div>
 
       <div className={compStyles.businessContainer}>
-        <div className={compStyles.groupParent20}>
-          <div className={compStyles.vectorParent13}>
+        <div className={compStyles.togglerParent}>
+          <div className={compStyles.togglerLine}>
             <img
-              className={compStyles.groupChild68}
+              className={compStyles.togglerLineImg}
               alt=""
               src="/line-82.svg"
             />
