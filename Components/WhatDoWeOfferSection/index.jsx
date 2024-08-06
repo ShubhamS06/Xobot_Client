@@ -22,9 +22,7 @@ function WhatDoWeOfferSection({ styles }) {
             <div className={styles.whatDoWeOfferCardTitle}>Analytics</div>
           </div>
           <div className={styles.whatDoWeOfferCardBody}>
-            <div className={styles.sectionHeader}>
-              <b className={styles.sectionMainHeading}>Call Analytics data</b>
-            </div>
+            <b className={styles.sectionMainHeading}>Call Analytics data</b>
 
             <div className={styles.whatDoWeOfferCardText}>
               Our software, with its intuitive dashboard, allows users to gain a
@@ -42,9 +40,7 @@ function WhatDoWeOfferSection({ styles }) {
             <div className={styles.whatDoWeOfferCardTitle}>AGENTS</div>
           </div>
           <div className={styles.whatDoWeOfferCardBody}>
-            <div className={styles.sectionHeader}>
-              <b className={styles.sectionMainHeading}>Range of agents</b>
-            </div>
+            <b className={styles.sectionMainHeading}>Range of agents</b>
 
             <div className={styles.whatDoWeOfferCardText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,9 +67,7 @@ function WhatDoWeOfferSection({ styles }) {
             <div className={styles.whatDoWeOfferCardTitle}>Testing</div>
           </div>
           <div className={styles.whatDoWeOfferCardBody}>
-            <div className={styles.sectionHeader}>
-              <b className={styles.sectionMainHeading}>Test on the go!</b>
-            </div>
+            <b className={styles.sectionMainHeading}>Test on the go!</b>
 
             <div className={styles.whatDoWeOfferCardText}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
