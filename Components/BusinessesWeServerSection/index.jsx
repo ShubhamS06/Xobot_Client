@@ -134,7 +134,7 @@ function BusinessesWeServerSection({ styles }) {
   return (
     <div className={compStyles.businessesWeServerParent}>
       <div className={styles.sectionHeader}>
-        <b className={styles.sectionMainHeading}>Businesses we serve</b>
+        <b className={styles.sectionMainHeading}>Use cases</b>
         <div className={styles.sectionSubHeading}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua

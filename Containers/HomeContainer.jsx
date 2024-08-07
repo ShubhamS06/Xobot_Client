@@ -16,10 +16,10 @@ function HomeContainer({ styles }) {
       <div className={styles.landingPage}>
         <Header styles={styles} />
         <HeroSection styles={styles} />
-        <TrustedSection styles={styles} />
-        <ConnectToolsSection styles={styles} />
-        <WhatDoWeOfferSection styles={styles} />
         <BusinessesWeServerSection styles={styles} />
+        <TrustedSection styles={styles} />        
+        <ConnectToolsSection styles={styles} />
+        <WhatDoWeOfferSection styles={styles} />        
         <WhatOurClientsAreSayingSection styles={styles} />
         <FaqSection styles={styles} />
         <MaximizeSection styles={styles} />

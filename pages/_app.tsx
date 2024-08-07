@@ -7,11 +7,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Xobot_Dev</title>
+        <title>Xobot</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <link rel="icon" type="image/x-icon" href="/xobot.svg" />
+        <link rel="favicon" type="image/x-icon" href="/xobot.svg"></link>
       </Head>
       <Component {...pageProps} />
     </Fragment>
