@@ -12,8 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <link rel="icon" type="image/x-icon" href="/xobot.svg" />
-        <link rel="favicon" type="image/x-icon" href="/xobot.svg"></link>
+        <link rel="icon" type="image/svg+xml" href="/xobot.png" />
       </Head>
       <Component {...pageProps} />
     </Fragment>
