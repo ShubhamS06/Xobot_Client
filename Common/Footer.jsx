@@ -16,30 +16,31 @@ function Footer({styles}) {
                         <div className={styles.footerLinksHeader}>Platform</div>
                         <div className={styles.footerLinkGroup}>
                             <div className={styles.footerLink}>{`Plans & Pricing`}</div>
-                            <div className={styles.footerLink}>Personal AI Manager</div>
-                            <div className={styles.footerLink}>AI Business Writer</div>
+                            {/* <div className={styles.footerLink}>Personal AI Manager</div>
+                            <div className={styles.footerLink}>AI Business Writer</div> */}
                         </div>
                     </div>
                     <div className={styles.footerLinksColumn}>
                         <div className={styles.footerLinksHeader}>Company</div>
                         <div className={styles.footerLinkGroup}>
                             <div className={styles.footerLink}>Blog</div>
-                            <div className={styles.footerLink}>Careers</div>
-                            <div className={styles.footerLink}>News</div>
+                            {/* <div className={styles.footerLink}>Careers</div>
+                            <div className={styles.footerLink}>News</div> */}
                         </div>
                     </div>
                     <div className={styles.footerLinksColumn}>
                         <div className={styles.footerLinksHeader}>Resources</div>
                         <div className={styles.footerLinkGroup}>
                             <div className={styles.footerLink}>Documentation</div>
-                            <div className={styles.footerLink}>Papers</div>
-                            <div className={styles.footerLink}>Press Conferences</div>
+                            {/* <div className={styles.footerLink}>Papers</div>
+                            <div className={styles.footerLink}>Press Conferences</div> */}
                         </div>
                     </div>
                     <div className={styles.footerLinksColumn}>
                         <div className={styles.footerLinksHeader}>Get the app</div>
                         <div className={styles.footerLinkButtonGroup}>
-                            <button className={`${styles.footerLinkButton} ${styles.footerLink}`}>
+                            Coming soon
+                            {/* <button className={`${styles.footerLinkButton} ${styles.footerLink}`}>
                                 <img
                                     className={styles.footerButtonInnerIcon}
                                     alt=""
@@ -54,14 +55,14 @@ function Footer({styles}) {
                                     src="/icroundapple.svg"
                                 />
                                     macOS
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
             </div>
             <div className={styles.footerBottomContainer}>
                 <div className={styles.menuItem}>
-                    © 2023 Wonderc hat. All rights reserved.
+                    © 2024 Xobot. All rights reserved.
                 </div>
                 <div className={styles.links4}>
                     <div className={styles.menuItem}>Terms of Service</div>

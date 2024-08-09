@@ -136,8 +136,7 @@ function BusinessesWeServerSection({ styles }) {
       <div className={styles.sectionHeader}>
         <b className={styles.sectionMainHeading}>Use cases</b>
         <div className={styles.sectionSubHeading}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Scenarios you can use the bot in, with tons of integrations.
         </div>
       </div>
 

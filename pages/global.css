@@ -7,6 +7,10 @@ body {
   background-color: #0a0b0d;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* fonts */
   --font-poppins: Poppins;
@@ -168,6 +172,10 @@ body {
   --line-height-160: 160%;
   --line-height-120: 120%;
   --transition: .5s;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 @media screen and (max-width: 1200px) {

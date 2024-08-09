@@ -101,6 +101,8 @@
 .card {
   max-width: 23rem;
   min-width: 23rem;
+  max-height: 34rem;
+  overflow-y: auto;
   text-align: center;
   position: relative;
 }
@@ -308,6 +310,8 @@
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite;
+  display: inline;
+  max-width: none;
 }
 
 @-moz-keyframes spin {
@@ -349,6 +353,8 @@
   margin-top: 30%;
   height: 40%;
   cursor: pointer;
+  display: inline;
+  max-width: none;
 }
 
 .playIconBg {
@@ -390,12 +396,14 @@
   flex-direction: column;
   height: 100px;
   width: 100px;
+  cursor: pointer;
 }
 
 .phoneoutgoingIcon {
   width: 40%;
   margin-inline: auto;
   margin-top: 20%;
+  cursor: pointer;
 }
 
 .talkOnWeb {

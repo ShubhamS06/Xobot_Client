@@ -4,6 +4,8 @@ import Card from "./card";
 import TypingAnnimatText from "../../Common/TypingAnnimatText";
 
 export default function HeroSection({ styles }) {
+  const BOT_IDS = `${process.env.NEXT_PUBLIC_BOT_IDS}`;
+  const heroIds = BOT_IDS.split(',').filter(x => x !== '');
   const heroTitles = [
     "sales lead agent",
     "schedule appointment agent",
@@ -11,9 +13,12 @@ export default function HeroSection({ styles }) {
     "collect missing information agent"
   ];
   const [suffleText, setsuffleText] = useState(heroTitles[0]);
+  const [suffleId, setsuffleId] = useState(heroIds[0]);
   const onSuffleClick = () => {
     const randomIndex = Math.floor(Math.random() * heroTitles.length);
     setsuffleText(heroTitles[randomIndex]);
+    const randomIdIndex = Math.floor(Math.random() * heroIds.length);
+    setsuffleId(heroIds[randomIdIndex]);
   };
   return (
     <div className={heroStyles.heroSectionParent}>
@@ -43,7 +48,7 @@ export default function HeroSection({ styles }) {
             >
               <img src="/shuffleIcon.svg" alt="shuffleIcon" /> Shuffle
             </button>
-            <Card title={suffleText} styles={heroStyles} />
+            <Card id={suffleId} title={suffleText} styles={heroStyles} />
             <div className={heroStyles.selectWrapper}>
               <select
                 className={`${styles.heroButton} ${styles.getStartedFor}`}

@@ -17,12 +17,12 @@ function HomeContainer({ styles }) {
         <Header styles={styles} />
         <HeroSection styles={styles} />
         <BusinessesWeServerSection styles={styles} />
-        <TrustedSection styles={styles} />        
+        <TrustedSection styles={styles} />
         <ConnectToolsSection styles={styles} />
-        <WhatDoWeOfferSection styles={styles} />        
-        <WhatOurClientsAreSayingSection styles={styles} />
-        <FaqSection styles={styles} />
-        <MaximizeSection styles={styles} />
+        <WhatDoWeOfferSection styles={styles} />
+        {/* <WhatOurClientsAreSayingSection styles={styles} /> */}
+        {/* <FaqSection styles={styles} /> */}
+        {/* <MaximizeSection styles={styles} /> */}
         <Footer styles={styles} />
       </div>
     </>

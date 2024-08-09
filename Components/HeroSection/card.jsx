@@ -1,20 +1,77 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import VoiceChat from "./VoiceChat";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle
+} from './Dialog'
 
-export default function Card({ styles, title }) {
+import { Input } from "./Input";
+import { Button } from '@nextui-org/react'
+
+export default function Card({ id, title, styles }) {
   const [showChat, setShowChat] = useState(false);
-  const chats = [
-    { content: "hello! how are you?", isCurrentUser: false },
-    { content: "i'm good, thanks!", isCurrentUser: true },
-    {
-      content: "Are you interested in buying a property?",
-      isCurrentUser: false
-    },
-    {
-      content:
-        "Yes, I'm interested but looking for something that fits in my budget",
-      isCurrentUser: true
+  const [messages, setMessages] = useState([]);
+  const [status, setStatus] = useState('');
+  const [callDialog, setCallDialog] = useState(false);
+  const [callProgress, setCallProgress] = useState(false);
+  const [callSuccess, setCallSuccess] = useState(false);
+  const [callFail, setCallFail] = useState(false);
+  const [phoneInput, setPhoneInput] = useState('');
+  const chatRef = useRef(null);
+  
+  useEffect(() => {
+    if (chatRef.current) {
+      setTimeout(() => {
+        chatRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }, 900);
     }
-  ];
+  }, [messages]);
+
+  useEffect(() => {
+    if (!showChat) {
+      setMessages([]);
+    }
+  }, [showChat]);
+
+  const makeCall = (number) => {
+    if (!number) {
+      setCallFail(true);
+      return;
+    }
+    setCallProgress(true);
+    let apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/voice`;
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(
+        {
+          bot_id: id,
+          to_number: number,
+          account_id: 'guest'
+        }
+      )
+    })
+      .then(x => x.json())
+      .then(y => {
+        setCallProgress(false);
+        setCallSuccess(true);
+      })
+      .catch(reason => {
+        setCallProgress(false);
+        setCallFail(true);
+      })
+
+  };
+
+  const onCallChange = () => {
+    setCallDialog(true);
+  };
 
   return (
     <div className={styles.card}>
@@ -34,18 +91,18 @@ export default function Card({ styles, title }) {
           </div>
 
           {showChat ? (
-            <div className={styles.chatRoot}>
+            <div className={styles.chatRoot} ref={chatRef}>
               <div className={styles.chatHeader}>
                 <span className={styles.greenDot}>● </span> Browser call in
                 progress!
               </div>
 
               <div className={styles.chatGroup}>
-                {chats.map((chat, index) => (
+                {messages.map((chat, index) => (
                   <div
                     key={index}
                     className={
-                      chat.isCurrentUser ? styles.chatRight : styles.chatLeft
+                      chat.role == 'user' ? styles.chatRight : styles.chatLeft
                     }
                   >
                     {chat.content}
@@ -54,8 +111,12 @@ export default function Card({ styles, title }) {
               </div>
 
               <div className={styles.chatAction}>
-                <img src="/pause-bg.svg" alt="" />
-                <span>Listening</span>
+                <img
+                  onClick={() => setShowChat(false)}
+
+                  style={{ cursor: 'pointer' }}
+                  src="/pause-bg.svg" alt="" />
+                <span>{status}...</span>
               </div>
             </div>
           ) : (
@@ -89,7 +150,9 @@ export default function Card({ styles, title }) {
                     alt=""
                     src="/ellipse-74@2x.png"
                   />
-                  <div className={styles.phoneoutgoingParent}>
+                  <div
+                    onClick={onCallChange}
+                    className={styles.phoneoutgoingParent}>
                     <img
                       className={styles.phoneoutgoingIcon}
                       alt=""
@@ -101,6 +164,68 @@ export default function Card({ styles, title }) {
               </div>
             </>
           )}
+          <VoiceChat id={id} sendMessages={setMessages} sendStatus={setStatus} showChatStatus={showChat}></VoiceChat>
+          <div>
+            <Dialog open={callDialog} onOpenChange={setCallDialog}>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Enter Phone Number</DialogTitle>
+                  <DialogDescription>
+                    Enter full phone number including + and country code
+                  </DialogDescription>
+                </DialogHeader>
+                <Input
+                  type='tel'
+                  required={true}
+                  value={phoneInput}
+                  placeholder="+1xxxxxxxxxx"
+                  onChange={(e) => setPhoneInput(e.target.value)}
+                />
+                <DialogFooter className="items-center">
+                  <Button
+                    type='button'
+                    className='bg-green-500 text-white px-4 py-2 rounded-md text-sm'
+                    onClick={() => {
+                      makeCall(phoneInput)
+                      setCallDialog(false)
+                    }}
+                  >
+                    Call Now
+                  </Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+            <Dialog open={callProgress} onOpenChange={setCallProgress}>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Call in Progress</DialogTitle>
+                  <DialogDescription>
+                    Your call is in progress. Please wait...
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog open={callSuccess} onOpenChange={setCallSuccess}>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Call Success</DialogTitle>
+                  <DialogDescription>
+                    The number should receive a call shortly.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+            <Dialog open={callFail} onOpenChange={setCallFail}>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Call Failed</DialogTitle>
+                  <DialogDescription>
+                    Call failed. Please try again.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+          </div>
         </div>
       </div>
     </div>

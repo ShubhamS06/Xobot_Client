@@ -28,7 +28,7 @@ function TrustedSection({ styles }) {
   return (
     <div className={styles.trustedSection}>
       <div className={styles.frameParent8}>
-        <div className={styles.trustedBy100BusinessesParent}>
+        {/* <div className={styles.trustedBy100BusinessesParent}>
           <div className={styles.sectionHeader}>
             <b className={styles.sectionMainHeading}>
               Trusted by 100+ businesses
@@ -47,10 +47,11 @@ function TrustedSection({ styles }) {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.frameParent9}>
-          <div className={`${styles.sectionHeader} ${styles.sectionMargin}`}>
+          <div className={`${styles.sectionHeader} `}> 
+            {/* ${styles.sectionMargin} */}
             <b className={styles.sectionMainHeading}>5 minute set-up process</b>
             <div className={styles.sectionSubHeading}>
               Within a Couple of Steps your AI Voice Bot is ready to be used.
